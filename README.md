@@ -1,5 +1,5 @@
 # RChaput's Personal Website
-> author: rchaput <rchaput.pro@gmail.com>
+> Author: rchaput <rchaput.pro@gmail.com>
 
 ## Description
 
@@ -10,6 +10,8 @@ the [Wowchemy][wowchemy] (formerly Academic) theme.
 ## How to
 
 To locally view the website (dev version), use the `./view.sh` script.
+
+To build the website into a set of static files, use `./build.sh`.
 
 ## License
 
