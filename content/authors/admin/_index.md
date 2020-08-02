@@ -46,6 +46,21 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/rchaput
+- icon: linkedin
+  icon_pack:
+  link: https://www.linkedin.com/in/rchaput/
+- icon: researchgate
+  icon_pack: ai
+  link: https://www.researchgate.net/profile/Remy_Chaput
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0002-2233-7566
+- icon: zotero
+  icon_pack: ai
+  link: https://www.zotero.org/rchaput
+# - icon: dblp
+#   icon_pack: ai
+#   link:
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv

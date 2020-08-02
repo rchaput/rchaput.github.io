@@ -58,12 +58,12 @@ https://sdkman.io/install.
 
 Un résumé simplifié de ces instructions :
 
-```shell script
-# Télécharger le script d'installation et l'exécuter immédiatement
+```shell
+Télécharger le script d'installation et l'exécuter immédiatement
 $ curl -s "https://get.sdkman.io" | bash
-# Une fois l'installation terminée, lancer le script d'initialisation
+Une fois l'installation terminée, lancer le script d'initialisation
 $ source "${HOME}/.sdkman/bin/sdkman-init.sh"
-# Vous avez maintenant accès à sdkman ! Vérifions que cela fonctionne
+Vous avez maintenant accès à sdkman ! Vérifions que cela fonctionne
 $ sdk version
 ```
 
@@ -74,7 +74,7 @@ accès à SDKMAN via la commande `sdk`. `sdk help` affichera la liste des sous-c
 
 Utilisez `sdk list java` pour afficher l'ensemble des versions de Java qui peuvent être téléchargées.
 Voici ce que cela donne sur ma machine (affichage tronqué) :
-```shell script
+```shell
 $ sdk list java
 ================================================================================
 Available Java Versions
