@@ -29,18 +29,6 @@ interests:
 - Neural-Symbolic Learning
 - (Lifelong) Reinforcement Learning
 
-education:
-  courses:
-  - course: PhD in Artificial Intelligence
-    institution: LIRIS - Université Claude Bernard Lyon 1
-    year: (2020 - present)
-  - course: MSc in Artificial Intelligence
-    institution: Université Claude Bernard Lyon 1
-    year: 2019
-  - course: BSc in Computer Science
-    institution: Université Claude Bernard Lyon 1
-    year: 2017
-
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the

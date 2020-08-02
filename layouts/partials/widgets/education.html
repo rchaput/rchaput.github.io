@@ -1,0 +1,33 @@
+{{ $ := .root }}
+{{ $page := .page }}
+
+<div class="row education">
+  {{ with $page.Title }}
+  <div class="col-md-12 section-heading">
+    <h1>{{ . | markdownify | emojify }}</h1>
+    {{ if $page.Params.subtitle }}<p>{{ $page.Params.subtitle | markdownify | emojify }}</p>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ with $page.Content }}
+  <div class="col-md-12">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  <div class="col-md-12">
+    <ul class="ul-edu fa-ul">
+      {{ range $page.Params.course }}
+      <li>
+        <div class="description">
+          <i class="fa=li fas fa-graduation-cap"></i>
+          <span class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</span>
+          {{ with .subtitle }}<p class="institution">{{ . | markdownify }}</p>{{ end }}
+          <p class="institution">{{ .institution }}</p>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
+</div>
