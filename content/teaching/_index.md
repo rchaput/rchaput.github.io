@@ -8,6 +8,11 @@ layout: "docs"
 header:
   caption: ""
   image: ""
+
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
 ---
 
 This page lists materials used in courses that I teach. They are mostly in French for students.
