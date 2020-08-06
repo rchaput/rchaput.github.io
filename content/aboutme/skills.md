@@ -9,9 +9,7 @@ title = "Skills"
 subtitle = ""
 
 # Showcase personal skills or business features.
-# 
 # Add/remove as many `[[feature]]` blocks below as you like.
-# 
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
@@ -45,11 +43,11 @@ subtitle = ""
   description = "Small proficiency"
 
 [[feature]]
-  icon = "intellij"
-  # TODO: replace by the 'devicons' fontpack instead of relying on custom SVG
+  icon = "jetbrains-logos/jetbrains"
   icon_pack = "custom"
   name = "IntelliJ Idea, PyCharm"
-  description = ""
+  description = "Preferred IDEs"
+  url = "https://www.jetbrains.com"
 
 [[feature]]
   icon = "linux"

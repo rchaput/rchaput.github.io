@@ -33,6 +33,7 @@ date_format = "Jan 2006"
   * Developing use case and implementation of our approach
   * Publishing scientific articles
   * Mentoring research interns
+  * Giving courses at the University
   """
 
 [[experience]]
