@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   date_start = "2019-09-01"
   date_end = ""
   description = """
-  PhD Student in the EthicsAI project ; project goal is to *learn behaviors exhibiting ethical values by co-construction
+  PhD Student in the **EthicsAI** project ; project goal is to *learn behaviors exhibiting ethical values by co-construction
   with human or other artificial agents*.  
   Responsibilities include:
   * Organizing meetings (agenda)
@@ -35,6 +35,8 @@ date_format = "Jan 2006"
   * Mentoring research interns
   * Giving courses at the University
   """
+  tags = ["Python3", "Reinforcement Learning", "Ethical Artificial Intelligence", "Multi-Agent System", "Neural Network",
+  "Neural-Symbolic Learning", "Explainable AI"]
 
 [[experience]]
   title = "Research Intern"
@@ -48,6 +50,7 @@ date_format = "Jan 2006"
   Project: learn "ethical behaviors".  
   Developed a Multi-Agent System, with Reinforcement Learning.
   """
+  tags = ["Python3", "Reinforcement Learning", "Ethical Artificial Intelligence", "Multi-Agent System", "Neural Network"]
 
 [[experience]]
   title = "Intern"
@@ -57,8 +60,9 @@ date_format = "Jan 2006"
   date_start = "2017-03-01"
   date_end = "2017-07-31"
   description = """
-  Worked as a full-stack developer in a startup.
+  Worked as a full-stack developer in a startup, applying Agile methodology.
   Extended existing functionalities and added new ones, from conception to implementation, for Atlassian Confluence plugins.
   """
+  tags = ["Java", "jQuery", "Agile", "Atlassian", "Startup"]
 
 +++
