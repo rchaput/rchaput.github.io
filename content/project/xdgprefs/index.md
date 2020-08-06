@@ -3,10 +3,13 @@
 
 title: "XDG-Prefs"
 summary: "XDG-Prefs is an open-source tool to manage your default applications on GNU/Linux."
-authors: ["admin"]
-tags: ["Python3", "OpenSource", "GNU/Linux"]
+authors: ["rchaput"]
+tags: ["Python3", "OpenSource", "GNU+Linux"]
 categories: []
 date: 2020-08-04T21:36:46+02:00
+
+# Do not show author profile
+profile: false
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

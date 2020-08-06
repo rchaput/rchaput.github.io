@@ -2,11 +2,14 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Py3status Random Wallpaper"
-summary: "py3status-random-wallpaper is a module for the Py3status bar, which allows you to easily change your wallpaper on GNU/Linux."
-authors: ["admin"]
-tags: ["Python3", "OpenSource", "GNU\Linux"]
+summary: "py3status-random-wallpaper is a module for the Py3status bar, that allows you to easily change your wallpaper on GNU/Linux."
+authors: ["rchaput"]
+tags: ["Python3", "OpenSource", "GNU+Linux"]
 categories: []
 date: 2020-08-04T22:06:02+02:00
+
+# Do not show author profile
+profile: false
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
