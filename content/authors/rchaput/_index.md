@@ -28,6 +28,8 @@ interests:
 - Explainable AI
 - Neural-Symbolic Learning
 - (Lifelong) Reinforcement Learning
+- Multi-Agent Systems
+- Constructivism
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -36,7 +38,7 @@ interests:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:rchaput.pro@gmail.com'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:rchaput.pro@gmail.com'
 # - icon: twitter
 #   icon_pack: fab
 #   link: https://twitter.com/GeorgeCushen
@@ -77,7 +79,8 @@ user_groups:
 - Visitors
 ---
 
-I am a PhD Student in Artificial Intelligence, currently working at the [LIRIS](https://liris.cnrs.fr/) lab (CNRS - UMR5205).
+I am a PhD Student in Artificial Intelligence, currently working at the [LIRIS](https://liris.cnrs.fr/) lab 
+(CNRS - UMR5205), in the [Multi-Agent System (SMA)](https://liris.cnrs.fr/equipe/sma) team.
 My thesis focuses on learning ethical behaviors for Artificial Agents through Reinforcement Learning.
 
 My research interests also include Explainable AI, and human-centered AI (such as Responsible AI, AI4People, etc.).

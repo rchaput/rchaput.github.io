@@ -19,4 +19,5 @@ $sta-link-hover: $sta-link;
 .card > .card-body > h4.exp-company > a.exp-comp-link:hover,
 .card > .card-body > h4.exp-company > a.exp-comp-link:focus {
   color: $sta-link-hover;
+  text-decoration-color: currentColor;
 }

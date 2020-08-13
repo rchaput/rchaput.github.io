@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 title = "Programmation Orientée Objet"
 linktitle = "Programmation Orientée Objet"
-summary = "Chargé de TD/TP en Programmation Orientée Objet (Licence 3ème année)."
+summary = "Chargé de TD/TP en LIFAP7 POO (Licence 3ème année [UE-INF3007L])."
 weight = 2
 
 # Page metadata.

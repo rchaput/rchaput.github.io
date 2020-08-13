@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 title = "Bases de l'Intelligence Artificielle"
 linktitle = "Bases de l'Intelligence Artificielle"
-summary = "Chargé de TD/TP en Bases de l'Intelligence Artificielle (Master 1ère année)."
+summary = "Chargé de TD/TP en M1IF06 BIA (Master 1ère année [UE-INF1092M])."
 weight = 1
 
 # Page metadata.

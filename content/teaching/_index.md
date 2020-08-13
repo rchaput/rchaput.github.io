@@ -17,5 +17,5 @@ image:
 
 This page lists materials used in courses that I teach. They are mostly in French for students.
 
-Cette page liste des matériaux utilisés dans les cours que j'enseigne. Elles sont principalement en Français pour
+Cette page liste des matériaux utilisés dans les cours que j'enseigne. Ils sont principalement en Français pour
 les étudiants.
