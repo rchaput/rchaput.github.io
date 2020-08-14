@@ -17,3 +17,5 @@ type = "docs"
 
 Quelques documents nécessaires ou utiles dans le cadre du cours de Bases de l'Intelligence Artificielle (UE-INF1092M, 
 1ère année de Master Informatique).
+
+Site du cours : https://perso.liris.cnrs.fr/marie.lefevre/enseignement-BIA.html

@@ -1,16 +1,15 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Jfsma2020"
+title: "Poster at GDR IA 2019"
 authors: []
-date: 2020-08-05T22:46:13+02:00
+date: 2019-10-01T00:00:00+02:00
 doi: ""
 
 profile: false
-draft: true
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2020-08-05T22:46:13+02:00
+publishDate: 2019-10-01T00:00:00+02:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -25,9 +24,9 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: ""
+summary: "Poster about my Master thesis, at an AI Autumn school."
 
-tags: []
+tags: ["Ethics", "Multi-Agent Systems", "Reinforcement Learning", "Self-Organizing Maps", "Smart Grids"]
 categories: []
 featured: false
 
@@ -42,7 +41,7 @@ featured: false
 url_pdf:
 url_code:
 url_dataset:
-url_poster:
+url_poster: /pdf/Poster_IA2_GDRIA_2019.pdf
 url_project:
 url_slides:
 url_source:
@@ -70,3 +69,16 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
+***
+
+[IA²][1] is an Autumn school about Artificial Intelligence, organized by the [GDR IA][2] and financed by the [CNRS][3]. 
+This 2019 edition of [IA²][1] was specialized on Smart Environment and Smart Cities, during which I presented a poster 
+about my internship work on ethical behaviors of artificial agents and the application to intelligent distribution of 
+energy inside a small Smart Grid.
+
+The poster is in French
+
+[1]: https://ia2.gdria.fr/
+[2]: https://gdria.fr/
+[3]: https://cnrs.fr/
