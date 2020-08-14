@@ -15,7 +15,9 @@ type = "docs"
     weight = 1
 +++
 
-Quelques documents nécessaires ou utiles dans le cadre du cours de Bases de l'Intelligence Artificielle (UE-INF1092M, 
-1ère année de Master Informatique).
+*Code UE : UE-INF1092M / M1IF06*
+
+Quelques documents nécessaires ou utiles dans le cadre du cours de Bases de l'Intelligence Artificielle 
+(1ère année de Master Informatique).
 
 Site du cours : https://perso.liris.cnrs.fr/marie.lefevre/enseignement-BIA.html

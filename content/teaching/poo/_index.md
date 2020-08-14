@@ -15,5 +15,7 @@ type = "docs"
     weight = 1
 +++
 
-Quelques documents nécessaires ou utiles dans le cadre du cours de Programmation Orientée Objet (UE-INF3007L, 
-3ème année de Licence Informatique).
+*Code UE : UE-INF3007L / LIFAP7*
+
+Quelques documents nécessaires ou utiles dans le cadre du cours de Programmation Orientée Objet 
+(3ème année de Licence Informatique).
