@@ -6,12 +6,7 @@ date: ""
 # Optional header image (relative to `static/img/` folder).
 header:
   caption: ""
-  image: ""
-
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
+  image: "research-2-cropped2.jpg"
 ---
 
 This page lists the research materials I published (publications, talks, etc.).

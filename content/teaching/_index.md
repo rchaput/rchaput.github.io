@@ -7,12 +7,7 @@ layout: "docs"
 # Optional header image (relative to `static/img/` folder).
 header:
   caption: ""
-  image: ""
-
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
+  image: "teaching-1-cropped2.jpg"
 ---
 
 This page lists materials used in courses that I teach. They are mostly in French for students.
