@@ -21,3 +21,14 @@ $sta-link-hover: $sta-link;
   color: $sta-link-hover;
   text-decoration-color: currentColor;
 }
+
+div#container-publications h3.article-title a {
+  color: $sta-link-hover;
+  text-decoration-color: currentColor;
+}
+
+div#container-publications h3.article-title a:hover,
+div#container-publications h3.article-title a:focus {
+  color: $sta-link-hover;
+  text-decoration: currentColor underline;
+}
