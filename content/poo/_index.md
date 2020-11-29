@@ -3,11 +3,11 @@
 title = "Programmation Orientée Objet"
 linktitle = "Programmation Orientée Objet"
 summary = "Chargé de TD/TP en LIFAP7 POO (Licence 3ème année [UE-INF3007L])."
-weight = 2
+weight = 1
 
 # Page metadata.
 toc = true
-type = "docs"
+type = "book"
 
 [menu]
   [menu.poo]

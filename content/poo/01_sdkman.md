@@ -1,20 +1,19 @@
----
-title: Installer Java avec SDKMAN
-linktitle: Installer Java avec SDKMAN
-summary: "Apprendre a utiliser l'outil SDKMAN pour télécharger, installer et utiliser en parallèle sur la même machine de multiples versions de Java."
++++
+title = "Installer Java avec SDKMAN"
+linktitle = "Installer Java avec SDKMAN"
+summary = "Apprendre a utiliser l'outil SDKMAN pour télécharger, installer et utiliser en parallèle sur la même machine de multiples versions de Java."
 
-toc: true
-type: docs
+toc = true
+type = "book"
 
-date: "2020-08-02"
+date = "2020-08-02"
+weight = 1
 
-menu:
-  poo:
-    parent: POO
-    weight: 1
-
-weight: 1
----
+[menu]
+  [menu.poo]
+    parent = "POO"
+    weight = 1
++++
 
 Ce document explique comment installer un environnement de développement Java, grâce à l'utilitaire SDKMAN.
 Cela sera utile aux étudiants qui s'intéressent au développement d'applications Java (au-delà du cadre du cours de POO).

@@ -1,20 +1,19 @@
----
-title: Le problème du null et les Optional
-linktitle: Les null et les Optional
-summary: ""
++++
+title = "Le problème du null et les Optional"
+linktitle = "Les null et les Optional"
+summary = ""
 
-toc: true
-type: docs
+toc = true
+type = "book"
 
-date: "2020-08-21"
+date = "2020-08-21"
+weight = 2
 
-menu:
-  poo:
-    parent: POO
-    weight: 2
-
-weight: 2
----
+[menu]
+  [menu.poo]
+    parent = "POO"
+    weight = 2
++++
 
 Ce document explique le problème du `null` en Java ainsi que quelques solutions pour pallier à ce problème, telle que
 l'utilisation des `Optional`.

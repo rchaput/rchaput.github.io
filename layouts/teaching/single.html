@@ -1,0 +1,45 @@
+{{- define "main" -}}
+{{ $page := . }}
+
+  <article class="article">
+
+    {{ partial "page_header" . }}
+
+    <div class="article-container">
+
+      <div class="article-style">
+        {{ .Content }}
+      </div>
+
+      {{ range $page.Params.year }}
+      <div class="col-md-12">
+        <details open>
+          <summary>{{ .name }}</summary>
+          <ul class="ul-edu fa-ul">
+            {{ range .course }}
+            <li>
+              <div class="description">
+                <i class="fa-li fas fa-chalkboard-teacher"></i>
+                {{ if .internal_link }}
+                  <a href="{{ relref $page .internal_link }}"><span class="course">{{ .name }}</span></a>
+                {{ else }}
+                  <span class="course">{{ .name }}</span>
+                {{ end }}
+                {{ with .subtitle }}<p class="institution">{{ . | markdownify }}</p>{{ end }}
+                {{ with .link }}<p class="institution"><a href="{{ . }}">Site du cours</a></p>{{ end }}
+                {{ with .level }}<p class="institution">Niveau : {{ . | markdownify }}</p>{{ end }}
+                {{ with .code }}<p class="institution">Code UE: <i>{{ . | markdownify }}</i></p>{{ end}}
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+        </details>
+      </div>
+      {{ end }}
+
+      {{ partial "page_footer" . }}
+
+    </div>
+  </article>
+
+{{- end -}}
