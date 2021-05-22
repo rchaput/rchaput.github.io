@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Remy Chaput</title><link>/</link><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><description>Remy Chaput</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate><image><url>/images/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_2.png</url><title>Remy Chaput</title><link>/</link></image><item><title>Installer Java avec SDKMAN</title><link>/poo/01_sdkman/</link><pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate><guid>/poo/01_sdkman/</guid><description>&lt;p>Ce document explique comment installer un environnement de développement Java, grâce à l&amp;rsquo;utilitaire SDKMAN.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Remy Chaput</title><link>/</link><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><description>Remy Chaput</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_2.png</url><title>Remy Chaput</title><link>/</link></image><item><title>Installer Java avec SDKMAN</title><link>/poo/01_sdkman/</link><pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate><guid>/poo/01_sdkman/</guid><description>&lt;p>Ce document explique comment installer un environnement de développement Java, grâce à l&amp;rsquo;utilitaire SDKMAN.
 Cela sera utile aux étudiants qui s&amp;rsquo;intéressent au développement d&amp;rsquo;applications Java (au-delà du cadre du cours de POO).&lt;/p>
 &lt;p>SDKMAN est facile à installer sur Linux et Mac OSX, mais sur Windows il nécessite d&amp;rsquo;utiliser WSL ou Cygwin.&lt;/p>
 &lt;p>L&amp;rsquo;autre option est une installation &amp;ldquo;traditionnelle&amp;rdquo; en passant par le gestionnaire de paquets
@@ -113,7 +113,7 @@ La commande &lt;code>which java&lt;/code> permet de connaître l&amp;rsquo;empla
 chemin (cela montre que votre JDK est bien configuré).
 &lt;/div>
 &lt;/div>
-&lt;h2 id="paramétrage-de-lide">Paramétrage de l&amp;rsquo;&lt;em>IDE&lt;/em>&lt;/h2>
+&lt;h2 id="paramétrage-de-lide">Paramétrage de l'&lt;em>IDE&lt;/em>&lt;/h2>
 &lt;h3 id="avec-intellij-idea">Avec IntelliJ IDEA&lt;/h3>
 &lt;p>Lors de la création d&amp;rsquo;un projet, IntelliJ demande quel SDK utiliser ; en déroulant la liste, sélectionner &lt;em>Add JDK&amp;hellip;&lt;/em>.&lt;/p>
 &lt;p>Sinon, cliquer sur &lt;em>File&lt;/em> &amp;gt; &lt;em>Project Structure&lt;/em> (ou &lt;em>Ctrl+Alt+Shift+S&lt;/em>), puis dans l&amp;rsquo;onglet &lt;em>SDKs&lt;/em> cliquer sur
@@ -182,8 +182,7 @@ Quand on crée une nouvelle classe et que l&amp;rsquo;on surcharge la méthode &
 qu&amp;rsquo;il a une valeur immédiate, à l&amp;rsquo;inverse d&amp;rsquo;une variable qui &lt;em>peut&lt;/em> avoir une valeur ou non). Ici, &lt;code>&amp;quot;Smith&amp;quot;&lt;/code> est un
 littéral. En revanche, si je veux comparer &lt;code>String user1&lt;/code> et &lt;code>String user2&lt;/code>, je n&amp;rsquo;ai pas de littéral.&lt;/p>
 &lt;p>Heureusement, cette situation est si fréquente que le langage Java nous propose une méthode toute prête :
-&lt;code>Objects.equals(Object a, Object b)&lt;/code> (
-&lt;a href="https://docs.oracle.com/javase/7/docs/api/java/util/Objects.html#equals%28java.lang.Object,%20java.lang.Object" target="_blank" rel="noopener">voir la doc&lt;/a>)).
+&lt;code>Objects.equals(Object a, Object b)&lt;/code> (&lt;a href="https://docs.oracle.com/javase/7/docs/api/java/util/Objects.html#equals%28java.lang.Object,%20java.lang.Object" target="_blank" rel="noopener">voir la doc&lt;/a>)).
 La classe &lt;code>Objects&lt;/code> consiste en un ensemble de méthodes &amp;ldquo;utilitaires&amp;rdquo; telle que celle-ci. &lt;code>Objects.equals&lt;/code> est statique
 et il suffit donc de l&amp;rsquo;appeler sur 2 objets pour savoir s&amp;rsquo;ils sont égaux. En interne, elle vérifiera si les objets
 sont &lt;code>null&lt;/code>s, comparables, et appellera éventuellement la méthode &lt;code>equals&lt;/code> de la bonne classe.
@@ -205,8 +204,7 @@ Or, on ne s&amp;rsquo;en souvient pas toujours ; parfois, on utilise une bibliot
 application communiquant en réseau) qui, lors des tests, nous renvoie toujours un objet non-&lt;code>null&lt;/code>, sauf un jour, en
 production, dans un contexte particulier où notre application reçoit un objet &lt;code>null&lt;/code> et crashe complètement&amp;hellip;&lt;/p>
 &lt;p>Depuis sa version 8, le langage Java propose une classe qui a pour but de supprimer le problème du &lt;code>null&lt;/code> : la classe
-&lt;code>Optional&amp;lt;T&amp;gt;&lt;/code> (que j&amp;rsquo;appellerais &lt;code>Optional&lt;/code> pour faire plus simple ;
-&lt;a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html" target="_blank" rel="noopener">voir la doc&lt;/a>).&lt;/p>
+&lt;code>Optional&amp;lt;T&amp;gt;&lt;/code> (que j&amp;rsquo;appellerais &lt;code>Optional&lt;/code> pour faire plus simple ; &lt;a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html" target="_blank" rel="noopener">voir la doc&lt;/a>).&lt;/p>
 &lt;p>&lt;code>Optional&lt;/code> est une classe générique qui peut contenir, ou non, une valeur (de type &lt;code>T&lt;/code>) ; elle propose également des
 méthodes permettant de simplifier sa manipulation, en particulier de vérifier qu&amp;rsquo;une valeur soit présente (&lt;code>isPresent&lt;/code>),
 de fournir une valeur par défaut (&lt;code>orElse&lt;/code>), de récupérer la valeur (&lt;code>get&lt;/code>), etc.&lt;/p>
@@ -274,50 +272,36 @@ objets ; dans ce cas, la méthode statique &lt;code>Objects.equals(a, b)&lt;/cod
 vérifier la présence (ou non) d&amp;rsquo;une valeur, et dans le cas où elle est présente, on la récupère via &lt;code>Optional.get()&lt;/code>.&lt;/p>
 &lt;p>L&amp;rsquo;utilisation de la classe &lt;code>Optional&lt;/code> permet d&amp;rsquo;envoyer un message (implicite) au développeur qui utiliserait votre
 code : le retour de cette méthode peut ne pas avoir de valeur ! Ainsi, lorsque votre méthode renvoie &lt;em>forcément&lt;/em> une
-valeur non-&lt;code>null&lt;/code>, il n&amp;rsquo;est pas nécessaire d&amp;rsquo;utiliser &lt;code>Optional&lt;/code>.&lt;/p></description></item><item><title>Explanations: What does it mean for humans, for machines, for man-machines interactions?</title><link>/publication/xai2021/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><guid>/publication/xai2021/</guid><description/></item><item><title>Py3status Random Wallpaper</title><link>/project/py3status-wallpaper/</link><pubDate>Tue, 04 Aug 2020 22:06:02 +0200</pubDate><guid>/project/py3status-wallpaper/</guid><description>&lt;p>
-&lt;a href="https://github.com/rchaput/py3status-random-wallpaper/" title="Pystatus-Random-Wallpaper" target="_blank" rel="noopener">Py3status Random Wallpaper&lt;/a> is a module for
-&lt;a href="https://github.com/ultrabug/py3status/" target="_blank" rel="noopener">Py3status&lt;/a> (which is itself a replacement for the defaul i3status in i3bar) that allows you to
+valeur non-&lt;code>null&lt;/code>, il n&amp;rsquo;est pas nécessaire d&amp;rsquo;utiliser &lt;code>Optional&lt;/code>.&lt;/p></description></item><item><title>Explanations: What does it mean for humans, for machines, for man-machines interactions?</title><link>/publication/xai2021/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><guid>/publication/xai2021/</guid><description/></item><item><title>Py3status Random Wallpaper</title><link>/project/py3status-wallpaper/</link><pubDate>Tue, 04 Aug 2020 22:06:02 +0200</pubDate><guid>/project/py3status-wallpaper/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/py3status-random-wallpaper/" title="Pystatus-Random-Wallpaper" target="_blank" rel="noopener">Py3status Random Wallpaper&lt;/a> is a module for &lt;a href="https://github.com/ultrabug/py3status/" target="_blank" rel="noopener">Py3status&lt;/a> (which is itself a replacement for the defaul i3status in i3bar) that allows you to
 change your wallpaper. Each time the module is loaded (for example, when the i3bar is started), it will
 pick a random wallpaper amongst your library. You can also directly click on the module to change the wallpaper.&lt;/p>
 &lt;p>This module was made with high configurability in mind, and you can tweak several parameters, such as:&lt;/p>
 &lt;ul>
 &lt;li>the folders which will be scanned for wallpapers&lt;/li>
 &lt;li>the buttons used to trigger a new change&lt;/li>
-&lt;li>the command used to set the wallpaper (by default, uses
-&lt;a href="https://feh.finalrewind.org/" target="_blank" rel="noopener">feh&lt;/a>)&lt;/li>
+&lt;li>the command used to set the wallpaper (by default, uses &lt;a href="https://feh.finalrewind.org/" target="_blank" rel="noopener">feh&lt;/a>)&lt;/li>
 &lt;li>an optional list of ignored files&lt;/li>
 &lt;li>and others&amp;hellip;&lt;/li>
-&lt;/ul></description></item><item><title>XDG-Prefs</title><link>/project/xdgprefs/</link><pubDate>Tue, 04 Aug 2020 21:36:46 +0200</pubDate><guid>/project/xdgprefs/</guid><description>&lt;p>
-&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> is an Open-Source tool to manage your default applications on GNU/Linux, with a simple but efficient GUI.&lt;/p>
-&lt;p>On GNU/Linux systems, each file has a type, named the
-&lt;a href="https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/" target="_blank" rel="noopener">MIME Type&lt;/a> (or Media Type), based on the
-&lt;a href="https://www.freedesktop.org/wiki/Specifications/mime-apps-spec/" target="_blank" rel="noopener">XDG Specifications&lt;/a> by
-&lt;a href="https://www.freedesktop.org/wiki/" target="_blank" rel="noopener">Freedesktop&lt;/a>. Your system maintains a database that specifies the
+&lt;/ul></description></item><item><title>XDG-Prefs</title><link>/project/xdgprefs/</link><pubDate>Tue, 04 Aug 2020 21:36:46 +0200</pubDate><guid>/project/xdgprefs/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> is an Open-Source tool to manage your default applications on GNU/Linux, with a simple but efficient GUI.&lt;/p>
+&lt;p>On GNU/Linux systems, each file has a type, named the &lt;a href="https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/" target="_blank" rel="noopener">MIME Type&lt;/a> (or Media Type), based on the
+&lt;a href="https://www.freedesktop.org/wiki/Specifications/mime-apps-spec/" target="_blank" rel="noopener">XDG Specifications&lt;/a> by &lt;a href="https://www.freedesktop.org/wiki/" target="_blank" rel="noopener">Freedesktop&lt;/a>. Your system maintains a database that specifies the
 default application you want to use for each MIME Type ; this database is available through the official
 &lt;code>xdg-mime&lt;/code> tool, but the command-line interface is not suited for easy management (you must remember the
 exact name of the MIME Type for example).&lt;/p>
-&lt;p>
-&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> offers a simple GUI that allows you to view and modify this database easily ; it
+&lt;p>&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> offers a simple GUI that allows you to view and modify this database easily ; it
 is built upon the same standard specifications, meaning that your preferences will be recognized by
 all other applications (typically, when you double-click on a file in your File Explorer).&lt;/p>
 &lt;p>Such a tool is commonly found in Desktop Environments, such as &lt;em>Gnome&lt;/em> or &lt;em>KDE&lt;/em>, but not in Window Managers,
-such as &lt;em>i3wm&lt;/em>.
-&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> is desktop-agnostic, meaning that you can use it on Gnome, KDE, or even i3.&lt;/p></description></item><item><title>Apprentissage adaptatif de comportements éthiques</title><link>/publication/jfsma20/</link><pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate><guid>/publication/jfsma20/</guid><description/></item><item><title>Poster at GDR IA 2019</title><link>/publication/poster_gdria2019/</link><pubDate>Tue, 01 Oct 2019 00:00:00 +0200</pubDate><guid>/publication/poster_gdria2019/</guid><description>&lt;hr>
-&lt;p>
-&lt;a href="https://ia2.gdria.fr/" target="_blank" rel="noopener">IA²&lt;/a> is an Autumn school about Artificial Intelligence, organized by the
-&lt;a href="https://gdria.fr/" target="_blank" rel="noopener">GDR IA&lt;/a> and financed by the
-&lt;a href="https://cnrs.fr/" target="_blank" rel="noopener">CNRS&lt;/a>.
-This 2019 edition of
-&lt;a href="https://ia2.gdria.fr/" target="_blank" rel="noopener">IA²&lt;/a> was specialized on Smart Environment and Smart Cities, during which I presented a poster
+such as &lt;em>i3wm&lt;/em>. &lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> is desktop-agnostic, meaning that you can use it on Gnome, KDE, or even i3.&lt;/p></description></item><item><title>Apprentissage adaptatif de comportements éthiques</title><link>/publication/jfsma20/</link><pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate><guid>/publication/jfsma20/</guid><description/></item><item><title>Poster at GDR IA 2019</title><link>/publication/poster_gdria2019/</link><pubDate>Tue, 01 Oct 2019 00:00:00 +0200</pubDate><guid>/publication/poster_gdria2019/</guid><description>&lt;hr>
+&lt;p>&lt;a href="https://ia2.gdria.fr/" target="_blank" rel="noopener">IA²&lt;/a> is an Autumn school about Artificial Intelligence, organized by the &lt;a href="https://gdria.fr/" target="_blank" rel="noopener">GDR IA&lt;/a> and financed by the &lt;a href="https://cnrs.fr/" target="_blank" rel="noopener">CNRS&lt;/a>.
+This 2019 edition of &lt;a href="https://ia2.gdria.fr/" target="_blank" rel="noopener">IA²&lt;/a> was specialized on Smart Environment and Smart Cities, during which I presented a poster
 about my internship work on ethical behaviors of artificial agents and the application to intelligent distribution of
 energy inside a small Smart Grid.&lt;/p>
 &lt;p>The poster is in French&lt;/p></description></item><item><title>Master Research Internship (Thesis)</title><link>/publication/master_thesis/</link><pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate><guid>/publication/master_thesis/</guid><description>&lt;hr>
 &lt;p>This is the thesis I redacted at the end of my Master in Artificial Intelligence. The subject was &lt;em>Evolutive learning
-of ethical behaviors&lt;/em>, realized at the
-&lt;a href="https://liris.cnrs.fr" target="_blank" rel="noopener">LIRIS&lt;/a> lab, under the supervision of Professor
+of ethical behaviors&lt;/em>, realized at the &lt;a href="https://liris.cnrs.fr" target="_blank" rel="noopener">LIRIS&lt;/a> lab, under the supervision of Professor
 &lt;a href="https://liris.cnrs.fr/page-membre/salima-hassas" target="_blank" rel="noopener">Salima Hassas&lt;/a> and
-Professor
-&lt;a href="https://www.emse.fr/~boissier/" target="_blank" rel="noopener">Olivier Boissier&lt;/a>.&lt;/p>
+Professor &lt;a href="https://www.emse.fr/~boissier/" target="_blank" rel="noopener">Olivier Boissier&lt;/a>.&lt;/p>
 &lt;p>The documents (thesis and slides) are in French, but the English abstract is available.&lt;/p></description></item><item><title>About Me</title><link>/aboutme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/aboutme/</guid><description/></item><item><title>Teaching / Enseignement</title><link>/teaching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/teaching/</guid><description>&lt;p>This page lists the courses I teach at the University. I also include a few
 useful materials (in French for students).&lt;/p>
 &lt;p>Cette page liste les cours que j&amp;rsquo;enseigne à l&amp;rsquo;Université. J&amp;rsquo;inclus également
