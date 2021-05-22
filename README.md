@@ -20,11 +20,11 @@ The content of the website itself is licensed under the
 source code used to produce that website is licensed under the 
 [MIT License][mit].
 
-The Wowchemy theme is released under the MIT License, copyright
+The [Wowchemy][wowchemy] theme is released under the MIT License, copyright
 [George Cushen][gcushen].
 
 [hugo]: https://github.com/gohugoio/hugo
 [wowchemy]: https://wowchemy.com/
 [gcushen]: https://georgecushen.com/
 [cc-by]: https://creativecommons.org/licenses/by/4.0/
-[mit]: ./LICENSE
+[mit]: ../old/LICENSE

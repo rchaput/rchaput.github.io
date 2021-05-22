@@ -21,6 +21,7 @@ date_format = "Jan 2006"
   title = "PhD Student"
   company = "LIRIS"
   company_url = "https://liris.cnrs.fr/"
+  # company_logo = "liris"
   location = "France"
   date_start = "2019-09-01"
   date_end = ""
@@ -33,7 +34,7 @@ date_format = "Jan 2006"
   * Developing use case and implementation of our approach
   * Publishing scientific articles
   * Mentoring research interns
-  * Giving courses at the University
+  * Teaching courses at the University
   """
   tags = ["Python3", "Reinforcement Learning", "Ethical Artificial Intelligence", "Multi-Agent System", "Neural Network",
   "Neural-Symbolic Learning", "Explainable AI"]
@@ -42,6 +43,7 @@ date_format = "Jan 2006"
   title = "Research Intern"
   company = "LIRIS"
   company_url = "https://liris.cnrs.fr/"
+  # company_logo = "liris"
   location = "France"
   date_start = "2019-02-01"
   date_end = "2019-07-01"

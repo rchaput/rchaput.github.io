@@ -1,87 +1,65 @@
-+++
-# Display name
-title = "Remy Chaput"
+---
+title: Remy Chaput
 
-# Username (this should match the folder name)
-authors = ["rchaput"]
+superuser: true
 
-# Is this the primary user of the site?
-superuser = true
+role: PhD Student in Artificial Intelligence
 
-# Role/position
-role = "PhD Student in Artificial Intelligence"
+organizations:
+  - name: Université Claude Bernard Lyon 1
+    url: https://www.univ-lyon1.fr
+  - name: LIRIS
+    url: https://liris.cnrs.fr
 
-# Organizations/Affiliations
-organizations = [
-  {name = "Université Claude Bernard Lyon 1", url = "https://www.univ-lyon1.fr"},
-  {name = "LIRIS", url = "https://liris.cnrs.fr"}
-]
+bio: I am interested in Reinforcement Learning, Ethics in Artificial Intelligence (Responsible AI) and Explainable AI.
 
-# Short bio (displayed in user profile at end of posts)
-bio = "I am interested in Reinforcement Learning, Ethics in Artificial Intelligence (Responsible AI) and Explainable AI."
+interests:
+  - Artificial Intelligence
+  - Responsible AI
+  - Explainable AI
+  - Neural-Symbolic Learning
+  - (Lifelong) Reinforcement Learning
+  - Multi-Agent Systems
+  - Constructivism
 
-interests = [
-  "Artificial Intelligence",
-  "Responsible AI",
-  "Explainable AI",
-  "Neural-Symbolic Learning",
-  "(Lifelong) Reinforcement Learning",
-  "Multi-Agent Systems",
-  "Constructivism"
-]
+social:
+- icon: envelope
+  icon_pack: fas
+  link: 'mailto:rchaput.pro@gmail.com'
+- icon: github
+  icon_pack: fab
+  link: https://github.com/rchaput
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/rchaput
+- icon: researchgate
+  icon_pack: ai
+  link: https://www.researchgate.net/profile/Remy_Chaput
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0002-2233-7566
+- icon: zotero
+  icon_pack: ai
+  link: https://www.zotero.org/rchaput
+- icon: dblp
+  icon_pack: ai
+  link: https://dblp.uni-trier.de/pid/272/7185.html
 
-# Social/Academic Networking
-# For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
-[[social]]
-  icon = "envelope"
-  icon_pack = "fas"
-  link = "mailto:rchaput.pro@gmail.com"
-[[social]]
-  icon = "github"
-  icon_pack = "fab"
-  link = "https://github.com/rchaput"
-[[social]]
-  icon = "linkedin"
-  icon_pack = "fab"
-  link = "https://www.linkedin.com/in/rchaput/"
-[[social]]
-  icon = "researchgate"
-  icon_pack = "ai"
-  link = "https://www.researchgate.net/profile/Remy_Chaput"
-[[social]]
-  icon = "orcid"
-  icon_pack = "ai"
-  link = "https://orcid.org/0000-0002-2233-7566"
-[[social]]
-  icon = "zotero"
-  icon_pack = "ai"
-  link = "https://www.zotero.org/rchaput"
-# - icon: dblp
-#   icon_pack: ai
-#   link:
-# - icon: twitter
-#   icon_pack: fab
-#   link: https://twitter.com/GeorgeCushen
-# - icon: google-scholar
-#   icon_pack: ai
-#   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+# Link to a PDF of your resume/CV.
+# To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
+# and uncomment the lines below.
 # - icon: cv
 #   icon_pack: ai
-#   link: files/cv.pdf
+#   link: media/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email = ""
+email: ""
 
-# Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.
-# user_groups = ["Researchers", "Visitors"]
-+++
+# Highlight the author in author lists? (true/false)
+highlight_name: false
+---
 
-I am a PhD Student in Artificial Intelligence, currently working at the [LIRIS](https://liris.cnrs.fr/) lab 
+I am a PhD Student in Artificial Intelligence, currently working at the [LIRIS](https://liris.cnrs.fr/) lab
 (CNRS - UMR5205), in the [Multi-Agent System (SMA)](https://liris.cnrs.fr/equipe/sma) team.
 My thesis focuses on learning ethical behaviors for Artificial Agents through Reinforcement Learning.
 

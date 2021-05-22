@@ -30,25 +30,25 @@ SDKMAN est un outil conçu pour faciliter l'installation d'une ou plusieurs vers
 particulièrement utile lorsque l'on a besoin de conserver sur son ordinateur différentes versions de Java (par exemple,
 un projet peut avoir besoin du *JDK8* tandis qu'un autre utilisera le *JDK13*).
 
-{{% alert note %}}
+{{% callout note %}}
 *JDK8* fait référence au *Java Development Kit* (c'est-à-dire l'ensemble des fichiers nécessaires pour exécuter et 
 développer une application en langage Java), précisément avec la version 8. À ce jour, les versions de Java disponibles 
 sont numerotées de 6 a 16. 
 
 Remarque : les anciennes versions de Java étaient versionnées selon le format `1.x` (par exemple, `1.6`). 
 `1.6` est donc équivalent à `JDK6`. Ce format a été abandonné depuis longtemps et il vaut mieux utiliser `JDKx`.
-{{% /alert %}}
+{{% /callout %}}
 
 En résumé, SDKMAN permet de disposer de plusieurs versions du JDK (8, 9, 12, 13, ...), tandis que l'installation par
 le gestionnaire de paquets ne permet d'installer qu'une seule version (tous les paquets sont mutuellement en conflit).
 
-{{% alert note %}}
+{{% callout note %}}
 SDKMAN permet également de télécharger des outils qui font partie de l'écosystème Java (par exemple Maven ou Gradle),
 ainsi que des environnements de développement pour les langages dits "de la JVM" (Scala, Ceylon, Kotlin, etc.), 
 c'est-à-dire qui utilisent la *Java Virtual Machine*, et sont donc plus ou moins liés à Java.
 L'écosystème Java ne sera pas abordé durant ce cours, mais est en vogue dans le monde de l'entreprise, il est donc
 bon pour vous de pouvoir télécharger les outils facilement !
-{{% /alert %}}
+{{% /callout %}}
 
 ## Installation de SDKMAN
 
@@ -112,12 +112,12 @@ standard n'est pas fixé et est susceptible de changer (il n'est pas stable).
 
 Je conseille donc de choisir le JDK13 ou 14.
 
-{{% alert note %}}
+{{% callout note %}}
 le JDK9 a introduit un changement majeur (les modules) qui font que beaucoup d'applications conçues avec Java 8 
 (ou inférieur) ne fonctionnent plus sous Java 9 ! Je recommande donc d'installer également un JDK8, cela vous sera
 utile pour certains "vieux" programmes. L'avantage de SDKMAN est que vous pouvez définir le JDK13 en version par
 défaut, et utiliser avec `sdk use` le JDK8 quand vous en aurez besoin.
-{{% /alert %}}
+{{% /callout %}}
 
 ### Résumé : quel candidat choisir ?
 
@@ -125,7 +125,7 @@ Je choisis d'installer le JDK13, avec JavaFX intégré ; le candidat corresponda
 `13.0.2.fx-librca` (notez le `13` en début, le `.fx` qui indique JavaFX et `-librca` pour l'implémentation de Bellsoft).
 La commande pour installer ce candidat est `sdk install java 13.0.2.fx-librca`.
 
-{{% alert note %}}
+{{% callout note %}}
 S'il s'agit de votre premier JDK installé, SDKMAN le définit comme JDK par défaut (c'est-à-dire que les variables
 d'environnement `JAVA_HOME` et `PATH` pointent sur le dossier de ce JDK). Toutes les applications Java utiliseront 
 ce JDK (à moins que vous n'indiquiez manuellement un autre JDK). De plus, la commande `java` (ainsi que `javac`, etc.) 
@@ -134,7 +134,7 @@ seront celles fournies par ce JDK.
 En revanche, si vous téléchargez plus d'un JDK, SDKMAN vous demandera si vous souhaitez le mettre en JDK par défaut. Je
 vous conseille de garder le JDK13 en version par défaut (il est suffisamment récent pour faire tourner la majorité
 des programmes).
-{{% /alert %}}
+{{% /callout %}}
 
 ### Où est mon JDK ?
 
@@ -146,10 +146,10 @@ est situé dans le dossier `${HOME}/.sdkman` (c'est-à-dire le dossier caché `.
 En particulier, les candidats sont installés dans `${HOME}/.sdkman/candidates/`. Votre version par défaut du JDK se
 trouve donc à l'emplacement suivant : `${HOME}/.sdkman/candidates/java/current/bin`.
 
-{{% alert note %}}
+{{% callout note %}}
 La commande `which java` permet de connaître l'emplacement de l'exécutable `java` ; elle devrait retourner le même
 chemin (cela montre que votre JDK est bien configuré).
-{{% /alert %}}
+{{% /callout %}}
 
 ## Paramétrage de l'*IDE*
 

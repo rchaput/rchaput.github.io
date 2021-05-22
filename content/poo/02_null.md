@@ -47,14 +47,14 @@ Le problème est qu'il faut se souvenir de **toujours** vérifier que la référ
 les développeurs oublient souvent. De plus, la situation se complexifie lorsqu'on utilise des bibliothèques tierces
 (on ne sait pas très bien si le retour d'une méthode peut renvoyer `null` ou pas...).
 
-{{% alert note %}}
+{{% callout note %}}
 La personne ayant "inventé" le concept de `null` affirme aujourd'hui qu'il s'agit d'une erreur, qu'il a nommé
 "The Billion Dollar Mistake" (l'erreur à un milliard de dollars) !
 Ce milliard aurait été perdu par le nombre de plantages produits par un oubli de `null-check` dans des applications
 industrielles.
 Je vous recommande de voir sa présentation (ou de lire ses notes) à ce sujet :
 https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/
-{{% /alert %}}
+{{% /callout %}}
 
 
 ## Un (rapide) aparté sur le problème de l'égalité
@@ -85,10 +85,10 @@ Ici, pas de problème, car `"Smith"` n'est pas `null`, et j'ai donc tout à fait
 dessus. En revanche, la méthode `equals` de la classe `String` **doit** effectuer un `null-check` sur l'argument qu'elle
 reçoit (fort heureusement pour nous, elle le fait).
 
-{{% alert warning %}}
+{{% callout warning %}}
 **À retenir !** <br />
 Quand on crée une nouvelle classe et que l'on surcharge la méthode `equals`, il **faut** penser au `null-check` !
-{{% /alert %}}
+{{% /callout %}}
 
 Cette technique ne fonctionne que dans le cas où l'un des deux objets est un *littéral* (c'est-à-dire, pour simplifier,
 qu'il a une valeur immédiate, à l'inverse d'une variable qui *peut* avoir une valeur ou non). Ici, `"Smith"` est un
@@ -107,10 +107,10 @@ if (Objects.equals(user1, user2)) {
 }
 ```
 
-{{% alert warning %}}
+{{% callout warning %}}
 **À retenir !** <br />
 Favorisez l'utilisation de `Objects.equals(a, b)` dans votre code aussi souvent que possible.
-{{% /alert %}}
+{{% /callout %}}
 
 
 ## Une solution plus élégante : les Optional
@@ -175,12 +175,12 @@ public void receiveRequest(String username, String password) {
 }
 ```
 
-{{% alert note %}}
+{{% callout note %}}
 La classe `Optional` permet également une approche plus "fonctionnelle", avec par exemple les méthodes `map`, 
 `ifPresent`, `orElseGet` qui prennent en paramètre des `Function`, `Consumer` ou `Supplier` (c'est-à-dire des méthodes
 ou des `lambda-expressions`).
 Il s'agit là de concepts plus avancés qui ne seront pas abordés dans le cadre de ce cours.
-{{% /alert %}}
+{{% /callout %}}
 
 Il existe toutefois un piège si vous ne respectez pas une règle implicite... ne **jamais** renvoyer `null` lorsque le 
 type est `Optional<T>` ! Cela supprimerait complètement les avantages de la classe `Optional` et pousserait la 
