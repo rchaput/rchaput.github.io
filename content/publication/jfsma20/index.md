@@ -29,7 +29,7 @@ summary = """
 Paper on adaptive learning of ethical behaviors I presented at JFSMA (French Days of Multi-Agent Systems).
 """
 
-tags = ["Éthique", "Apprentissage par renforcement", "Systèmes Multi-Agent", "Répartition de l'énergie"]
+tags = ["Ethics", "Reinforcement Learning", "Multi-Agent System", "Energy management"]
 featured = false
 
 url_pdf = "Chaput_Apprentissage_adaptatif_ethique_paper.pdf"

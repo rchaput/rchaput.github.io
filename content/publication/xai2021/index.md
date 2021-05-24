@@ -4,7 +4,7 @@ date = 2021-02-08
 authors = ["Rémy Chaput", "Amélie Cordier", "Alain Mille"]
 profile = false
 
-publication_types = ["0"]
+publication_types = ["9"]
 publication = "*Explainable Agency in Artificial Intelligence Workshop - 35th AAAI Conference on Artificial Intelligence - A Virtual Conference, February 2-9, 2021*"
 publication_short = "XAI Workshop 2021"
 
