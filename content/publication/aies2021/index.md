@@ -49,5 +49,5 @@ featured = false
 
 url_poster = "Multi_Agent_Approach_Combine_Reasoning_Learning_Ethical_Behavior_poster.pdf"
 url_slides = "Multi_Agent_Approach_Combine_Reasoning_Learning_Ethical_Behavior_slides.pdf"
-url_pdf = "https://www.aies-conference.com/2021/"
+#url_pdf = "https://www.aies-conference.com/2021/"
 +++
