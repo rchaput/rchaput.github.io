@@ -39,8 +39,7 @@ the judging agents’ rules, including when rules evolve over time.
 summary = """
 Paper presented at the *AI, Ethics, and Society* conference. It presents a
 novel, hybrid, method to learn \"ethical behaviors\" by combining symbolic
-judgments with a Reinforcement Learning algorithm.  
-*Soon to be available in the AIES21 Proceedings, in the ACM Digital Library.*
+judgments with a Reinforcement Learning algorithm.
 """
 
 tags = ["Ethics", "Machine Ethics", "Multi-Agent Learning", 
@@ -49,5 +48,5 @@ featured = false
 
 url_poster = "Multi_Agent_Approach_Combine_Reasoning_Learning_Ethical_Behavior_poster.pdf"
 url_slides = "Multi_Agent_Approach_Combine_Reasoning_Learning_Ethical_Behavior_slides.pdf"
-#url_pdf = "https://www.aies-conference.com/2021/"
+url_pdf = "https://dl.acm.org/doi/10.1145/3461702.3462515"
 +++
