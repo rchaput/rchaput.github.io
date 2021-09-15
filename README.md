@@ -27,4 +27,4 @@ The [Wowchemy][wowchemy] theme is released under the MIT License, copyright
 [wowchemy]: https://wowchemy.com/
 [gcushen]: https://georgecushen.com/
 [cc-by]: https://creativecommons.org/licenses/by/4.0/
-[mit]: ../old/LICENSE
+[mit]: ./LICENSE

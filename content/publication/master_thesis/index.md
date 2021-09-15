@@ -1,8 +1,8 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Master Research Internship (Thesis)"
-authors: []
+title: "Master Research Internship"
+authors: ["Rémy Chaput"]
 date: 2019-06-01
 doi: ""
 
@@ -15,11 +15,11 @@ publishDate: 2019-06-01T00:00:00+02:00
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["7"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""
-publication_short: ""
+publication_short: "Univ Lyon 1"
 
 abstract: >
   The increase in the use of Artificial Intelligence (AI) algorithms in applications impacting human users and actors 

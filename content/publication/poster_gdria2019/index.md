@@ -2,7 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Poster at GDR IA 2019"
-authors: []
+authors: ["Rémy Chaput"]
 date: 2019-10-01T00:00:00+02:00
 doi: ""
 
@@ -19,7 +19,7 @@ publication_types: ["0"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""
-publication_short: ""
+publication_short: "IA²"
 
 abstract: ""
 

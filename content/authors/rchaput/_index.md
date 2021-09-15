@@ -60,7 +60,7 @@ highlight_name: false
 ---
 
 I am a PhD Student in Artificial Intelligence, currently working at the [LIRIS](https://liris.cnrs.fr/) lab
-(CNRS - UMR5205), in the [Multi-Agent System (SMA)](https://liris.cnrs.fr/equipe/sma) team.
-My thesis focuses on learning ethical behaviors for Artificial Agents through Reinforcement Learning.
+(CNRS - UMR5205), in the [Cognitive Systems and Multi-Agent Systems (SyCoSMA)](https://liris.cnrs.fr/equipe/sycosma) 
+team. My thesis focuses on learning ethical behaviors for Artificial Agents through Reinforcement Learning.
 
 My research interests also include Explainable AI, and human-centered AI (such as Responsible AI, AI4People, etc.).
