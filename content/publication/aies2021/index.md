@@ -46,7 +46,13 @@ tags = ["Ethics", "Machine Ethics", "Multi-Agent Learning",
 "Reinforcement Learning", "Hybrid Neural-Symbolic Learning", "Ethical Judgment"]
 featured = false
 
+doi = "10.1145/3461702.3462515"
 url_poster = "Multi_Agent_Approach_Combine_Reasoning_Learning_Ethical_Behavior_poster.pdf"
 url_slides = "Multi_Agent_Approach_Combine_Reasoning_Learning_Ethical_Behavior_slides.pdf"
 url_pdf = "https://dl.acm.org/doi/10.1145/3461702.3462515"
+
+[[links]]
+url = "https://hal.archives-ouvertes.fr/emse-03318195v1"
+name = "HAL"
+
 +++
