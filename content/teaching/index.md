@@ -12,11 +12,11 @@ type = "teaching"
 
 # List of courses, grouped by (academic) year
 [[year]]
-  name = "2020 - 2021"
+  name = "2021 - 2022"
   [[year.course]]
     name = "Bases de l'Intelligence Artificielle"
     subtitle = "Chargé de TD et TP"
-    code = ""
+    code = "UE-INF1092M / M1IF06"
     level = "1ère année de Master"
     link = "https://perso.liris.cnrs.fr/marie.lefevre/enseignement-BIA.html"
   [[year.course]]
@@ -25,6 +25,19 @@ type = "teaching"
     code = "UE-INF3007L / LIFAP7"
     level = "3ème année de Licence"
     internal_link = "poo"
+
+[[year]]
+  name = "2020 - 2021"
+  [[year.course]]
+    name = "Bases de l'Intelligence Artificielle"
+    subtitle = "Chargé de TD et TP"
+    code = "UE-INF1092M / M1IF06"
+    level = "1ère année de Master"
+  [[year.course]]
+    name = "Programmation Orientée Objet"
+    subtitle = "Chargé de TD et TP"
+    code = "UE-INF3007L / LIFAP7"
+    level = "3ème année de Licence"
 
 [[year]]
   name = "2019 - 2020"
