@@ -24,7 +24,7 @@
     {{ with $resource }}
       {{ $pdf = .RelPermalink }}
     {{ else }}
-      {{ $pdf = $page.Params.url_pdf | relURL }}
+      {{ $pdf = $page.Params.url_pdf | absURL }}
     {{ end }}
   {{ end }}
 {{ end }}
