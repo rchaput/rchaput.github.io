@@ -23,8 +23,8 @@ date_format = "Jan 2006"
   company_url = "https://liris.cnrs.fr/"
   # company_logo = "liris"
   location = "France"
-  date_start = "2019-09-01"
-  date_end = ""
+  date_start = "2019-10-14"
+  date_end = "2022-10-13"
   description = """
   PhD Student in the **EthicsAI** project ; project goal is to *learn behaviors exhibiting ethical values by co-construction
   with human or other artificial agents*.  

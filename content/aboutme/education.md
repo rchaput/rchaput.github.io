@@ -9,9 +9,10 @@ title = "Education"
 subtitle = ""
 
 [[course]]
-  course = "PhD in Artificial Intelligence"
+  course = "PhD in Computer Science"
+  subtitle = "(Artificial Intelligence)"
   institution = "LIRIS - Université Claude Bernard Lyon 1"
-  year = "(2020 - present)"
+  year = "(2019 - 2022)"
 
 [[course]]
   course = "MSc in Artificial Intelligence"
