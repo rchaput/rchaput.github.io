@@ -61,6 +61,8 @@ highlight_name: false
 
 I am a PhD in Computer Science, focusing on Artificial Intelligence and Ethics.
 
+See my [PhD Thesis]({{< ref "/publication/phd_thesis/index.md" >}}).
+
 <!--
 I am a PhD Student in Artificial Intelligence, currently working at the [LIRIS](https://liris.cnrs.fr/) lab
 (CNRS - UMR5205), in the [Cognitive Systems and Multi-Agent Systems (SyCoSMA)](https://liris.cnrs.fr/equipe/sycosma) 
