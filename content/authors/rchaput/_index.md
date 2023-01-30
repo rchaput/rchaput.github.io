@@ -3,24 +3,24 @@ title: Remy Chaput
 
 superuser: true
 
-role: PhD Student in Artificial Intelligence
+role: PhD in Artificial Intelligence
 
-organizations:
-  - name: Université Claude Bernard Lyon 1
-    url: https://www.univ-lyon1.fr
-  - name: LIRIS
-    url: https://liris.cnrs.fr
+# organizations:
+#  - name: Université Claude Bernard Lyon 1
+#    url: https://www.univ-lyon1.fr
+#  - name: LIRIS
+#    url: https://liris.cnrs.fr
 
 bio: I am interested in Reinforcement Learning, Ethics in Artificial Intelligence (Responsible AI) and Explainable AI.
 
 interests:
   - Artificial Intelligence
+  - (Lifelong) Reinforcement Learning
+  - Machine Ethics
   - Responsible AI
   - Explainable AI
-  - Neural-Symbolic Learning
-  - (Lifelong) Reinforcement Learning
+  - (Hybrid) Neural-Symbolic Learning
   - Multi-Agent Systems
-  - Constructivism
 
 social:
 - icon: envelope
@@ -59,8 +59,12 @@ email: ""
 highlight_name: false
 ---
 
+I am a PhD in Computer Science, focusing on Artificial Intelligence and Ethics.
+
+<!--
 I am a PhD Student in Artificial Intelligence, currently working at the [LIRIS](https://liris.cnrs.fr/) lab
 (CNRS - UMR5205), in the [Cognitive Systems and Multi-Agent Systems (SyCoSMA)](https://liris.cnrs.fr/equipe/sycosma) 
 team. My thesis focuses on learning ethical behaviors for Artificial Agents through Reinforcement Learning.
+-->
 
 My research interests also include Explainable AI, and human-centered AI (such as Responsible AI, AI4People, etc.).
