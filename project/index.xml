@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | Remy Chaput</title><link>/project/</link><atom:link href="/project/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_2.png</url><title>Projects</title><link>/project/</link></image><item><title>knitrdrawio</title><link>/project/knitrdrawio/</link><pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate><guid>/project/knitrdrawio/</guid><description>&lt;p>&lt;strong>knitrdrawio&lt;/strong> is a publicly-available R package that brings a new engine
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | Remy Chaput</title><link>/project/</link><atom:link href="/project/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_2.png</url><title>Projects</title><link>/project/</link></image><item><title>acronymsdown</title><link>/project/acronymsdown/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/project/acronymsdown/</guid><description>&lt;p>&lt;strong>acronymsdown&lt;/strong> is an open-source &lt;a href="https://pandoc.org/lua-filters.html" target="_blank" rel="noopener">Pandoc filter&lt;/a> shipped in an R package
+that allows using acronyms in a &lt;a href="https://rmarkdown.rstudio.com/" target="_blank" rel="noopener">R Markdown&lt;/a> document (Rmd).&lt;/p>
+&lt;p>Rmd documents bring a simplified syntax over existing languages, such as
+LaTeX or HTML; however, no easy and integrated support for acronyms was
+available, as opposed to LaTeX&amp;rsquo;s &lt;a href="https://www.ctan.org/pkg/glossaries" target="_blank" rel="noopener">glossaries&lt;/a> package for example.&lt;/p>
+&lt;p>The typical workflow to use acronyms in a Rmd document, without
+&lt;strong>acronymsdown&lt;/strong>, would be to write in plain text the full name and its
+acronym, such as &lt;code>R Markdown (Rmd)&lt;/code>, the first time the acronym is used, then
+only the acronym on subsequent uses, such as &lt;code>Rmd&lt;/code>. This involves remembering
+whether the acronym already appeared; if the first occurrence is changed or
+moved, the document might not be correct anymore.&lt;/p>
+&lt;p>Instead, &lt;strong>acronymsdown&lt;/strong> automates the use of acronyms, by first declaring
+them, and then using a special syntax throughout the document. The underlying
+filter will automatically replace each occurrence by the correct text,
+depending on whether it corresponds to the first use.&lt;/p>
+&lt;p>Using an acronym is as simple as writing:&lt;/p>
+&lt;pre>&lt;code class="language-md">\acr{Rmd} documents are great!
+\acr{Rmd} relies on Pandoc internally.
+&lt;/code>&lt;/pre>
+&lt;p>Each occurrence of &lt;code>\acr{KEY}&lt;/code> will be replaced, according to a user-configurable
+style, such as &lt;code>R Markdown (Rmd)&lt;/code> or &lt;code>Rmd (R Markdown)&lt;/code>. In addition, a List of
+Acronym can be automatically generated, based on all defined acronyms.&lt;/p>
+&lt;p>See the &lt;a href="https://github.com/rchaput/acronymsdown" target="_blank" rel="noopener">GitHub&lt;/a> page, the
+&lt;a href="https://rchaput.github.io/acronymsdown/" target="_blank" rel="noopener">documentation&lt;/a> for more details, or
+start using &lt;strong>acronymsdown&lt;/strong> in your Rmd documents right away:&lt;/p>
+&lt;pre>&lt;code>```{r setup}
+install.packages(&amp;quot;remotes&amp;quot;)
+remotes::install_github(&amp;quot;rchaput/acronymsdown&amp;quot;)
+```
+&lt;/code>&lt;/pre>
+&lt;pre>&lt;code class="language-yaml">---
+output:
+pdf_document:
+pandoc_args: !expr acronymsdown::add_filter()
+acronyms:
+keys:
+- shortname: Rmd
+longname: R Markdown
+---
+&lt;/code>&lt;/pre></description></item><item><title>knitrdrawio</title><link>/project/knitrdrawio/</link><pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate><guid>/project/knitrdrawio/</guid><description>&lt;p>&lt;strong>knitrdrawio&lt;/strong> is a publicly-available R package that brings a new engine
 to the &lt;a href="https://yihui.org/knitr/" target="_blank" rel="noopener">knitr&lt;/a> library, to automatically include &lt;a href="https://diagrams.net" target="_blank" rel="noopener">draw.io&lt;/a> diagrams in R
 Markdown documents (Rmd).&lt;/p>
 &lt;p>Rmd documents are powerful documents that increase reproducibility in

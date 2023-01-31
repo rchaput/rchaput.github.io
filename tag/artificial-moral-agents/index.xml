@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Artificial Moral Agents | Remy Chaput</title><link>/tag/artificial-moral-agents/</link><atom:link href="/tag/artificial-moral-agents/index.xml" rel="self" type="application/rss+xml"/><description>Artificial Moral Agents</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 27 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_2.png</url><title>Artificial Moral Agents</title><link>/tag/artificial-moral-agents/</link></image><item><title>PhD Thesis</title><link>/publication/phd_thesis/</link><pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate><guid>/publication/phd_thesis/</guid><description>&lt;p>&lt;strong>Learning behaviours aligned with moral values in a multi-agent system: guiding reinforcement learning
+with symbolic judgments&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;p>This is the manuscript and slides of my PhD Thesis in Computer Science, realized at the &lt;a href="https://liris.cnrs.fr" target="_blank" rel="noopener">LIRIS&lt;/a>
+lab, under the supervision of Professor &lt;a href="https://liris.cnrs.fr/page-membre/salima-hassas" target="_blank" rel="noopener">Salima Hassas&lt;/a>,
+Professor &lt;a href="https://www.emse.fr/~boissier/" target="_blank" rel="noopener">Olivier Boissier&lt;/a>, and Dr.
+&lt;a href="https://www.ucly.fr/la-recherche/les-enseignants-chercheurs/enseignants-chercheurs/guillermin-mathieu-249/" target="_blank" rel="noopener">Mathieu Guillermin&lt;/a>.&lt;/p>
+&lt;p>The thesis was defended at &lt;a href="">Université Claude Bernard Lyon 1&lt;/a> on 2022-10-27 before the following jury:&lt;/p>
+&lt;ul>
+&lt;li>Pr. Parisa Ghodous &amp;ndash; Université Claude Bernard Lyon 1 &amp;ndash; &lt;em>President&lt;/em>&lt;/li>
+&lt;li>Dr. Grégory Bonnet &amp;ndash; Université de Caen Normandie &amp;ndash; &lt;em>Reviewer&lt;/em>&lt;/li>
+&lt;li>Pr. Marija Slavkovik &amp;ndash; University of Bergen &amp;ndash; &lt;em>Reviewer&lt;/em>&lt;/li>
+&lt;li>Dr. Alain Dutech &amp;ndash; INRIA Nancy &amp;ndash; &lt;em>Examiner&lt;/em>&lt;/li>
+&lt;li>Pr. Juan A. Rodríguez-Aguilar &amp;ndash; Autonomous University of Barcelona &amp;ndash; &lt;em>Examiner&lt;/em>&lt;/li>
+&lt;li>Pr. Salima Hassas &amp;ndash; Université Claude Bernard Lyon 1 &amp;ndash; &lt;em>Supervisor&lt;/em>&lt;/li>
+&lt;li>Pr. Olivier Boissier &amp;ndash; École des Mines de Saint-Étienne &amp;ndash; &lt;em>Co-supervisor&lt;/em>&lt;/li>
+&lt;li>Dr. Mathieu Guillermin &amp;ndash; Université Catholique de Lyon &amp;ndash; &lt;em>Co-supervisor&lt;/em>&lt;/li>
+&lt;/ul></description></item></channel></rss>
