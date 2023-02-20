@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Given Talks | Remy Chaput</title><link>/talk/</link><atom:link href="/talk/index.xml" rel="self" type="application/rss+xml"/><description>Given Talks</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Feb 2023 16:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_2.png</url><title>Given Talks</title><link>/talk/</link></image><item><title>Machine Ethics and Normative Systems -- Towards user in the loop</title><link>/talk/icr-lu-2023/</link><pubDate>Mon, 20 Feb 2023 16:00:00 +0000</pubDate><guid>/talk/icr-lu-2023/</guid><description>&lt;p>A talk that I gave at a seminar of the
+&lt;a href="https://icr.uni.lu/" target="_blank" rel="noopener">&lt;em>Individual and Collective Reasoning group&lt;/em> (ICR &amp;ndash; University of Luxembourg)&lt;/a>
+remotely.&lt;/p>
+&lt;p>&lt;strong>Abstract&lt;/strong>&lt;/p>
+&lt;p>Increasingly numerous AI systems have been deployed from labs to our society, with an important impact over human
+(daily) lives, especially with respect to ethical considerations. The field of Machine Ethics has proposed several
+approaches to embed such considerations within the decision-making mechanisms of artificial agents. In this
+presentation, I briefly summarize the state of the art, focusing particularly on normative systems, before presenting
+the AJAR framework, which leverages argumentation to judge reinforcement learning agents. Finally, I present an
+extension towards putting human users in the loop and settling dilemmas.&lt;/p></description></item></channel></rss>
