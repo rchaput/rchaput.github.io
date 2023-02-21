@@ -6,7 +6,7 @@ profile = false
 type = "teaching"
 
 # Optional header image (relative to `static/img/` folder).
-[header]
+[banner]
   caption = ""
   image = "teaching-1-cropped2.jpg"
 

@@ -11,7 +11,7 @@ date: ""
 view: 3
 
 # Optional header image (relative to `static/img/` folder).
-header:
+banner:
   caption: ""
   image: "research-2-cropped2.jpg"
 ---

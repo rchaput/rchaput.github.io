@@ -32,3 +32,12 @@ div#container-publications h3.article-title a:focus {
   color: $sta-link-hover;
   text-decoration: currentColor underline;
 }
+
+// Override the banner height to use `auto` (value pre-v5.6.0) instead of `260px` (value post-v5.6.0)
+// This allows for better looking banners; the height can be configured by changing the images' size,
+// instead of using a fixed value.
+.article-banner {
+  width: 100%;
+  height: auto !important;
+  object-fit: cover;
+}

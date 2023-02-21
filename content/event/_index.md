@@ -15,7 +15,7 @@ view: 3
 aliases: ['/talk/']
 
 # Optional header image (relative to `static/media/` folder).
-header:
+banner:
   caption: ""
   image: "talks-1-cropped.jpg"
 ---
