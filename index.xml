@@ -274,14 +274,7 @@ vérifier la présence (ou non) d&amp;rsquo;une valeur, et dans le cas où elle 
 code : le retour de cette méthode peut ne pas avoir de valeur ! Ainsi, lorsque votre méthode renvoie &lt;em>forcément&lt;/em> une
 valeur non-&lt;code>null&lt;/code>, il n&amp;rsquo;est pas nécessaire d&amp;rsquo;utiliser &lt;code>Optional&lt;/code>.&lt;/p></description></item><item><title>Machine Ethics and Normative Systems -- Towards user in the loop</title><link>/talk/icr-lu-2023/</link><pubDate>Mon, 20 Feb 2023 16:00:00 +0000</pubDate><guid>/talk/icr-lu-2023/</guid><description>&lt;p>A talk that I gave at a seminar of the
 &lt;a href="https://icr.uni.lu/" target="_blank" rel="noopener">&lt;em>Individual and Collective Reasoning group&lt;/em> (ICR &amp;ndash; University of Luxembourg)&lt;/a>
-remotely.&lt;/p>
-&lt;p>&lt;strong>Abstract&lt;/strong>&lt;/p>
-&lt;p>Increasingly numerous AI systems have been deployed from labs to our society, with an important impact over human
-(daily) lives, especially with respect to ethical considerations. The field of Machine Ethics has proposed several
-approaches to embed such considerations within the decision-making mechanisms of artificial agents. In this
-presentation, I briefly summarize the state of the art, focusing particularly on normative systems, before presenting
-the AJAR framework, which leverages argumentation to judge reinforcement learning agents. Finally, I present an
-extension towards putting human users in the loop and settling dilemmas.&lt;/p></description></item><item><title>PhD Thesis</title><link>/publication/phd_thesis/</link><pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate><guid>/publication/phd_thesis/</guid><description>&lt;p>&lt;strong>Learning behaviours aligned with moral values in a multi-agent system: guiding reinforcement learning
+remotely.&lt;/p></description></item><item><title>PhD Thesis</title><link>/publication/phd_thesis/</link><pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate><guid>/publication/phd_thesis/</guid><description>&lt;p>&lt;strong>Learning behaviours aligned with moral values in a multi-agent system: guiding reinforcement learning
 with symbolic judgments&lt;/strong>&lt;/p>
 &lt;hr>
 &lt;p>This is the manuscript and slides of my PhD Thesis in Computer Science, realized at the &lt;a href="https://liris.cnrs.fr" target="_blank" rel="noopener">LIRIS&lt;/a>
