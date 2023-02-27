@@ -13,6 +13,16 @@ To locally view the website (dev version), use the `./view.sh` script.
 
 To build the website into a set of static files, use `./build.sh`.
 
+To update Wowchemy, change the version number (tag) in `go.mod`, and then
+download the new modules with `hugo mod get -u`. If something does not work,
+`hugo mod clean` can be used to clear the cache.
+
+Remember to read and apply the "Breaking changes" described in the
+[release](https://github.com/wowchemy/wowchemy-hugo-themes/releases).
+
+The `./update_wowchemy.sh` script can be used only to update to the latest
+commit (development version).
+
 ## License
 
 The content of the website itself is licensed under the 

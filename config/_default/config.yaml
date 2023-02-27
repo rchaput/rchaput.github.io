@@ -22,7 +22,7 @@ removePathAccents: true
 
 module:
   imports:
-    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy
+    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5
 
 ############################
 ## ADVANCED
@@ -73,3 +73,11 @@ related:
       weight: 100
     - name: categories
       weight: 70
+
+# Allow to call `getenv` for Hugo and Wowchemy (WC)
+# This is necessary since Hugo 0.91
+security:
+  funcs:
+    getenv:
+      - ^HUGO_
+      - ^WC_
