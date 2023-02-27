@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>drawio | Remy Chaput</title><link>/tag/drawio/</link><atom:link href="/tag/drawio/index.xml" rel="self" type="application/rss+xml"/><description>drawio</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_2.png</url><title>drawio</title><link>/tag/drawio/</link></image><item><title>knitrdrawio</title><link>/project/knitrdrawio/</link><pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate><guid>/project/knitrdrawio/</guid><description>&lt;p>&lt;strong>knitrdrawio&lt;/strong> is a publicly-available R package that brings a new engine
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>drawio | Remy Chaput</title><link>/tag/drawio/</link><atom:link href="/tag/drawio/index.xml" rel="self" type="application/rss+xml"/><description>drawio</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_3.png</url><title>drawio</title><link>/tag/drawio/</link></image><item><title>knitrdrawio</title><link>/project/knitrdrawio/</link><pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate><guid>/project/knitrdrawio/</guid><description>&lt;p>&lt;strong>knitrdrawio&lt;/strong> is a publicly-available R package that brings a new engine
 to the &lt;a href="https://yihui.org/knitr/" target="_blank" rel="noopener">knitr&lt;/a> library, to automatically include &lt;a href="https://diagrams.net" target="_blank" rel="noopener">draw.io&lt;/a> diagrams in R
 Markdown documents (Rmd).&lt;/p>
 &lt;p>Rmd documents are powerful documents that increase reproducibility in
@@ -19,7 +19,7 @@ the rest of the document. One has to remember how to export the diagrams,
 from which source files, which are the correct versions, etc.
 Moreover, many scientists only include the exported images in their
 Version Control System (VCS), which makes it more difficult to modify
-the diagram later on (&amp;ldquo;where is that source file?!&amp;quot;).&lt;/p>
+the diagram later on (&amp;ldquo;where is that source file?!&amp;rdquo;).&lt;/p>
 &lt;p>&lt;strong>knitrdrawio&lt;/strong> was built to solve this, by extending the &lt;a href="https://yihui.org/knitr/" target="_blank" rel="noopener">knitr&lt;/a> library
 with a new chunk &lt;em>engine&lt;/em>, which allows to seamlessly export and include
 &lt;a href="https://diagrams.net" target="_blank" rel="noopener">draw.io&lt;/a> diagrams.&lt;/p>

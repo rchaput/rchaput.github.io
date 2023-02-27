@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programmation Orientée Objet | Remy Chaput</title><link>/poo/</link><atom:link href="/poo/index.xml" rel="self" type="application/rss+xml"/><description>Programmation Orientée Objet</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 21 Aug 2020 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_2.png</url><title>Programmation Orientée Objet</title><link>/poo/</link></image><item><title>Installer Java avec SDKMAN</title><link>/poo/01_sdkman/</link><pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate><guid>/poo/01_sdkman/</guid><description>&lt;p>Ce document explique comment installer un environnement de développement Java, grâce à l&amp;rsquo;utilitaire SDKMAN.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programmation Orientée Objet | Remy Chaput</title><link>/poo/</link><atom:link href="/poo/index.xml" rel="self" type="application/rss+xml"/><description>Programmation Orientée Objet</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 21 Aug 2020 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_3.png</url><title>Programmation Orientée Objet</title><link>/poo/</link></image><item><title>Installer Java avec SDKMAN</title><link>/poo/01_sdkman/</link><pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate><guid>/poo/01_sdkman/</guid><description>&lt;p>Ce document explique comment installer un environnement de développement Java, grâce à l&amp;rsquo;utilitaire SDKMAN.
 Cela sera utile aux étudiants qui s&amp;rsquo;intéressent au développement d&amp;rsquo;applications Java (au-delà du cadre du cours de POO).&lt;/p>
 &lt;p>SDKMAN est facile à installer sur Linux et Mac OSX, mais sur Windows il nécessite d&amp;rsquo;utiliser WSL ou Cygwin.&lt;/p>
 &lt;p>L&amp;rsquo;autre option est une installation &amp;ldquo;traditionnelle&amp;rdquo; en passant par le gestionnaire de paquets
 (&lt;code>apt&lt;/code>, &lt;code>pacman&lt;/code>, &lt;code>rpm&lt;/code>, etc.) et sera suffisante dans le cadre de ce cours, mais n&amp;rsquo;est pas recommandée
-(voir la section &amp;ldquo;Qu&amp;rsquo;est-ce que SDKMAN ?&amp;quot;).&lt;/p>
+(voir la section &amp;ldquo;Qu&amp;rsquo;est-ce que SDKMAN ?&amp;rdquo;).&lt;/p>
 &lt;h2 id="quest-ce-que-sdkman-">Qu&amp;rsquo;est-ce que SDKMAN ?&lt;/h2>
 &lt;p>SDKMAN est un outil conçu pour faciliter l&amp;rsquo;installation d&amp;rsquo;une ou plusieurs versions de Java sous Linux. Il est
 particulièrement utile lorsque l&amp;rsquo;on a besoin de conserver sur son ordinateur différentes versions de Java (par exemple,
@@ -30,7 +30,7 @@ bon pour vous de pouvoir télécharger les outils facilement !
 &lt;/div>
 &lt;h2 id="installation-de-sdkman">Installation de SDKMAN&lt;/h2>
 &lt;p>Les instructions pour l&amp;rsquo;installer de SDKMAN se trouvent sur le site officielle, à la page suivante :
-&lt;a href="https://sdkman.io/install">https://sdkman.io/install&lt;/a>.&lt;/p>
+&lt;a href="https://sdkman.io/install" target="_blank" rel="noopener">https://sdkman.io/install&lt;/a>.&lt;/p>
 &lt;p>Un résumé simplifié de ces instructions :&lt;/p>
 &lt;pre>&lt;code class="language-shell">Télécharger le script d'installation et l'exécuter immédiatement
 $ curl -s &amp;quot;https://get.sdkman.io&amp;quot; | bash
@@ -65,7 +65,7 @@ Java.net | | 16.ea.8 | open | | 16.ea.8-open
 &lt;p>Il existe de &lt;em>nombreux&lt;/em> &amp;ldquo;candidats&amp;rdquo; (dans le langage de SDKMAN) pour Java ; ils se répartissent selon le &lt;em>distributeur&lt;/em>
 (&lt;em>Vendor&lt;/em>) et la &lt;em>version&lt;/em>.&lt;/p>
 &lt;h3 id="quel-vendor-choisir-">Quel &lt;em>Vendor&lt;/em> choisir ?&lt;/h3>
-&lt;p>Il existe plusieurs implémentations du JDK (voir &lt;a href="https://sdkman.io/jdks">https://sdkman.io/jdks&lt;/a> pour leurs différences) ; j&amp;rsquo;en recommande
+&lt;p>Il existe plusieurs implémentations du JDK (voir &lt;a href="https://sdkman.io/jdks" target="_blank" rel="noopener">https://sdkman.io/jdks&lt;/a> pour leurs différences) ; j&amp;rsquo;en recommande
 deux en particulier :&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Java.net&lt;/strong> est l&amp;rsquo;implémentation officielle du JDK ;&lt;/li>
@@ -113,7 +113,7 @@ La commande &lt;code>which java&lt;/code> permet de connaître l&amp;rsquo;empla
 chemin (cela montre que votre JDK est bien configuré).
 &lt;/div>
 &lt;/div>
-&lt;h2 id="paramétrage-de-lide">Paramétrage de l'&lt;em>IDE&lt;/em>&lt;/h2>
+&lt;h2 id="paramétrage-de-lide">Paramétrage de l&amp;rsquo;&lt;em>IDE&lt;/em>&lt;/h2>
 &lt;h3 id="avec-intellij-idea">Avec IntelliJ IDEA&lt;/h3>
 &lt;p>Lors de la création d&amp;rsquo;un projet, IntelliJ demande quel SDK utiliser ; en déroulant la liste, sélectionner &lt;em>Add JDK&amp;hellip;&lt;/em>.&lt;/p>
 &lt;p>Sinon, cliquer sur &lt;em>File&lt;/em> &amp;gt; &lt;em>Project Structure&lt;/em> (ou &lt;em>Ctrl+Alt+Shift+S&lt;/em>), puis dans l&amp;rsquo;onglet &lt;em>SDKs&lt;/em> cliquer sur
@@ -148,7 +148,7 @@ La personne ayant &amp;ldquo;inventé&amp;rdquo; le concept de &lt;code>null&lt;
 Ce milliard aurait été perdu par le nombre de plantages produits par un oubli de &lt;code>null-check&lt;/code> dans des applications
 industrielles.
 Je vous recommande de voir sa présentation (ou de lire ses notes) à ce sujet :
-&lt;a href="https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/">https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/&lt;/a>
+&lt;a href="https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/" target="_blank" rel="noopener">https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;h2 id="un-rapide-aparté-sur-le-problème-de-légalité">Un (rapide) aparté sur le problème de l&amp;rsquo;égalité&lt;/h2>
