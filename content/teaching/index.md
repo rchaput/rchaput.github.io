@@ -1,9 +1,15 @@
 +++
 title = "Teaching / Enseignement"
 summary = "This page lists the courses that I taught."
-date = ""
 profile = false
 type = "teaching"
+
+# Hide the date (irrelevant)
+date = ""
+show_date = false
+
+# Hide share buttons
+share = false
 
 # Optional header image (relative to `static/img/` folder).
 [banner]
