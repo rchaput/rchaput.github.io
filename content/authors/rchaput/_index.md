@@ -5,11 +5,11 @@ superuser: true
 
 role: PhD in Artificial Intelligence
 
-# organizations:
-#  - name: Université Claude Bernard Lyon 1
-#    url: https://www.univ-lyon1.fr
-#  - name: LIRIS
-#    url: https://liris.cnrs.fr
+organizations:
+ - name: Université Claude Bernard Lyon 1
+   url: https://www.univ-lyon1.fr
+ - name: LIRIS
+   url: https://liris.cnrs.fr
 
 bio: I am interested in Reinforcement Learning, Ethics in Artificial Intelligence (Responsible AI) and Explainable AI.
 
@@ -63,10 +63,8 @@ I am a PhD in Computer Science, focusing on Artificial Intelligence and Ethics.
 
 See my [PhD Thesis]({{< ref "/publication/phd_thesis/index.md" >}}).
 
-<!--
-I am a PhD Student in Artificial Intelligence, currently working at the [LIRIS](https://liris.cnrs.fr/) lab
+I am a Research Engineer, currently working at the [LIRIS](https://liris.cnrs.fr/) lab
 (CNRS - UMR5205), in the [Cognitive Systems and Multi-Agent Systems (SyCoSMA)](https://liris.cnrs.fr/equipe/sycosma) 
-team. My thesis focuses on learning ethical behaviors for Artificial Agents through Reinforcement Learning.
--->
+team.
 
 My research interests also include Explainable AI, and human-centered AI (such as Responsible AI, AI4People, etc.).

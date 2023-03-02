@@ -18,6 +18,22 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "Research Engineer"
+  company = "LIRIS"
+  company_url = "https://liris.cnrs.fr/"
+  location = "France"
+  date_start = "2023-03-01"
+  date_end = "2023-04-15"
+  description = """
+  Research Engineer in the **EthicsAI** project. Responsibilities include:
+  * Implementation of an open-source simulator and learning algorithms
+  * Reviewing state of the art
+  * Publishing scientific articles
+  * Communication in conferences, workshops and seminaries
+  """
+  tags = ["Python3", "Reinforcement Learning", "Ethical Artificial Intelligence", "Multi-Agent System", "Open-Science"]
+
+[[experience]]
   title = "PhD Student"
   company = "LIRIS"
   company_url = "https://liris.cnrs.fr/"
