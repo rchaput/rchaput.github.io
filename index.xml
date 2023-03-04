@@ -292,7 +292,9 @@ Professor &lt;a href="https://www.emse.fr/~boissier/" target="_blank" rel="noope
 &lt;li>Pr. Salima Hassas &amp;ndash; Université Claude Bernard Lyon 1 &amp;ndash; &lt;em>Supervisor&lt;/em>&lt;/li>
 &lt;li>Pr. Olivier Boissier &amp;ndash; École des Mines de Saint-Étienne &amp;ndash; &lt;em>Co-supervisor&lt;/em>&lt;/li>
 &lt;li>Dr. Mathieu Guillermin &amp;ndash; Université Catholique de Lyon &amp;ndash; &lt;em>Co-supervisor&lt;/em>&lt;/li>
-&lt;/ul></description></item><item><title>acronymsdown</title><link>/project/acronymsdown/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/project/acronymsdown/</guid><description>&lt;p>&lt;strong>acronymsdown&lt;/strong> is an open-source &lt;a href="https://pandoc.org/lua-filters.html" target="_blank" rel="noopener">Pandoc filter&lt;/a> shipped in an R package
+&lt;/ul></description></item><item><title>Multi-agent learning of ethical behaviours, combining symbolic reasoning and numeric learning</title><link>/talk/liris-jdt-2022/</link><pubDate>Tue, 01 Feb 2022 14:10:00 +0000</pubDate><guid>/talk/liris-jdt-2022/</guid><description>&lt;p>A short talk describing my PhD work (key contributions, architecture of proposed approach) that I gave at
+the &amp;ldquo;Journée des Thèses&amp;rdquo; (PhD Days) of the &lt;a href="https://liris.cnrs.fr" target="_blank" rel="noopener">LIRIS&lt;/a> lab, in front of other PhD students and
+researchers from LIRIS.&lt;/p></description></item><item><title>acronymsdown</title><link>/project/acronymsdown/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/project/acronymsdown/</guid><description>&lt;p>&lt;strong>acronymsdown&lt;/strong> is an open-source &lt;a href="https://pandoc.org/lua-filters.html" target="_blank" rel="noopener">Pandoc filter&lt;/a> shipped in an R package
 that allows using acronyms in a &lt;a href="https://rmarkdown.rstudio.com/" target="_blank" rel="noopener">R Markdown&lt;/a> document (Rmd).&lt;/p>
 &lt;p>Rmd documents bring a simplified syntax over existing languages, such as
 LaTeX or HTML; however, no easy and integrated support for acronyms was
