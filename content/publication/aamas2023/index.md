@@ -33,12 +33,10 @@ featured = false
 
 doi = "10.5555/3545946.3598956"
 
+hal = "hal-04127943"
+
 [[links]]
 url = "https://dl.acm.org/doi/10.5555/3545946.3598956"
 name = "ACM DL"
-
-[[links]]
-url = "https://hal.science/hal-04127943"
-name = "HAL"
 
 +++

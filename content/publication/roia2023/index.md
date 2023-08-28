@@ -32,8 +32,6 @@ featured = false
 
 doi = "10.5802/roia.56"
 
-[[links]]
-url = "https://hal.science/hal-04161020"
-name = "HAL"
+hal = "hal-04161020"
 
 +++

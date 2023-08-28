@@ -39,8 +39,6 @@ featured = false
 url_pdf = "Chaput_Approche_multiagent_combinant_raisonnement_apprentissage_comportement_ethique.pdf"
 url_slides = "Chaput_Approche_multiagent_combinant_raisonnement_apprentissage_comportement_ethique_slides.pdf"
 
-[[links]]
-url = "https://hal.archives-ouvertes.fr/emse-03278353v1"
-name = "HAL"
+hal = "emse-03278353v1"
 
 +++

@@ -45,6 +45,8 @@ featured: true
 #   icon_pack: fab
 #   icon: twitter
 
+hal: "tel-04107492"
+
 url_pdf: https://rchaput.github.io/phdthesis/thesis.pdf
 url_code:
 url_dataset:

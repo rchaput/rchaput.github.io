@@ -30,12 +30,10 @@ featured = false
 
 doi = "10.1109/ETHICS57328.2023.10155026"
 
+hal = "hal-04127849"
+
 [[links]]
 url = "https://ieeexplore.ieee.org/document/10155026"
 name = "IEEE Xplore"
-
-[[links]]
-url = "https://hal.science/hal-04127849"
-name = "HAL"
 
 +++

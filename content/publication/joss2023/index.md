@@ -30,14 +30,12 @@ featured = false
 
 doi = "10.21105/joss.05410"
 
+hal = "hal-04187666"
+
 [[links]]
 url = "https://github.com/ethicsai/ethical-smart-grid"
 icon_pack = "fab"
 icon = "github"
 name = "GitHub"
-
-[[links]]
-url = "https://hal.science/hal-04187666"
-name = "HAL"
 
 +++

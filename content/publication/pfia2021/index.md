@@ -27,8 +27,6 @@ by the AFIA (French Association for Artificial Intelligence).
 tags = []
 featured = false
 
-[[links]]
-url = "https://hal.science/hal-03352469"
-name = "HAL"
+hal = "hal-03352469"
 
 +++

@@ -35,8 +35,6 @@ featured = false
 url_pdf = "Explanation__what_does_it_mean_for_humans__for_machines__for_man_machine_interactions__.pdf"
 url_slides = "Explanation__what_does_it_mean_for_humans__for_machines__for_man_machine_interactions_slides.pdf"
 
-[[links]]
-url = "https://hal.archives-ouvertes.fr/hal-03106286v1"
-name = "HAL"
+hal = "hal-03106286v1"
 
 +++
