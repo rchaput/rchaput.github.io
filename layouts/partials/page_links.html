@@ -137,6 +137,11 @@
   <i class="ai ai-doi"></i> DOI
 </a>
 {{ end }}
+{{ with $page.Params.hal }}
+<a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="https://hal.science/{{ . }}" target="_blank" rel="noopener">
+  <i class="ai ai-hal"></i> HAL
+</a>
+{{ end }}
 {{ range $page.Params.links }}
   {{ $pack := or .icon_pack "fas" }}
   {{ $pack_prefix := $pack }}
