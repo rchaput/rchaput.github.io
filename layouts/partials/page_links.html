@@ -11,7 +11,7 @@
     {{ $link = . | relURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
-  {{ i18n "btn_preprint" }}
+  <i class="fas fa-file-pdf mr-1"></i>{{ i18n "btn_preprint" }}
 </a>
 {{ end }}
 {{ $pdf := "" }}
@@ -31,14 +31,14 @@
 
 {{ with $pdf }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
-  {{ i18n "btn_pdf" }}
+  <i class="fas fa-file-pdf mr-1"></i>{{ i18n "btn_pdf" }}
 </a>
 {{ end }}
 {{ $resource := $page.Resources.GetMatch "cite.bib" }}
 {{ with $resource }}
 <a href="#" class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}} js-cite-modal"
         data-filename="{{ .RelPermalink }}">
-  {{ i18n "btn_cite" }}
+  <i class="fas fa-quote-left mr-1"></i>{{ i18n "btn_cite" }}
 </a>
 {{ end }}
 {{ with $page.Params.url_code }}
@@ -49,7 +49,7 @@
     {{ $link = . | relURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
-  {{ i18n "btn_code" }}
+  <i class="fas fa-code mr-1"></i>{{ i18n "btn_code" }}
 </a>
 {{ end }}
 {{ with $page.Params.url_dataset }}
@@ -60,14 +60,14 @@
     {{ $link = . | relURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
-  {{ i18n "btn_dataset" }}
+  <i class="fas fa-database mr-1"></i>{{ i18n "btn_dataset" }}
 </a>
 {{ end }}
 {{ if $page.Params.projects }}
 {{ range $page.Params.projects }}
   {{ with (site.GetPage (printf "project/%s" .)) }}
   <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}">
-    {{ i18n "btn_project" }}
+    <i class="fas fa-diagram-project mr-1"></i>{{ i18n "btn_project" }}
   </a>
   {{ else }}
     {{/* errorf "The `projects` parameter in `content/%s` references a project file, `content/project/%s`, which cannot be found. Please either set `projects = []` or fix the reference." $page.File.Path . */}}
@@ -76,7 +76,7 @@
 {{ else }}
 {{ with $page.Params.url_project }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
-  {{ i18n "btn_project" }}
+  <i class="fas fa-diagram-project mr-1"></i>{{ i18n "btn_project" }}
 </a>
 {{ end }}
 {{ end }}
@@ -88,13 +88,13 @@
     {{ $link = . | relURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
-  {{ i18n "btn_poster" }}
+  <i class="far fa-file-image mr-1"></i>{{ i18n "btn_poster" }}
 </a>
 {{ end }}
 {{ if $page.Params.slides }}
   {{ with (site.GetPage (printf "slides/%s" $page.Params.slides)) }}
   <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}" target="_blank">
-    {{ i18n "btn_slides" }}
+    <i class="fas fa-person-chalkboard mr-1"></i>{{ i18n "btn_slides" }}
   </a>
   {{ end }}
 {{ else }}
@@ -106,7 +106,7 @@
     {{ $link = . | relURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
-  {{ i18n "btn_slides" }}
+  <i class="fas fa-person-chalkboard mr-1"></i>{{ i18n "btn_slides" }}
 </a>
 {{ end }}
 {{ end }}
@@ -118,7 +118,7 @@
     {{ $link = . | relURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
-  {{ i18n "btn_video" }}
+  <i class="far fa-file-video mr-1"></i>{{ i18n "btn_video" }}
 </a>
 {{ end }}
 {{ with $page.Params.url_source }}
@@ -129,17 +129,17 @@
     {{ $link = . | relURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
-  {{ i18n "btn_source" }}
+  <i class="fas fa-file-import mr-1"></i>{{ i18n "btn_source" }}
 </a>
 {{ end }}
 {{ with $page.Params.doi }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="https://doi.org/{{ . }}" target="_blank" rel="noopener">
-  <i class="ai ai-doi"></i> DOI
+  <i class="ai ai-doi mr-1"></i>DOI
 </a>
 {{ end }}
 {{ with $page.Params.hal }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="https://hal.science/{{ . }}" target="_blank" rel="noopener">
-  <i class="ai ai-hal"></i> HAL
+  <i class="ai ai-hal mr-1"></i>HAL
 </a>
 {{ end }}
 {{ range $page.Params.links }}
