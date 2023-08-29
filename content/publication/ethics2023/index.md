@@ -35,5 +35,7 @@ hal = "hal-04127849"
 [[links]]
 url = "https://ieeexplore.ieee.org/document/10155026"
 name = "IEEE Xplore"
+icon_pack = "ai"
+icon = "ieee"
 
 +++

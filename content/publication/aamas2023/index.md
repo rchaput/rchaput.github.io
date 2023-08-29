@@ -38,5 +38,7 @@ hal = "hal-04127943"
 [[links]]
 url = "https://dl.acm.org/doi/10.5555/3545946.3598956"
 name = "ACM DL"
+icon_pack = "ai"
+icon = "acmdl"
 
 +++
