@@ -5,7 +5,7 @@ date = 2021-09-23
 authors = ["Alain Mille", "Rémy Chaput", "Amélie Cordier"]
 profile = false
 
-publication_types = ["4"]
+publication_types = ["report"]
 publication_short = "Tutorial PFIA 2020"
 
 abstract = """

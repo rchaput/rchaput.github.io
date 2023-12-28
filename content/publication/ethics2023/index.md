@@ -4,7 +4,7 @@ date = 2023-05-18
 authors = ["Marco Tassella", "Rémy Chaput", "Mathieu Guillermin"]
 profile = false
 
-publication_types = ["1"]
+publication_types = ["paper-conference"]
 publication = "*2023 IEEE International Symposium on Ethics in Engineering, Science, and Technology (ETHICS)*"
 publication_short = "ETHICS2023"
 

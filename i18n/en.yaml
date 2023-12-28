@@ -1,2 +1,11 @@
 - id: pub_workshop
   translation: Workshop paper
+
+- id: pub_report
+  translation: Technical report
+
+- id: pub_speech
+  translation: Oral presentation
+
+- id: pub_software
+  translation: Software

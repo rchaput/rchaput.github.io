@@ -4,7 +4,7 @@ date = 2023-08-25
 authors = ["Clément Scheirlinck", "Rémy Chaput", "Salima Hassas"]
 profile = false
 
-publication_types = ["2"]
+publication_types = ["article-journal", "software"]
 publication = "*Journal of Open Source Software, Volume 8, no. 88*"
 publication_short = "JOSS 2023"
 

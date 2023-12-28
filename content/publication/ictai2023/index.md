@@ -4,7 +4,7 @@ date = 2023-11-06
 authors = ["Rémy Chaput", "Laetitia Matignon", "Mathieu Guillermin"]
 profile = false
 
-publication_types = ["1"]
+publication_types = ["paper-conference"]
 publication = "*The 35th IEEE International Conference on Tools with Artificial Intelligence (ICTAI)*"
 publication_short = "ICTAI2023"
 

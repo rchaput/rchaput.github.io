@@ -4,7 +4,7 @@ date = 2023-05-30
 authors = ["Benoît Alcaraz", "Olivier Boissier", "Rémy Chaput", "Christopher Leturc"]
 profile = false
 
-publication_types = ["1"]
+publication_types = ["paper-conference"]
 publication = "*AAMAS '23: Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems*"
 publication_short = "AAMAS2023"
 

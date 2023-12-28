@@ -4,7 +4,7 @@ date = 2020-06-29
 authors = ["Rémy Chaput", "Olivier Boissier", "Mathieu Guillermin", "Salima Hassas"]
 profile = false
 
-publication_types = ["1"]
+publication_types = ["paper-conference"]
 publication = "*Architectures multi-agents pour la simulation de systèmes complexes- Vingt-huitième journées francophones sur les systèmes multi-agents, JFSMA 2020, Angers, France, June 29 - July 3, 2020*"
 publication_short = "JFSMA"
 

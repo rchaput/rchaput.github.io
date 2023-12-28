@@ -5,7 +5,7 @@ authors = ["Rémy Chaput", "Jérémy Duval", "Olivier Boissier",
 "Mathieu Guillermin", "Salima Hassas"]
 profile = false
 
-publication_types = ["1"]
+publication_types = ["paper-conference"]
 publication = "Journées Francophones sur les Systèmes Multi-Agents, Juin 2021, Bordeaux, France."
 publication_short = "JFSMA"
 

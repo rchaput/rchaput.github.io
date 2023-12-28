@@ -4,7 +4,7 @@ date = 2021-05-21
 authors = ["Rémy Chaput", "Jérémy Duval", "Olivier Boissier", "Mathieu Guillermin", "Salima Hassas"]
 profile = false
 
-publication_types = ["1"]
+publication_types = ["paper-conference"]
 publication = "*Fourth AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society - A virtual conference, May 19-21, 2021*"
 publication_short = "AIES21"
 

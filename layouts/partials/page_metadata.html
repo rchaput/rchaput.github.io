@@ -41,8 +41,9 @@
   {{/* BEGIN ADDED: show the publication type after the publication's date and place */}}
   {{ with $page.Params.publication_types }}
   <span class="middot-divider"></span>
-  {{ $pub_types := partial "functions/get_pub_types" $ }}
-  <span class="pub-publication">{{ index $pub_types (int (index . 0)) }}</span>
+  {{ $pub_type_csl := index . 0 }}
+  {{ $pub_type_display := i18n (printf "pub_%s" (strings.Replace $pub_type_csl "-" "_")) | default (strings.Title $pub_type_csl) }}
+  <span class="pub-publication">{{ $pub_type_display }}</span>
   {{ end }}
   {{/* END ADDED */}}
 

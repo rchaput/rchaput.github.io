@@ -4,7 +4,7 @@ date = 2023-07-04
 authors = ["Rémy Chaput", "Jérémy Duval", "Olivier Boissier", "Mathieu Guillermin", "Salima Hassas"]
 profile = false
 
-publication_types = ["2"]
+publication_types = ["article-journal"]
 publication = "*Revue Ouverte d'Intelligence Artificielle, Volume 4 (2023) no. 2*"
 publication_short = "ROIA 2023"
 
