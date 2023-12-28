@@ -18,22 +18,39 @@ share = false
 
 # List of courses, grouped by (academic) year
 [[year]]
+  name = "2023 - 2024"
+  [[year.course]]
+    name = "Intelligent Agents"
+    subtitle = "Chargé de TP"
+    code = "UE-INF2348M"
+    level = "2ème année de Master parcours intelligence Artificielle"
+  [[year.course]]
+    name = "Programmation Orientée Objet"
+    subtitle = "Chargé de TD et TP"
+    code = "UE-INF3007L / LIFAP7"
+    level = "3ème année de Licence"
+
+
+[[year]]
   name = "2021 - 2022"
   [[year.course]]
     name = "Bases de l'Intelligence Artificielle"
     subtitle = "Chargé de TD et TP"
     code = "UE-INF1092M / M1IF06"
     level = "1ère année de Master"
-    link = "https://perso.liris.cnrs.fr/marie.lefevre/enseignement-BIA.html"
   [[year.course]]
     name = "Programmation Orientée Objet"
     subtitle = "Chargé de TD et TP"
     code = "UE-INF3007L / LIFAP7"
     level = "3ème année de Licence"
-    internal_link = "poo"
 
 [[year]]
   name = "2020 - 2021"
+  [[year.course]]
+    name = "Bio-Inspired Intelligence"
+    subtitle = "Chargé de TP"
+    code = "UE-INF2350M"
+    level = "2ème année de Master Intelligence Artificielle"
   [[year.course]]
     name = "Bases de l'Intelligence Artificielle"
     subtitle = "Chargé de TD et TP"
