@@ -8,7 +8,7 @@
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
-    {{ $link = . | relURL }}
+    {{ $link = . | absURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
   <i class="fas fa-file-pdf mr-1"></i>{{ i18n "btn_preprint" }}
@@ -46,7 +46,7 @@
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
-    {{ $link = . | relURL }}
+    {{ $link = . | absURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
   <i class="fas fa-code mr-1"></i>{{ i18n "btn_code" }}
@@ -57,7 +57,7 @@
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
-    {{ $link = . | relURL }}
+    {{ $link = . | absURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
   <i class="fas fa-database mr-1"></i>{{ i18n "btn_dataset" }}
@@ -85,7 +85,7 @@
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
-    {{ $link = . | relURL }}
+    {{ $link = . | absURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
   <i class="far fa-file-image mr-1"></i>{{ i18n "btn_poster" }}
@@ -98,24 +98,24 @@
   </a>
   {{ end }}
 {{ else }}
-{{ with $page.Params.url_slides }}
-  {{ $resource := $page.Resources.GetMatch . }}
-  {{ if $resource }}
-    {{ $link = $resource.RelPermalink }}
-  {{ else }}
-    {{ $link = . | relURL }}
-  {{ end }}
+  {{ with $page.Params.url_slides }}
+    {{ $resource := $page.Resources.GetMatch . }}
+    {{ if $resource }}
+      {{ $link = $resource.RelPermalink }}
+    {{ else }}
+      {{ $link = . | absURL }}
+    {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
   <i class="fas fa-person-chalkboard mr-1"></i>{{ i18n "btn_slides" }}
 </a>
-{{ end }}
+  {{ end }}
 {{ end }}
 {{ with $page.Params.url_video }}
   {{ $resource := $page.Resources.GetMatch . }}
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
-    {{ $link = . | relURL }}
+    {{ $link = . | absURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
   <i class="far fa-file-video mr-1"></i>{{ i18n "btn_video" }}
@@ -126,7 +126,7 @@
   {{ if $resource }}
     {{ $link = $resource.RelPermalink }}
   {{ else }}
-    {{ $link = . | relURL }}
+    {{ $link = . | absURL }}
   {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
   <i class="fas fa-file-import mr-1"></i>{{ i18n "btn_source" }}
