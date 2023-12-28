@@ -38,4 +38,14 @@ url_pdf = "Chaput_Learning_identify_settle_dilemmas_paper.pdf"
 
 url_slides = "Chaput_Learning_identify_settle_dilemmas_slides.pdf"
 
+doi = "10.1109/ICTAI59109.2023.00075"
+
+hal = "hal-04349804"
+
+[[links]]
+url = "https://ieeexplore.ieee.org/document/10356516"
+name = "IEEE Xplore"
+icon_pack = "ai"
+icon = "ieee"
+
 +++
