@@ -15,7 +15,7 @@ bio: I am interested in Reinforcement Learning, Ethics in Artificial Intelligenc
 
 interests:
   - Artificial Intelligence
-  - (Lifelong) Reinforcement Learning
+  - Reinforcement Learning (Lifelong, Multi-Agent, Multi-Objective)
   - Machine Ethics
   - Responsible AI
   - Explainable AI
@@ -25,7 +25,7 @@ interests:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:rchaput.pro@gmail.com'
+  link: 'mailto:rchaput.pro@pm.me'
 - icon: github
   icon_pack: fab
   link: https://github.com/rchaput
@@ -63,7 +63,7 @@ I am a PhD in Computer Science, focusing on Artificial Intelligence and Ethics.
 
 See my [PhD Thesis]({{< ref "/publication/phd_thesis/index.md" >}}).
 
-I am a Research Engineer, currently working at the [LIRIS](https://liris.cnrs.fr/) lab
+I am a Post-doctorate researcher, currently working at the [LIRIS](https://liris.cnrs.fr/) lab
 (CNRS - UMR5205), in the [Cognitive Systems and Multi-Agent Systems (SyCoSMA)](https://liris.cnrs.fr/equipe/sycosma) 
 team.
 
