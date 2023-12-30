@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>quarto | Remy Chaput</title><link>/tag/quarto/</link><atom:link href="/tag/quarto/index.xml" rel="self" type="application/rss+xml"/><description>quarto</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_3.png</url><title>quarto</title><link>/tag/quarto/</link></image><item><title>acronymsdown / acronyms</title><link>/project/acronymsdown/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/project/acronymsdown/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/acronyms/" target="_blank" rel="noopener">acronyms&lt;/a> is the newest version of this
+library, made specifically for &lt;a href="https://quarto.org" target="_blank" rel="noopener">Quarto documents&lt;/a>.&lt;/p>
+&lt;p>It works similarly to &lt;a href="https://github.com/rchaput/acronymsdown" target="_blank" rel="noopener">acronymsdown&lt;/a>,
+which was designed as a &lt;a href="https://pandoc.org/lua-filters.html" target="_blank" rel="noopener">Pandoc filter&lt;/a> shipped in an R package for [R Markdown
+documents].
+In the future, &lt;strong>acronyms&lt;/strong> will have more features than &lt;strong>acronymsdown&lt;/strong>.&lt;/p>
+&lt;p>Rmd and Quarto documents bring a simplified syntax over existing languages,
+such as LaTeX or HTML; however, no easy and integrated support for acronyms
+was available, as opposed to LaTeX&amp;rsquo;s &lt;a href="https://www.ctan.org/pkg/glossaries" target="_blank" rel="noopener">glossaries&lt;/a> package for example.&lt;/p>
+&lt;p>The typical workflow to use acronyms in a Rmd or Quarto document, without
+&lt;strong>acronyms&lt;/strong>, would be to write in plain text the full name and its
+acronym, such as &lt;code>R Markdown (Rmd)&lt;/code>, the first time the acronym is used, then
+only the acronym on subsequent uses, such as &lt;code>Rmd&lt;/code>. This involves remembering
+whether the acronym already appeared; if the first occurrence is changed or
+moved, the document might not be correct anymore.&lt;/p>
+&lt;p>Instead, &lt;strong>acronyms&lt;/strong> automates the use of acronyms, by first declaring
+them, and then using a special syntax throughout the document. The underlying
+filter will automatically replace each occurrence by the correct text,
+depending on whether it corresponds to the first use.&lt;/p>
+&lt;p>Using an acronym is as simple as writing:&lt;/p>
+&lt;pre>&lt;code class="language-md">\acr{Rmd} documents are great!
+\acr{Rmd} relies on Pandoc internally.
+&lt;/code>&lt;/pre>
+&lt;p>Each occurrence of &lt;code>\acr{KEY}&lt;/code> will be replaced, according to a user-configurable
+style, such as &lt;code>R Markdown (Rmd)&lt;/code> or &lt;code>Rmd (R Markdown)&lt;/code>. In addition, a List of
+Acronym can be automatically generated, based on all defined acronyms.&lt;/p>
+&lt;p>See the &lt;a href="https://github.com/rchaput/acronyms/" target="_blank" rel="noopener">GitHub&lt;/a> page, the
+&lt;a href="https://rchaput.github.io/acronyms/" target="_blank" rel="noopener">documentation&lt;/a> for more details, or
+start using &lt;strong>acronyms&lt;/strong> in your Quarto documents right away:&lt;/p>
+&lt;pre>&lt;code class="language-shell">quarto add rchaput/acronyms@master
+&lt;/code>&lt;/pre>
+&lt;pre>&lt;code class="language-yaml">---
+filters:
+- acronyms
+acronyms:
+keys:
+- shortname: Rmd
+longname: R Markdown
+---
+&lt;/code>&lt;/pre></description></item></channel></rss>

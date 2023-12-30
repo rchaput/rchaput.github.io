@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lua | Remy Chaput</title><link>/tag/lua/</link><atom:link href="/tag/lua/index.xml" rel="self" type="application/rss+xml"/><description>lua</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_3.png</url><title>lua</title><link>/tag/lua/</link></image><item><title>acronymsdown / acronyms</title><link>/project/acronymsdown/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/project/acronymsdown/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/acronyms/" target="_blank" rel="noopener">acronyms&lt;/a> is the newest version of this
+library, made specifically for &lt;a href="https://quarto.org" target="_blank" rel="noopener">Quarto documents&lt;/a>.&lt;/p>
+&lt;p>It works similarly to &lt;a href="https://github.com/rchaput/acronymsdown" target="_blank" rel="noopener">acronymsdown&lt;/a>,
+which was designed as a &lt;a href="https://pandoc.org/lua-filters.html" target="_blank" rel="noopener">Pandoc filter&lt;/a> shipped in an R package for [R Markdown
+documents].
+In the future, &lt;strong>acronyms&lt;/strong> will have more features than &lt;strong>acronymsdown&lt;/strong>.&lt;/p>
+&lt;p>Rmd and Quarto documents bring a simplified syntax over existing languages,
+such as LaTeX or HTML; however, no easy and integrated support for acronyms
+was available, as opposed to LaTeX&amp;rsquo;s &lt;a href="https://www.ctan.org/pkg/glossaries" target="_blank" rel="noopener">glossaries&lt;/a> package for example.&lt;/p>
+&lt;p>The typical workflow to use acronyms in a Rmd or Quarto document, without
+&lt;strong>acronyms&lt;/strong>, would be to write in plain text the full name and its
+acronym, such as &lt;code>R Markdown (Rmd)&lt;/code>, the first time the acronym is used, then
+only the acronym on subsequent uses, such as &lt;code>Rmd&lt;/code>. This involves remembering
+whether the acronym already appeared; if the first occurrence is changed or
+moved, the document might not be correct anymore.&lt;/p>
+&lt;p>Instead, &lt;strong>acronyms&lt;/strong> automates the use of acronyms, by first declaring
+them, and then using a special syntax throughout the document. The underlying
+filter will automatically replace each occurrence by the correct text,
+depending on whether it corresponds to the first use.&lt;/p>
+&lt;p>Using an acronym is as simple as writing:&lt;/p>
+&lt;pre>&lt;code class="language-md">\acr{Rmd} documents are great!
+\acr{Rmd} relies on Pandoc internally.
+&lt;/code>&lt;/pre>
+&lt;p>Each occurrence of &lt;code>\acr{KEY}&lt;/code> will be replaced, according to a user-configurable
+style, such as &lt;code>R Markdown (Rmd)&lt;/code> or &lt;code>Rmd (R Markdown)&lt;/code>. In addition, a List of
+Acronym can be automatically generated, based on all defined acronyms.&lt;/p>
+&lt;p>See the &lt;a href="https://github.com/rchaput/acronyms/" target="_blank" rel="noopener">GitHub&lt;/a> page, the
+&lt;a href="https://rchaput.github.io/acronyms/" target="_blank" rel="noopener">documentation&lt;/a> for more details, or
+start using &lt;strong>acronyms&lt;/strong> in your Quarto documents right away:&lt;/p>
+&lt;pre>&lt;code class="language-shell">quarto add rchaput/acronyms@master
+&lt;/code>&lt;/pre>
+&lt;pre>&lt;code class="language-yaml">---
+filters:
+- acronyms
+acronyms:
+keys:
+- shortname: Rmd
+longname: R Markdown
+---
+&lt;/code>&lt;/pre></description></item><item><title>knitrdrawio</title><link>/project/knitrdrawio/</link><pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate><guid>/project/knitrdrawio/</guid><description>&lt;p>&lt;strong>knitrdrawio&lt;/strong> is a publicly-available R package that brings a new engine
+to the &lt;a href="https://yihui.org/knitr/" target="_blank" rel="noopener">knitr&lt;/a> library, to automatically include &lt;a href="https://diagrams.net" target="_blank" rel="noopener">draw.io&lt;/a> diagrams in R
+Markdown documents (Rmd).&lt;/p>
+&lt;p>Rmd documents are powerful documents that increase reproducibility in
+research by integrating code chunks which are run when the document is
+processed by the &lt;a href="https://yihui.org/knitr/" target="_blank" rel="noopener">knitr&lt;/a> library and exported (e.g., to PDF or HTML webpages).
+Typical usages of such code chunks include, for example, the plotting
+of figures based on experiments data.&lt;/p>
+&lt;p>However, no tool was easily accessible to include diagram images,
+especially those created by a third-party software, such as &lt;a href="https://diagrams.net" target="_blank" rel="noopener">draw.io&lt;/a>.&lt;/p>
+&lt;p>Before &lt;strong>knitrdrawio&lt;/strong>, the alternative would have been to manually export
+the diagram from &lt;a href="https://diagrams.net" target="_blank" rel="noopener">draw.io&lt;/a> as an image (e.g., PNG, JPG, or PDF), and then
+to manually include it in the R Markdown document, as one would do with
+any Markdown document (&lt;code>[Image name](/path/to/image.png)&lt;/code>).&lt;/p>
+&lt;p>This workflow is rather cumbersome and does not support the stakes of
+reproducibility, open science and reusability.
+Indeed, the export process, and its parameters, are separated from
+the rest of the document. One has to remember how to export the diagrams,
+from which source files, which are the correct versions, etc.
+Moreover, many scientists only include the exported images in their
+Version Control System (VCS), which makes it more difficult to modify
+the diagram later on (&amp;ldquo;where is that source file?!&amp;rdquo;).&lt;/p>
+&lt;p>&lt;strong>knitrdrawio&lt;/strong> was built to solve this, by extending the &lt;a href="https://yihui.org/knitr/" target="_blank" rel="noopener">knitr&lt;/a> library
+with a new chunk &lt;em>engine&lt;/em>, which allows to seamlessly export and include
+&lt;a href="https://diagrams.net" target="_blank" rel="noopener">draw.io&lt;/a> diagrams.&lt;/p>
+&lt;p>Automatically exporting and including a diagram is as simple as writing:&lt;/p>
+&lt;pre>&lt;code>```{drawio my-super-diag1, src=&amp;quot;diag1.drawio&amp;quot;}
+```
+&lt;/code>&lt;/pre>
+&lt;p>This code chunk is replaced by the actual image, automatically exported
+from the &lt;code>diag1.drawio&lt;/code> diagram file, during the &lt;em>knitting&lt;/em> process.&lt;/p>
+&lt;p>Of course, parameters can be added to control the export process:&lt;/p>
+&lt;pre>&lt;code>```{drawio my-super-diag2, src=&amp;quot;diag2.drawio&amp;quot;, border=5, crop=FALSE, page.index=4}
+```
+&lt;/code>&lt;/pre>
+&lt;p>Notice how the parameters are directly written in the document itself:
+any people trying to re-create your document (including future you!) will
+export the diagram exactly as you intended.&lt;/p>
+&lt;p>As a bonus, &lt;strong>knitrdrawio&lt;/strong> builds upon &lt;a href="https://yihui.org/knitr/" target="_blank" rel="noopener">knitr&lt;/a>&amp;rsquo;s caching mechanism
+to avoid re-executing chunks if unnecessary. This means that, if
+you chose to enable cache, the chunk will be executed only once, as long
+as neither the parameters nor the diagram source file are changed.&lt;/p>
+&lt;p>See the &lt;a href="https://github.com/rchaput/knitrdrawio" target="_blank" rel="noopener">GitHub&lt;/a> page for more
+details, or start using &lt;strong>knitrdrawio&lt;/strong> in your Rmd documents right away:&lt;/p>
+&lt;pre>&lt;code>```{r setup}
+install.packages(&amp;quot;remotes&amp;quot;)
+remotes::install_github(&amp;quot;rchaput/knitrdrawio&amp;quot;)
+library(knitrdrawio)
+```
+&lt;/code>&lt;/pre></description></item></channel></rss>

@@ -1,15 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | Remy Chaput</title><link>/project/</link><atom:link href="/project/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_3.png</url><title>Projects</title><link>/project/</link></image><item><title>acronymsdown</title><link>/project/acronymsdown/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/project/acronymsdown/</guid><description>&lt;p>&lt;strong>acronymsdown&lt;/strong> is an open-source &lt;a href="https://pandoc.org/lua-filters.html" target="_blank" rel="noopener">Pandoc filter&lt;/a> shipped in an R package
-that allows using acronyms in a &lt;a href="https://rmarkdown.rstudio.com/" target="_blank" rel="noopener">R Markdown&lt;/a> document (Rmd).&lt;/p>
-&lt;p>Rmd documents bring a simplified syntax over existing languages, such as
-LaTeX or HTML; however, no easy and integrated support for acronyms was
-available, as opposed to LaTeX&amp;rsquo;s &lt;a href="https://www.ctan.org/pkg/glossaries" target="_blank" rel="noopener">glossaries&lt;/a> package for example.&lt;/p>
-&lt;p>The typical workflow to use acronyms in a Rmd document, without
-&lt;strong>acronymsdown&lt;/strong>, would be to write in plain text the full name and its
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | Remy Chaput</title><link>/project/</link><atom:link href="/project/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_3.png</url><title>Projects</title><link>/project/</link></image><item><title>ethical-smart-grid</title><link>/project/ethical-smartgrid/</link><pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate><guid>/project/ethical-smartgrid/</guid><description>&lt;p>This is a third-party &lt;a href="https://gymnasium.farama.org/" target="_blank" rel="noopener">Gym&lt;/a> environment, focusing on learning ethically-aligned
+behaviours in a Smart Grid use-case.&lt;/p>
+&lt;p>A Smart Grid contains several &lt;em>prosumer&lt;/em> (prosumer-consumer) agents that interact
+in a shared environment by consuming and exchanging energy. These agents have
+an energy need, at each time step, that they must satisfy by consuming energy.
+However, they should respect a set of moral values as they do so, i.e.,
+exhibiting an ethically-aligned behaviour.&lt;/p>
+&lt;p>Moral values are encoded in the reward functions, which determine the
+&amp;ldquo;correctness&amp;rdquo; of an agent&amp;rsquo;s action, with respect to these moral values. Agents
+receive rewards as feedback that guide them towards a better behaviour.&lt;/p></description></item><item><title>acronymsdown / acronyms</title><link>/project/acronymsdown/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/project/acronymsdown/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/acronyms/" target="_blank" rel="noopener">acronyms&lt;/a> is the newest version of this
+library, made specifically for &lt;a href="https://quarto.org" target="_blank" rel="noopener">Quarto documents&lt;/a>.&lt;/p>
+&lt;p>It works similarly to &lt;a href="https://github.com/rchaput/acronymsdown" target="_blank" rel="noopener">acronymsdown&lt;/a>,
+which was designed as a &lt;a href="https://pandoc.org/lua-filters.html" target="_blank" rel="noopener">Pandoc filter&lt;/a> shipped in an R package for [R Markdown
+documents].
+In the future, &lt;strong>acronyms&lt;/strong> will have more features than &lt;strong>acronymsdown&lt;/strong>.&lt;/p>
+&lt;p>Rmd and Quarto documents bring a simplified syntax over existing languages,
+such as LaTeX or HTML; however, no easy and integrated support for acronyms
+was available, as opposed to LaTeX&amp;rsquo;s &lt;a href="https://www.ctan.org/pkg/glossaries" target="_blank" rel="noopener">glossaries&lt;/a> package for example.&lt;/p>
+&lt;p>The typical workflow to use acronyms in a Rmd or Quarto document, without
+&lt;strong>acronyms&lt;/strong>, would be to write in plain text the full name and its
 acronym, such as &lt;code>R Markdown (Rmd)&lt;/code>, the first time the acronym is used, then
 only the acronym on subsequent uses, such as &lt;code>Rmd&lt;/code>. This involves remembering
 whether the acronym already appeared; if the first occurrence is changed or
 moved, the document might not be correct anymore.&lt;/p>
-&lt;p>Instead, &lt;strong>acronymsdown&lt;/strong> automates the use of acronyms, by first declaring
+&lt;p>Instead, &lt;strong>acronyms&lt;/strong> automates the use of acronyms, by first declaring
 them, and then using a special syntax throughout the document. The underlying
 filter will automatically replace each occurrence by the correct text,
 depending on whether it corresponds to the first use.&lt;/p>
@@ -20,23 +33,31 @@ depending on whether it corresponds to the first use.&lt;/p>
 &lt;p>Each occurrence of &lt;code>\acr{KEY}&lt;/code> will be replaced, according to a user-configurable
 style, such as &lt;code>R Markdown (Rmd)&lt;/code> or &lt;code>Rmd (R Markdown)&lt;/code>. In addition, a List of
 Acronym can be automatically generated, based on all defined acronyms.&lt;/p>
-&lt;p>See the &lt;a href="https://github.com/rchaput/acronymsdown" target="_blank" rel="noopener">GitHub&lt;/a> page, the
-&lt;a href="https://rchaput.github.io/acronymsdown/" target="_blank" rel="noopener">documentation&lt;/a> for more details, or
-start using &lt;strong>acronymsdown&lt;/strong> in your Rmd documents right away:&lt;/p>
-&lt;pre>&lt;code>```{r setup}
-install.packages(&amp;quot;remotes&amp;quot;)
-remotes::install_github(&amp;quot;rchaput/acronymsdown&amp;quot;)
-```
+&lt;p>See the &lt;a href="https://github.com/rchaput/acronyms/" target="_blank" rel="noopener">GitHub&lt;/a> page, the
+&lt;a href="https://rchaput.github.io/acronyms/" target="_blank" rel="noopener">documentation&lt;/a> for more details, or
+start using &lt;strong>acronyms&lt;/strong> in your Quarto documents right away:&lt;/p>
+&lt;pre>&lt;code class="language-shell">quarto add rchaput/acronyms@master
 &lt;/code>&lt;/pre>
 &lt;pre>&lt;code class="language-yaml">---
-output:
-pdf_document:
-pandoc_args: !expr acronymsdown::add_filter()
+filters:
+- acronyms
 acronyms:
 keys:
 - shortname: Rmd
 longname: R Markdown
 ---
+&lt;/code>&lt;/pre></description></item><item><title>r2dup2</title><link>/project/r2dup2/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/project/r2dup2/</guid><description>&lt;p>In &lt;code>R&lt;/code>, the default &lt;code>utils::capture.output&lt;/code> function only redirects R
+messages: it does not truly redirect the system streams, and thus fails with
+sub-processes, such as &lt;em>pandoc&lt;/em> when using &lt;em>RMarkdown&lt;/em>.&lt;/p>
+&lt;p>&lt;strong>r2dup2&lt;/strong> provides a way to truly redirect the error stream (&lt;em>stderr&lt;/em>),
+by using the &lt;code>with_redirect_stderr&lt;/code> function:&lt;/p>
+&lt;pre>&lt;code class="language-r">r2dup2::with_redirect_stderr(file = &amp;quot;error.txt&amp;quot;, {
+system(&amp;quot;echo &amp;gt;&amp;amp;2 This line will be printed to error.txt&amp;quot;)
+})
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>r2dup2&lt;/strong> is only available on GitHub, install it with the &lt;code>remotes&lt;/code> package:&lt;/p>
+&lt;pre>&lt;code class="language-r">install.packages(&amp;quot;remotes&amp;quot;)
+remotes::install_github(&amp;quot;rchaput/r2dup2&amp;quot;)
 &lt;/code>&lt;/pre></description></item><item><title>knitrdrawio</title><link>/project/knitrdrawio/</link><pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate><guid>/project/knitrdrawio/</guid><description>&lt;p>&lt;strong>knitrdrawio&lt;/strong> is a publicly-available R package that brings a new engine
 to the &lt;a href="https://yihui.org/knitr/" target="_blank" rel="noopener">knitr&lt;/a> library, to automatically include &lt;a href="https://diagrams.net" target="_blank" rel="noopener">draw.io&lt;/a> diagrams in R
 Markdown documents (Rmd).&lt;/p>
@@ -86,24 +107,32 @@ install.packages(&amp;quot;remotes&amp;quot;)
 remotes::install_github(&amp;quot;rchaput/knitrdrawio&amp;quot;)
 library(knitrdrawio)
 ```
-&lt;/code>&lt;/pre></description></item><item><title>Py3status Random Wallpaper</title><link>/project/py3status-wallpaper/</link><pubDate>Tue, 04 Aug 2020 22:06:02 +0200</pubDate><guid>/project/py3status-wallpaper/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/py3status-random-wallpaper/" title="Pystatus-Random-Wallpaper" target="_blank" rel="noopener">Py3status Random Wallpaper&lt;/a> is a module for &lt;a href="https://github.com/ultrabug/py3status/" target="_blank" rel="noopener">Py3status&lt;/a> (which is itself a replacement for the defaul i3status in i3bar) that allows you to
-change your wallpaper. Each time the module is loaded (for example, when the i3bar is started), it will
-pick a random wallpaper amongst your library. You can also directly click on the module to change the wallpaper.&lt;/p>
-&lt;p>This module was made with high configurability in mind, and you can tweak several parameters, such as:&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>Py3status Random Wallpaper</title><link>/project/py3status-wallpaper/</link><pubDate>Tue, 04 Aug 2020 22:06:02 +0200</pubDate><guid>/project/py3status-wallpaper/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/py3status-random-wallpaper/" title="Pystatus-Random-Wallpaper" target="_blank" rel="noopener">Py3status Random Wallpaper&lt;/a> is a module for &lt;a href="https://github.com/ultrabug/py3status/" target="_blank" rel="noopener">Py3status&lt;/a> (which is itself
+a replacement for the default i3status in i3bar) that allows you to change your
+wallpaper. Each time the module is loaded (for example, when the i3bar is
+started), it will pick a random wallpaper amongst your library. You can also
+directly click on the module to change the wallpaper.&lt;/p>
+&lt;p>This module was made with high configurability in mind, and you can tweak
+several parameters, such as:&lt;/p>
 &lt;ul>
-&lt;li>the folders which will be scanned for wallpapers&lt;/li>
-&lt;li>the buttons used to trigger a new change&lt;/li>
-&lt;li>the command used to set the wallpaper (by default, uses &lt;a href="https://feh.finalrewind.org/" target="_blank" rel="noopener">feh&lt;/a>)&lt;/li>
-&lt;li>an optional list of ignored files&lt;/li>
+&lt;li>the folders which will be scanned for wallpapers;&lt;/li>
+&lt;li>the buttons used to trigger a new change;&lt;/li>
+&lt;li>the command used to set the wallpaper (by default, uses &lt;a href="https://feh.finalrewind.org/" target="_blank" rel="noopener">feh&lt;/a>);&lt;/li>
+&lt;li>an optional list of ignored files;&lt;/li>
 &lt;li>and others&amp;hellip;&lt;/li>
-&lt;/ul></description></item><item><title>XDG-Prefs</title><link>/project/xdgprefs/</link><pubDate>Tue, 04 Aug 2020 21:36:46 +0200</pubDate><guid>/project/xdgprefs/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> is an Open-Source tool to manage your default applications on GNU/Linux, with a simple but efficient GUI.&lt;/p>
-&lt;p>On GNU/Linux systems, each file has a type, named the &lt;a href="https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/" target="_blank" rel="noopener">MIME Type&lt;/a> (or Media Type), based on the
-&lt;a href="https://www.freedesktop.org/wiki/Specifications/mime-apps-spec/" target="_blank" rel="noopener">XDG Specifications&lt;/a> by &lt;a href="https://www.freedesktop.org/wiki/" target="_blank" rel="noopener">Freedesktop&lt;/a>. Your system maintains a database that specifies the
-default application you want to use for each MIME Type ; this database is available through the official
-&lt;code>xdg-mime&lt;/code> tool, but the command-line interface is not suited for easy management (you must remember the
-exact name of the MIME Type for example).&lt;/p>
-&lt;p>&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> offers a simple GUI that allows you to view and modify this database easily ; it
-is built upon the same standard specifications, meaning that your preferences will be recognized by
-all other applications (typically, when you double-click on a file in your File Explorer).&lt;/p>
-&lt;p>Such a tool is commonly found in Desktop Environments, such as &lt;em>Gnome&lt;/em> or &lt;em>KDE&lt;/em>, but not in Window Managers,
-such as &lt;em>i3wm&lt;/em>. &lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> is desktop-agnostic, meaning that you can use it on Gnome, KDE, or even i3.&lt;/p></description></item></channel></rss>
+&lt;/ul></description></item><item><title>XDG-Prefs</title><link>/project/xdgprefs/</link><pubDate>Tue, 04 Aug 2020 21:36:46 +0200</pubDate><guid>/project/xdgprefs/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> is an Open-Source tool to manage your default applications on
+GNU/Linux, with a simple but efficient GUI.&lt;/p>
+&lt;p>On GNU/Linux systems, each file has a type, named the &lt;a href="https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/" target="_blank" rel="noopener">MIME Type&lt;/a>
+(or Media Type), based on the
+&lt;a href="https://www.freedesktop.org/wiki/Specifications/mime-apps-spec/" target="_blank" rel="noopener">XDG Specifications&lt;/a> by &lt;a href="https://www.freedesktop.org/wiki/" target="_blank" rel="noopener">Freedesktop&lt;/a>. Your system
+maintains a database that specifies the default application you want to use
+for each MIME Type ; this database is available through the official &lt;code>xdg-mime&lt;/code>
+tool, but the command-line interface is not suited for easy management
+(for example, you must remember the exact name of the MIME Type).&lt;/p>
+&lt;p>&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> offers a simple GUI that allows you to view and modify this
+database easily; it is built upon the same standard specifications, meaning
+that your preferences will be recognized by all other applications (typically,
+when you double-click on a file in your File Explorer).&lt;/p>
+&lt;p>Such a tool is commonly found in Desktop Environments, such as &lt;em>Gnome&lt;/em> or &lt;em>KDE&lt;/em>,
+but not in Window Managers, such as &lt;em>i3wm&lt;/em>. &lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> is desktop-agnostic,
+meaning that you can use it on Gnome, KDE, or even i3.&lt;/p></description></item></channel></rss>

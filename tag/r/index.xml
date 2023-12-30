@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>r | Remy Chaput</title><link>/tag/r/</link><atom:link href="/tag/r/index.xml" rel="self" type="application/rss+xml"/><description>r</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_3.png</url><title>r</title><link>/tag/r/</link></image><item><title>r2dup2</title><link>/project/r2dup2/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/project/r2dup2/</guid><description>&lt;p>In &lt;code>R&lt;/code>, the default &lt;code>utils::capture.output&lt;/code> function only redirects R
+messages: it does not truly redirect the system streams, and thus fails with
+sub-processes, such as &lt;em>pandoc&lt;/em> when using &lt;em>RMarkdown&lt;/em>.&lt;/p>
+&lt;p>&lt;strong>r2dup2&lt;/strong> provides a way to truly redirect the error stream (&lt;em>stderr&lt;/em>),
+by using the &lt;code>with_redirect_stderr&lt;/code> function:&lt;/p>
+&lt;pre>&lt;code class="language-r">r2dup2::with_redirect_stderr(file = &amp;quot;error.txt&amp;quot;, {
+system(&amp;quot;echo &amp;gt;&amp;amp;2 This line will be printed to error.txt&amp;quot;)
+})
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>r2dup2&lt;/strong> is only available on GitHub, install it with the &lt;code>remotes&lt;/code> package:&lt;/p>
+&lt;pre>&lt;code class="language-r">install.packages(&amp;quot;remotes&amp;quot;)
+remotes::install_github(&amp;quot;rchaput/r2dup2&amp;quot;)
+&lt;/code>&lt;/pre></description></item></channel></rss>

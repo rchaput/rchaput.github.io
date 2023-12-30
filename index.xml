@@ -272,7 +272,16 @@ objets ; dans ce cas, la méthode statique &lt;code>Objects.equals(a, b)&lt;/cod
 vérifier la présence (ou non) d&amp;rsquo;une valeur, et dans le cas où elle est présente, on la récupère via &lt;code>Optional.get()&lt;/code>.&lt;/p>
 &lt;p>L&amp;rsquo;utilisation de la classe &lt;code>Optional&lt;/code> permet d&amp;rsquo;envoyer un message (implicite) au développeur qui utiliserait votre
 code : le retour de cette méthode peut ne pas avoir de valeur ! Ainsi, lorsque votre méthode renvoie &lt;em>forcément&lt;/em> une
-valeur non-&lt;code>null&lt;/code>, il n&amp;rsquo;est pas nécessaire d&amp;rsquo;utiliser &lt;code>Optional&lt;/code>.&lt;/p></description></item><item><title>Learning to identify and settle dilemmas through contextual user preferences</title><link>/publication/ictai2023/</link><pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate><guid>/publication/ictai2023/</guid><description/></item><item><title>Ethical Smart Grid: a Gym environment for learning ethical behaviours</title><link>/publication/joss2023/</link><pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate><guid>/publication/joss2023/</guid><description/></item><item><title>Learning multi-value ethical behaviours by combining symbolic judging agents and learning agents</title><link>/publication/roia2023/</link><pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate><guid>/publication/roia2023/</guid><description/></item><item><title>AJAR: An Argumentation-based Judging Agents Framework for Ethical Reinforcement Learning</title><link>/publication/aamas2023/</link><pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate><guid>/publication/aamas2023/</guid><description/></item><item><title>Artificial Moral Advisors: enhancing human ethical decision-making</title><link>/publication/ethics2023/</link><pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate><guid>/publication/ethics2023/</guid><description/></item><item><title>Using argumentation to design reward functions</title><link>/talk/knaw-2023/</link><pubDate>Thu, 16 Mar 2023 14:40:00 +0000</pubDate><guid>/talk/knaw-2023/</guid><description>&lt;p>A talk that I gave about using argumentation-based frameworks to implement reward functions and implement (moral)
+valeur non-&lt;code>null&lt;/code>, il n&amp;rsquo;est pas nécessaire d&amp;rsquo;utiliser &lt;code>Optional&lt;/code>.&lt;/p></description></item><item><title>Learning to identify and settle dilemmas through contextual user preferences</title><link>/publication/ictai2023/</link><pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate><guid>/publication/ictai2023/</guid><description/></item><item><title>Ethical Smart Grid: a Gym environment for learning ethical behaviours</title><link>/publication/joss2023/</link><pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate><guid>/publication/joss2023/</guid><description/></item><item><title>Learning multi-value ethical behaviours by combining symbolic judging agents and learning agents</title><link>/publication/roia2023/</link><pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate><guid>/publication/roia2023/</guid><description/></item><item><title>AJAR: An Argumentation-based Judging Agents Framework for Ethical Reinforcement Learning</title><link>/publication/aamas2023/</link><pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate><guid>/publication/aamas2023/</guid><description/></item><item><title>Artificial Moral Advisors: enhancing human ethical decision-making</title><link>/publication/ethics2023/</link><pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate><guid>/publication/ethics2023/</guid><description/></item><item><title>ethical-smart-grid</title><link>/project/ethical-smartgrid/</link><pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate><guid>/project/ethical-smartgrid/</guid><description>&lt;p>This is a third-party &lt;a href="https://gymnasium.farama.org/" target="_blank" rel="noopener">Gym&lt;/a> environment, focusing on learning ethically-aligned
+behaviours in a Smart Grid use-case.&lt;/p>
+&lt;p>A Smart Grid contains several &lt;em>prosumer&lt;/em> (prosumer-consumer) agents that interact
+in a shared environment by consuming and exchanging energy. These agents have
+an energy need, at each time step, that they must satisfy by consuming energy.
+However, they should respect a set of moral values as they do so, i.e.,
+exhibiting an ethically-aligned behaviour.&lt;/p>
+&lt;p>Moral values are encoded in the reward functions, which determine the
+&amp;ldquo;correctness&amp;rdquo; of an agent&amp;rsquo;s action, with respect to these moral values. Agents
+receive rewards as feedback that guide them towards a better behaviour.&lt;/p></description></item><item><title>Using argumentation to design reward functions</title><link>/talk/knaw-2023/</link><pubDate>Thu, 16 Mar 2023 14:40:00 +0000</pubDate><guid>/talk/knaw-2023/</guid><description>&lt;p>A talk that I gave about using argumentation-based frameworks to implement reward functions and implement (moral)
 values in AI systems, at the Value Connection workshop. It is targeted for a multidisciplinary audience.&lt;/p></description></item><item><title>Projet ANR Acceler-AI</title><link>/talk/gt-ace-2023/</link><pubDate>Mon, 13 Mar 2023 15:30:00 +0000</pubDate><guid>/talk/gt-ace-2023/</guid><description>&lt;p>A talk that I gave (in French) at a seminar of the GT ACE &amp;ndash; a national workgroup on Computational Aspects of Ethics,
 about the Acceler-AI research project: Adaptive Co-Construction of Ethics for LifElong tRrustworthy AI.&lt;/p></description></item><item><title>IA pour la société : éthique, responsable, de confiance</title><link>/talk/abylsen-2023/</link><pubDate>Tue, 28 Feb 2023 18:30:00 +0000</pubDate><guid>/talk/abylsen-2023/</guid><description>&lt;p>A talk that I gave at a seminar of the Abylsen company.
 The slides are in French.&lt;/p></description></item><item><title>Machine Ethics and Normative Systems -- Towards user in the loop</title><link>/talk/icr-lu-2023/</link><pubDate>Mon, 20 Feb 2023 16:00:00 +0000</pubDate><guid>/talk/icr-lu-2023/</guid><description>&lt;p>A talk that I gave at a seminar of the
@@ -296,18 +305,22 @@ Professor &lt;a href="https://www.emse.fr/~boissier/" target="_blank" rel="noope
 &lt;li>Dr. Mathieu Guillermin &amp;ndash; Université Catholique de Lyon &amp;ndash; &lt;em>Co-supervisor&lt;/em>&lt;/li>
 &lt;/ul></description></item><item><title>Multi-agent learning of ethical behaviours, combining symbolic reasoning and numeric learning</title><link>/talk/liris-jdt-2022/</link><pubDate>Tue, 01 Feb 2022 14:10:00 +0000</pubDate><guid>/talk/liris-jdt-2022/</guid><description>&lt;p>A short talk describing my PhD work (key contributions, architecture of proposed approach) that I gave at
 the &amp;ldquo;Journée des Thèses&amp;rdquo; (PhD Days) of the &lt;a href="https://liris.cnrs.fr" target="_blank" rel="noopener">LIRIS&lt;/a> lab, in front of other PhD students and
-researchers from LIRIS.&lt;/p></description></item><item><title>acronymsdown</title><link>/project/acronymsdown/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/project/acronymsdown/</guid><description>&lt;p>&lt;strong>acronymsdown&lt;/strong> is an open-source &lt;a href="https://pandoc.org/lua-filters.html" target="_blank" rel="noopener">Pandoc filter&lt;/a> shipped in an R package
-that allows using acronyms in a &lt;a href="https://rmarkdown.rstudio.com/" target="_blank" rel="noopener">R Markdown&lt;/a> document (Rmd).&lt;/p>
-&lt;p>Rmd documents bring a simplified syntax over existing languages, such as
-LaTeX or HTML; however, no easy and integrated support for acronyms was
-available, as opposed to LaTeX&amp;rsquo;s &lt;a href="https://www.ctan.org/pkg/glossaries" target="_blank" rel="noopener">glossaries&lt;/a> package for example.&lt;/p>
-&lt;p>The typical workflow to use acronyms in a Rmd document, without
-&lt;strong>acronymsdown&lt;/strong>, would be to write in plain text the full name and its
+researchers from LIRIS.&lt;/p></description></item><item><title>acronymsdown / acronyms</title><link>/project/acronymsdown/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/project/acronymsdown/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/acronyms/" target="_blank" rel="noopener">acronyms&lt;/a> is the newest version of this
+library, made specifically for &lt;a href="https://quarto.org" target="_blank" rel="noopener">Quarto documents&lt;/a>.&lt;/p>
+&lt;p>It works similarly to &lt;a href="https://github.com/rchaput/acronymsdown" target="_blank" rel="noopener">acronymsdown&lt;/a>,
+which was designed as a &lt;a href="https://pandoc.org/lua-filters.html" target="_blank" rel="noopener">Pandoc filter&lt;/a> shipped in an R package for [R Markdown
+documents].
+In the future, &lt;strong>acronyms&lt;/strong> will have more features than &lt;strong>acronymsdown&lt;/strong>.&lt;/p>
+&lt;p>Rmd and Quarto documents bring a simplified syntax over existing languages,
+such as LaTeX or HTML; however, no easy and integrated support for acronyms
+was available, as opposed to LaTeX&amp;rsquo;s &lt;a href="https://www.ctan.org/pkg/glossaries" target="_blank" rel="noopener">glossaries&lt;/a> package for example.&lt;/p>
+&lt;p>The typical workflow to use acronyms in a Rmd or Quarto document, without
+&lt;strong>acronyms&lt;/strong>, would be to write in plain text the full name and its
 acronym, such as &lt;code>R Markdown (Rmd)&lt;/code>, the first time the acronym is used, then
 only the acronym on subsequent uses, such as &lt;code>Rmd&lt;/code>. This involves remembering
 whether the acronym already appeared; if the first occurrence is changed or
 moved, the document might not be correct anymore.&lt;/p>
-&lt;p>Instead, &lt;strong>acronymsdown&lt;/strong> automates the use of acronyms, by first declaring
+&lt;p>Instead, &lt;strong>acronyms&lt;/strong> automates the use of acronyms, by first declaring
 them, and then using a special syntax throughout the document. The underlying
 filter will automatically replace each occurrence by the correct text,
 depending on whether it corresponds to the first use.&lt;/p>
@@ -318,23 +331,31 @@ depending on whether it corresponds to the first use.&lt;/p>
 &lt;p>Each occurrence of &lt;code>\acr{KEY}&lt;/code> will be replaced, according to a user-configurable
 style, such as &lt;code>R Markdown (Rmd)&lt;/code> or &lt;code>Rmd (R Markdown)&lt;/code>. In addition, a List of
 Acronym can be automatically generated, based on all defined acronyms.&lt;/p>
-&lt;p>See the &lt;a href="https://github.com/rchaput/acronymsdown" target="_blank" rel="noopener">GitHub&lt;/a> page, the
-&lt;a href="https://rchaput.github.io/acronymsdown/" target="_blank" rel="noopener">documentation&lt;/a> for more details, or
-start using &lt;strong>acronymsdown&lt;/strong> in your Rmd documents right away:&lt;/p>
-&lt;pre>&lt;code>```{r setup}
-install.packages(&amp;quot;remotes&amp;quot;)
-remotes::install_github(&amp;quot;rchaput/acronymsdown&amp;quot;)
-```
+&lt;p>See the &lt;a href="https://github.com/rchaput/acronyms/" target="_blank" rel="noopener">GitHub&lt;/a> page, the
+&lt;a href="https://rchaput.github.io/acronyms/" target="_blank" rel="noopener">documentation&lt;/a> for more details, or
+start using &lt;strong>acronyms&lt;/strong> in your Quarto documents right away:&lt;/p>
+&lt;pre>&lt;code class="language-shell">quarto add rchaput/acronyms@master
 &lt;/code>&lt;/pre>
 &lt;pre>&lt;code class="language-yaml">---
-output:
-pdf_document:
-pandoc_args: !expr acronymsdown::add_filter()
+filters:
+- acronyms
 acronyms:
 keys:
 - shortname: Rmd
 longname: R Markdown
 ---
+&lt;/code>&lt;/pre></description></item><item><title>r2dup2</title><link>/project/r2dup2/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/project/r2dup2/</guid><description>&lt;p>In &lt;code>R&lt;/code>, the default &lt;code>utils::capture.output&lt;/code> function only redirects R
+messages: it does not truly redirect the system streams, and thus fails with
+sub-processes, such as &lt;em>pandoc&lt;/em> when using &lt;em>RMarkdown&lt;/em>.&lt;/p>
+&lt;p>&lt;strong>r2dup2&lt;/strong> provides a way to truly redirect the error stream (&lt;em>stderr&lt;/em>),
+by using the &lt;code>with_redirect_stderr&lt;/code> function:&lt;/p>
+&lt;pre>&lt;code class="language-r">r2dup2::with_redirect_stderr(file = &amp;quot;error.txt&amp;quot;, {
+system(&amp;quot;echo &amp;gt;&amp;amp;2 This line will be printed to error.txt&amp;quot;)
+})
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>r2dup2&lt;/strong> is only available on GitHub, install it with the &lt;code>remotes&lt;/code> package:&lt;/p>
+&lt;pre>&lt;code class="language-r">install.packages(&amp;quot;remotes&amp;quot;)
+remotes::install_github(&amp;quot;rchaput/r2dup2&amp;quot;)
 &lt;/code>&lt;/pre></description></item><item><title>An historical perspective on XAI</title><link>/publication/pfia2021/</link><pubDate>Thu, 23 Sep 2021 00:00:00 +0000</pubDate><guid>/publication/pfia2021/</guid><description/></item><item><title>knitrdrawio</title><link>/project/knitrdrawio/</link><pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate><guid>/project/knitrdrawio/</guid><description>&lt;p>&lt;strong>knitrdrawio&lt;/strong> is a publicly-available R package that brings a new engine
 to the &lt;a href="https://yihui.org/knitr/" target="_blank" rel="noopener">knitr&lt;/a> library, to automatically include &lt;a href="https://diagrams.net" target="_blank" rel="noopener">draw.io&lt;/a> diagrams in R
 Markdown documents (Rmd).&lt;/p>
@@ -384,27 +405,35 @@ install.packages(&amp;quot;remotes&amp;quot;)
 remotes::install_github(&amp;quot;rchaput/knitrdrawio&amp;quot;)
 library(knitrdrawio)
 ```
-&lt;/code>&lt;/pre></description></item><item><title>Approche multi-agent combinant raisonnement et apprentissage pour un comportement éthique</title><link>/publication/jfsma2021/</link><pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate><guid>/publication/jfsma2021/</guid><description/></item><item><title>A Multi-Agent Approach to Combine Reasoning and Learning for an Ethical Behavior</title><link>/publication/aies2021/</link><pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate><guid>/publication/aies2021/</guid><description/></item><item><title>Explanations: What does it mean for humans, for machines, for man-machines interactions?</title><link>/publication/xai2021/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><guid>/publication/xai2021/</guid><description/></item><item><title>Py3status Random Wallpaper</title><link>/project/py3status-wallpaper/</link><pubDate>Tue, 04 Aug 2020 22:06:02 +0200</pubDate><guid>/project/py3status-wallpaper/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/py3status-random-wallpaper/" title="Pystatus-Random-Wallpaper" target="_blank" rel="noopener">Py3status Random Wallpaper&lt;/a> is a module for &lt;a href="https://github.com/ultrabug/py3status/" target="_blank" rel="noopener">Py3status&lt;/a> (which is itself a replacement for the defaul i3status in i3bar) that allows you to
-change your wallpaper. Each time the module is loaded (for example, when the i3bar is started), it will
-pick a random wallpaper amongst your library. You can also directly click on the module to change the wallpaper.&lt;/p>
-&lt;p>This module was made with high configurability in mind, and you can tweak several parameters, such as:&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>Approche multi-agent combinant raisonnement et apprentissage pour un comportement éthique</title><link>/publication/jfsma2021/</link><pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate><guid>/publication/jfsma2021/</guid><description/></item><item><title>A Multi-Agent Approach to Combine Reasoning and Learning for an Ethical Behavior</title><link>/publication/aies2021/</link><pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate><guid>/publication/aies2021/</guid><description/></item><item><title>Explanations: What does it mean for humans, for machines, for man-machines interactions?</title><link>/publication/xai2021/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><guid>/publication/xai2021/</guid><description/></item><item><title>Py3status Random Wallpaper</title><link>/project/py3status-wallpaper/</link><pubDate>Tue, 04 Aug 2020 22:06:02 +0200</pubDate><guid>/project/py3status-wallpaper/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/py3status-random-wallpaper/" title="Pystatus-Random-Wallpaper" target="_blank" rel="noopener">Py3status Random Wallpaper&lt;/a> is a module for &lt;a href="https://github.com/ultrabug/py3status/" target="_blank" rel="noopener">Py3status&lt;/a> (which is itself
+a replacement for the default i3status in i3bar) that allows you to change your
+wallpaper. Each time the module is loaded (for example, when the i3bar is
+started), it will pick a random wallpaper amongst your library. You can also
+directly click on the module to change the wallpaper.&lt;/p>
+&lt;p>This module was made with high configurability in mind, and you can tweak
+several parameters, such as:&lt;/p>
 &lt;ul>
-&lt;li>the folders which will be scanned for wallpapers&lt;/li>
-&lt;li>the buttons used to trigger a new change&lt;/li>
-&lt;li>the command used to set the wallpaper (by default, uses &lt;a href="https://feh.finalrewind.org/" target="_blank" rel="noopener">feh&lt;/a>)&lt;/li>
-&lt;li>an optional list of ignored files&lt;/li>
+&lt;li>the folders which will be scanned for wallpapers;&lt;/li>
+&lt;li>the buttons used to trigger a new change;&lt;/li>
+&lt;li>the command used to set the wallpaper (by default, uses &lt;a href="https://feh.finalrewind.org/" target="_blank" rel="noopener">feh&lt;/a>);&lt;/li>
+&lt;li>an optional list of ignored files;&lt;/li>
 &lt;li>and others&amp;hellip;&lt;/li>
-&lt;/ul></description></item><item><title>XDG-Prefs</title><link>/project/xdgprefs/</link><pubDate>Tue, 04 Aug 2020 21:36:46 +0200</pubDate><guid>/project/xdgprefs/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> is an Open-Source tool to manage your default applications on GNU/Linux, with a simple but efficient GUI.&lt;/p>
-&lt;p>On GNU/Linux systems, each file has a type, named the &lt;a href="https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/" target="_blank" rel="noopener">MIME Type&lt;/a> (or Media Type), based on the
-&lt;a href="https://www.freedesktop.org/wiki/Specifications/mime-apps-spec/" target="_blank" rel="noopener">XDG Specifications&lt;/a> by &lt;a href="https://www.freedesktop.org/wiki/" target="_blank" rel="noopener">Freedesktop&lt;/a>. Your system maintains a database that specifies the
-default application you want to use for each MIME Type ; this database is available through the official
-&lt;code>xdg-mime&lt;/code> tool, but the command-line interface is not suited for easy management (you must remember the
-exact name of the MIME Type for example).&lt;/p>
-&lt;p>&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> offers a simple GUI that allows you to view and modify this database easily ; it
-is built upon the same standard specifications, meaning that your preferences will be recognized by
-all other applications (typically, when you double-click on a file in your File Explorer).&lt;/p>
-&lt;p>Such a tool is commonly found in Desktop Environments, such as &lt;em>Gnome&lt;/em> or &lt;em>KDE&lt;/em>, but not in Window Managers,
-such as &lt;em>i3wm&lt;/em>. &lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> is desktop-agnostic, meaning that you can use it on Gnome, KDE, or even i3.&lt;/p></description></item><item><title>Apprentissage adaptatif de comportements éthiques</title><link>/publication/jfsma20/</link><pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate><guid>/publication/jfsma20/</guid><description/></item><item><title>Poster at GDR IA 2019</title><link>/publication/poster_gdria2019/</link><pubDate>Tue, 01 Oct 2019 00:00:00 +0200</pubDate><guid>/publication/poster_gdria2019/</guid><description>&lt;hr>
+&lt;/ul></description></item><item><title>XDG-Prefs</title><link>/project/xdgprefs/</link><pubDate>Tue, 04 Aug 2020 21:36:46 +0200</pubDate><guid>/project/xdgprefs/</guid><description>&lt;p>&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> is an Open-Source tool to manage your default applications on
+GNU/Linux, with a simple but efficient GUI.&lt;/p>
+&lt;p>On GNU/Linux systems, each file has a type, named the &lt;a href="https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/" target="_blank" rel="noopener">MIME Type&lt;/a>
+(or Media Type), based on the
+&lt;a href="https://www.freedesktop.org/wiki/Specifications/mime-apps-spec/" target="_blank" rel="noopener">XDG Specifications&lt;/a> by &lt;a href="https://www.freedesktop.org/wiki/" target="_blank" rel="noopener">Freedesktop&lt;/a>. Your system
+maintains a database that specifies the default application you want to use
+for each MIME Type ; this database is available through the official &lt;code>xdg-mime&lt;/code>
+tool, but the command-line interface is not suited for easy management
+(for example, you must remember the exact name of the MIME Type).&lt;/p>
+&lt;p>&lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> offers a simple GUI that allows you to view and modify this
+database easily; it is built upon the same standard specifications, meaning
+that your preferences will be recognized by all other applications (typically,
+when you double-click on a file in your File Explorer).&lt;/p>
+&lt;p>Such a tool is commonly found in Desktop Environments, such as &lt;em>Gnome&lt;/em> or &lt;em>KDE&lt;/em>,
+but not in Window Managers, such as &lt;em>i3wm&lt;/em>. &lt;a href="https://github.com/rchaput/xdg-prefs/" target="_blank" rel="noopener">XDG-Prefs&lt;/a> is desktop-agnostic,
+meaning that you can use it on Gnome, KDE, or even i3.&lt;/p></description></item><item><title>Apprentissage adaptatif de comportements éthiques</title><link>/publication/jfsma20/</link><pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate><guid>/publication/jfsma20/</guid><description/></item><item><title>Poster at GDR IA 2019</title><link>/publication/poster_gdria2019/</link><pubDate>Tue, 01 Oct 2019 00:00:00 +0200</pubDate><guid>/publication/poster_gdria2019/</guid><description>&lt;hr>
 &lt;p>&lt;a href="https://ia2.gdria.fr/" target="_blank" rel="noopener">IA²&lt;/a> is an Autumn school about Artificial Intelligence, organized by the &lt;a href="https://gdria.fr/" target="_blank" rel="noopener">GDR IA&lt;/a> and financed by the &lt;a href="https://cnrs.fr/" target="_blank" rel="noopener">CNRS&lt;/a>.
 This 2019 edition of &lt;a href="https://ia2.gdria.fr/" target="_blank" rel="noopener">IA²&lt;/a> was specialized on Smart Environment and Smart Cities, during which I presented a poster
 about my internship work on ethical behaviors of artificial agents and the application to intelligent distribution of
@@ -414,7 +443,7 @@ energy inside a small Smart Grid.&lt;/p>
 of ethical behaviors&lt;/em>, realized at the &lt;a href="https://liris.cnrs.fr" target="_blank" rel="noopener">LIRIS&lt;/a> lab, under the supervision of Professor
 &lt;a href="https://liris.cnrs.fr/page-membre/salima-hassas" target="_blank" rel="noopener">Salima Hassas&lt;/a> and
 Professor &lt;a href="https://www.emse.fr/~boissier/" target="_blank" rel="noopener">Olivier Boissier&lt;/a>.&lt;/p>
-&lt;p>The documents (thesis and slides) are in French, but the English abstract is available.&lt;/p></description></item><item><title>About Me</title><link>/aboutme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/aboutme/</guid><description/></item><item><title>Teaching / Enseignement</title><link>/teaching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/teaching/</guid><description>&lt;p>This page lists the courses I teach at the University. I also include a few
+&lt;p>The documents (thesis and slides) are in French, but the English abstract is available.&lt;/p></description></item><item><title>About Me</title><link>/aboutme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/aboutme/</guid><description/></item><item><title>Projects</title><link>/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/</guid><description/></item><item><title>Teaching / Enseignement</title><link>/teaching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/teaching/</guid><description>&lt;p>This page lists the courses I teach at the University. I also include a few
 useful materials (in French for students).&lt;/p>
 &lt;p>Cette page liste les cours que j&amp;rsquo;enseigne à l&amp;rsquo;Université. J&amp;rsquo;inclus également
 des matériaux utiles (en Français pour les étudiants).&lt;/p></description></item></channel></rss>
