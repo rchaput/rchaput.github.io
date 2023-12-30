@@ -1,0 +1,38 @@
+{{/* Notify JS that this is a widget page */}}
+<!-- TODO: use data attribute on <body> instead if this is still required -->
+<span class="js-widget-page d-none"></span>
+
+
+{{/* Banner image */}}
+{{/* Copied from "page_header.html" */}}
+{{ $page := . }}
+{{ $featured := partial "blox-core/functions/get_featured_image.html" $page }}
+{{ if and .Params.banner.image (not (and $featured (not .Params.image.preview_only))) }}
+<div class="article-header">
+  {{- $img := "" -}}
+  {{ $alt := (.Params.banner.caption | default "") | plainify }}
+  {{ $destination := .Params.banner.image }}
+  {{ $is_remote := strings.HasPrefix $destination "http" }}
+  {{- if not $is_remote -}}
+    {{- $img = (.Page.Resources.ByType "image").GetMatch $destination -}}
+      {{- if not $img -}}
+        {{- $img = resources.Get (path.Join "media" $destination) -}}
+      {{- end -}}
+    {{- end -}}
+  {{ if $img }}
+    <img src="{{$img.RelPermalink}}" width="{{$img.Width}}" height="{{$img.Height}}" class="article-banner" alt="{{$alt}}">
+  {{ else }}
+    <img src="{{ .Params.banner.image }}" class="article-banner" alt="{{$alt}}">
+  {{ end }}
+
+  {{ with .Params.banner.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
+</div>
+{{end}}
+
+{{/* Load Hugo Blox */}}
+{{ range $index, $block := .Params.sections }}
+  {{/* Do not show sections intended only for the demo site. */}}
+  {{ if or (not $block.demo) ($block.demo | and (eq (os.Getenv "WC_DEMO") "true")) }}
+    {{ partial "functions/parse_block_v2" (dict "page" $ "block" $block) }}
+  {{ end }}
+{{ end }}
