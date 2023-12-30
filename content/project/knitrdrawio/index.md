@@ -2,7 +2,7 @@
 title: "knitrdrawio"
 summary: "New engine for knitr that allows to include draw.io diagrams in R Markdown documents."
 authors: ["rchaput"]
-tags: ["knitr", "drawio", "rmarkdown", "reproducibility", "OpenSource"]
+tags: ["lua", "knitr", "drawio", "rmarkdown", "reproducibility"]
 categories: []
 date: 2021-08-06
 
@@ -16,6 +16,12 @@ image:
   preview_only: false
 
 url_code: "https://github.com/rchaput/knitrdrawio/"
+
+links:
+  - name: Documentation
+    url: 'https://rchaput.github.io/knitrdrawio/'
+    icon_pack: fas
+    icon: book
 ---
 
 **knitrdrawio** is a publicly-available R package that brings a new engine

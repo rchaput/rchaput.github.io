@@ -4,7 +4,7 @@
 title: "Py3status Random Wallpaper"
 summary: "py3status-random-wallpaper is a module for the Py3status bar, that allows you to easily change your wallpaper on GNU/Linux."
 authors: ["rchaput"]
-tags: ["Python3", "OpenSource", "GNU+Linux"]
+tags: ["Python", "py3status", "Linux"]
 categories: []
 date: 2020-08-04T22:06:02+02:00
 
@@ -34,25 +34,22 @@ url_code: "https://github.com/rchaput/py3status-random-wallpaper/"
 url_pdf: ""
 url_slides: ""
 url_video: ""
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
 ---
 
 
-[Py3status Random Wallpaper][PRW] is a module for [Py3status] (which is itself a replacement for the defaul i3status in i3bar) that allows you to
-change your wallpaper. Each time the module is loaded (for example, when the i3bar is started), it will
-pick a random wallpaper amongst your library. You can also directly click on the module to change the wallpaper.
+[Py3status Random Wallpaper][PRW] is a module for [Py3status] (which is itself
+a replacement for the default i3status in i3bar) that allows you to change your
+wallpaper. Each time the module is loaded (for example, when the i3bar is
+started), it will pick a random wallpaper amongst your library. You can also
+directly click on the module to change the wallpaper.
 
-This module was made with high configurability in mind, and you can tweak several parameters, such as:
-* the folders which will be scanned for wallpapers
-* the buttons used to trigger a new change
-* the command used to set the wallpaper (by default, uses [feh])
-* an optional list of ignored files
+This module was made with high configurability in mind, and you can tweak
+several parameters, such as:
+
+* the folders which will be scanned for wallpapers;
+* the buttons used to trigger a new change;
+* the command used to set the wallpaper (by default, uses [feh]);
+* an optional list of ignored files;
 * and others...
 
 

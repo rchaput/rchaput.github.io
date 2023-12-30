@@ -4,7 +4,7 @@
 title: "XDG-Prefs"
 summary: "XDG-Prefs is an open-source tool to manage your default applications on GNU/Linux."
 authors: ["rchaput"]
-tags: ["Python3", "OpenSource", "GNU+Linux"]
+tags: ["Python", "XDG", "Linux"]
 categories: []
 date: 2020-08-04T21:36:46+02:00
 
@@ -34,30 +34,28 @@ url_code: "https://github.com/rchaput/xdg-prefs/"
 url_pdf: ""
 url_slides: ""
 url_video: ""
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
 ---
 
 
-[XDG-Prefs] is an Open-Source tool to manage your default applications on GNU/Linux, with a simple but efficient GUI.
+[XDG-Prefs] is an Open-Source tool to manage your default applications on
+GNU/Linux, with a simple but efficient GUI.
 
-On GNU/Linux systems, each file has a type, named the [MIME Type][mime-spec] (or Media Type), based on the 
-[XDG Specifications][xdg-spec] by [Freedesktop][freedesktop]. Your system maintains a database that specifies the
-default application you want to use for each MIME Type ; this database is available through the official
-`xdg-mime` tool, but the command-line interface is not suited for easy management (you must remember the
-exact name of the MIME Type for example).
+On GNU/Linux systems, each file has a type, named the [MIME Type][mime-spec]
+(or Media Type), based on the 
+[XDG Specifications][xdg-spec] by [Freedesktop][freedesktop]. Your system
+maintains a database that specifies the  default application you want to use 
+for each MIME Type ; this database is available through the official `xdg-mime`
+tool, but the command-line interface is not suited for easy management 
+(for example, you must remember the exact name of the MIME Type).
 
-[XDG-Prefs] offers a simple GUI that allows you to view and modify this database easily ; it
-is built upon the same standard specifications, meaning that your preferences will be recognized by
-all other applications (typically, when you double-click on a file in your File Explorer).
+[XDG-Prefs] offers a simple GUI that allows you to view and modify this
+database easily; it is built upon the same standard specifications, meaning
+that your preferences will be recognized by all other applications (typically,
+when you double-click on a file in your File Explorer).
 
-Such a tool is commonly found in Desktop Environments, such as *Gnome* or *KDE*, but not in Window Managers,
-such as *i3wm*. [XDG-Prefs] is desktop-agnostic, meaning that you can use it on Gnome, KDE, or even i3.
+Such a tool is commonly found in Desktop Environments, such as *Gnome* or *KDE*,
+but not in Window Managers, such as *i3wm*. [XDG-Prefs] is desktop-agnostic, 
+meaning that you can use it on Gnome, KDE, or even i3.
 
 
 [XDG-Prefs]: https://github.com/rchaput/xdg-prefs/
