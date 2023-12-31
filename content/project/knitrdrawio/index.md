@@ -2,7 +2,7 @@
 title: "knitrdrawio"
 summary: "New engine for knitr that allows to include draw.io diagrams in R Markdown documents."
 authors: ["rchaput"]
-tags: ["lua", "knitr", "drawio", "rmarkdown", "reproducibility"]
+tags: ["R", "knitr", "drawio", "rmarkdown", "reproducibility"]
 categories: []
 date: 2021-08-06
 
