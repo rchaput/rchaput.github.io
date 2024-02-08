@@ -44,6 +44,8 @@ sections:
           tag: lua
         - name: R
           tag: r
+        - name: JS
+          tag: js
     design:
       # See Page Builder docs for all section customization options.
       # Choose how many columns the section has. Valid values: '1' or '2'.
