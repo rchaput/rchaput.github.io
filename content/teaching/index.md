@@ -29,6 +29,10 @@ share = false
     subtitle = "Chargé de TD et TP"
     code = "UE-INF3007L / LIFAP7"
     level = "3ème année de Licence"
+  [[year.course]]
+    name = "Module Ethique de l'ingénieur"
+    subtitle = "Intervention de 3h"
+    level = "Cycle Ingénieur 1ère année, École des Mines de Saint-Étienne"
 
 
 [[year]]
