@@ -56,7 +56,7 @@ sections:
           company_url: 'https://liris.cnrs.fr/'
           location: France
           date_start: '2023-04-15'
-          date_end: ''
+          date_end: '2024-04-15'
           description: |2-
               Member of the **ACCELER-AI** ANR project.
               Responsibilities include:
@@ -72,7 +72,7 @@ sections:
           company_url: 'https://liris.cnrs.fr/'
           location: France
           date_start: '2023-03-01'
-          date_end: '2020-04-14'
+          date_end: '2023-04-14'
           description: |2-
             Research engineer in the **Ethics.AI** project.
             Responsibilities include:
