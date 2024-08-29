@@ -18,8 +18,12 @@ image:
 url_code: "https://github.com/ethicsai/argumentation-reward-designer/"
 
 links:
-  - name: Documentation
+  - name: Web App
     url: 'https://ethicsai.github.io/argumentation-reward-designer/'
+    icon_pack: fas
+    icon: globe
+  - name: Documentation
+    url: 'https://ethicsai.github.io/argumentation-reward-designer/docs/'
     icon_pack: fas
     icon: book
 ---
