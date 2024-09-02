@@ -51,6 +51,16 @@ sections:
       date_format: Jan 2006
       # Experiences.
       items:
+        - title: Associate Professor
+          company: CPE Lyon
+          company_url: 'https://www.cpe.fr/en/'
+          location: France
+          date_start: '2024-09-02'
+          date_end: ''
+          description: |2-
+            Teaching responsibilities at the **CPE Lyon** engineering school, 
+            in the *Science and Digital Technologies* domain. Courses focus
+            around the subjects of Data, AI, and Data Analysis.
         - title: Post-doctorate researcher
           company: LIRIS
           company_url: 'https://liris.cnrs.fr/'
