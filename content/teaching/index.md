@@ -18,6 +18,41 @@ share = false
 
 # List of courses, grouped by (academic) year
 [[year]]
+  name =" 2024 - 2025"
+  [[year.course]]
+    name = "IA & Deep Learning"
+    subtitle = "Co-responsable, intervenant CM et TP"
+    level = "5ème année ETI (majeure Info)"
+  [[year.course]]
+    name = "Big Data Analytics"
+    subtitle = "Responsable, intervenant TP"
+    level = "5ème année ETI & IRC"
+  [[year.course]]
+    name = "Bases de données"
+    subtitle = "Responsable, intervenant CM et TP"
+    level = "5ème année ETI (majeure Info)"
+  [[year.course]]
+    name = "Data Mining"
+    subtitle = "Intervenant TP"
+    level = "4ème année ETI"
+  [[year.course]]
+    name = "Architecture des Systèmes d'Information 1"
+    subtitle = "Co-responsable"
+    level = "4ème année IRC"
+  [[year.course]]
+    name = "Big Data Management"
+    subtitle = "Responsable, intervenant CM et TP"
+    level = "4ème année IRC"
+  [[year.course]]
+    name = "Architecture logicielle, web services, micro-services"
+    subtitle = "Intervenant TP"
+    level = "4ème année ICS"
+  [[year.course]]
+    name = "Traitement massif des données"
+    subtitle = "Intervenant TP"
+    level = "4ème année ICS"
+
+[[year]]
   name = "2023 - 2024"
   [[year.course]]
     name = "Intelligent Agents"
@@ -80,8 +115,10 @@ share = false
     level = "3ème année de Licence"
 +++
 
-This page lists the courses I teach at the University. I also include a few
-useful materials (in French for students).
+This page lists the courses I teach / taught, either at the University or in
+engineering schools. I also include a few useful materials (in French for 
+students).
 
-Cette page liste les cours que j'enseigne à l'Université. J'inclus également
-des matériaux utiles (en Français pour les étudiants).
+Cette page liste les cours que j'enseigne / ai enseigné à l'Université, ou
+dans des écoles d'ingénieurs. J'inclus également des matériaux utiles (en
+Français pour les étudiants).
