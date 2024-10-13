@@ -8,7 +8,6 @@ on:
   pull_request:
     branches: [ master ]
   workflow_dispatch:
-    inputs:
 
 jobs:
   deploy:
@@ -29,8 +28,15 @@ jobs:
       # Build the static website
       - name: Build
         run: hugo --minify
+      # Archive the build to retrieve it later if necessary
+      - name: Store artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: web
+          path: ./public
       # Deploy to the gh-pages branch on the same remote
       - name: Deploy
+        if: github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
