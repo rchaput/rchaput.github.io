@@ -1,0 +1,36 @@
+name: Update publications
+on:
+  schedule:
+    # Run automatically every month
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.1
+      - name: Detect missing publications
+        id: missing
+        uses: rchaput/gh-action-hal-updater@v1.1
+        with:
+          author-id: "remy-chaput"
+          local-path: "content/publication"
+          confidence-threshold: 0.75
+        # Outputs are:
+        # - created-files
+        # - body
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          title: "Update publications"
+          body: ${{ steps.missing.outputs.body }}
+          add-paths: ${{ steps.missing.outputs.created-files }}
+          labels: "publications,gh-hal-updater"
+          branch: "update-publications"
+          draft: true
