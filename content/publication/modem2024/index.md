@@ -1,10 +1,11 @@
 +++
 title = "Multi-objective reinforcement learning: an ethical perspective"
 date = 2024-10-20
+publishdate = 2024-10-01
 authors = ["Timon Deschamps", "Rémy Chaput", "Laëtitia Matignon"]
 profile = false
 
-publication_types = ["paper-conference"]
+publication_types = ["workshop"]
 publication = "Multi-Objective Decision Making Workshop"
 publication_short = "MODeM'24"
 
