@@ -61,6 +61,10 @@ sections:
             Teaching responsibilities at the **CPE Lyon** engineering school, 
             in the *Science and Digital Technologies* domain. Courses focus
             around the subjects of Data, AI, and Data Analysis.
+            
+            Research responsibilities at the **LIRIS** lab, as part of the
+            *Cognitive and Multi-Agent Systems* team. Member of the **ACCELER-AI**
+            ANR project.
         - title: Post-doctorate researcher
           company: LIRIS
           company_url: 'https://liris.cnrs.fr/'

@@ -8,6 +8,8 @@ role: PhD in Artificial Intelligence
 organizations:
  - name: CPE Lyon
    url: https://www.cpe.fr/en/
+ - name: LIRIS
+   url: https://liris.cnrs.fr/en/
 
 bio: I am interested in Reinforcement Learning, Ethics in Artificial Intelligence (Responsible AI) and Explainable AI.
 
@@ -61,7 +63,9 @@ I am a PhD in Computer Science, focusing on Artificial Intelligence and Ethics.
 
 See my [PhD Thesis]({{< ref "/publication/phd_thesis/index.md" >}}).
 
-I am an Associate Professor, currently working at [CPE Lyon](https://www.cpe.fr/en/).
+I am an Associate Professor, currently working at [CPE Lyon](https://www.cpe.fr/en/),
+and the [LIRIS](https://liris.cnrs.fr/) lab (CNRS - UMR5205), in the 
+[Cognitive Systems and Multi-Agent Systems (SyCoSMA)](https://liris.cnrs.fr/equipe/sycosma) team.
 
 My research interests also include Explainable AI, and human-centered AI
 (such as Responsible AI, AI4People, etc.).
