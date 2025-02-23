@@ -1,0 +1,96 @@
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+<div class="row research">
+  {{ with $block.content.title }}
+  <div class="col-md-12 section-heading mb-3 text-center">
+    <h1>{{ . | markdownify | emojify }}</h1>
+    {{ with $block.content.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ with $block.content.text }}
+  <div class="col-md-12">
+    {{ . | markdownify | emojify }}
+  </div>
+  {{ end }}
+
+  <div class="col-md-12">
+    <p>I am involved in the following active/past projects:</p>
+
+    <ul class="ul-edu fa-ul d-flex flex-column">
+      {{ range $block.content.items.projects }}
+      <li>
+        <div class="description">
+          {{ with .dates }}
+            <span class="research-project-date">{{ .start }}-{{ .end }}</span>
+          {{ end }}
+          <i class="fa=li fas fa-flask-vial ml-2"></i>
+          {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ end }}
+          <span class="research-project">{{ .name | markdownify | emojify }}</span>
+          {{ if .url }}</a>{{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="col-md-12">
+    <p>I had the privilege and pleasure to participate in the mentoring of the following students:</p>
+
+    <ul>
+      {{ with $block.content.items.students.phd }}
+        <li>
+          <span>PhD Students:</span>
+          <ul class="ul-edu fa-ul">
+            {{ range . }}
+            <li>
+              <div class="description">
+                {{ with .dates }}<span class="research-project-date">{{ .start }}-{{ .end }}</span>{{ end }}
+                {{ if eq .status "defended" }}
+                  <i class="fa=li fas fa-user-graduate ml-2"></i>
+                {{ else if eq .status "active" }}
+                  <i class="fa=li fas fa-user ml-2"></i>
+                {{ else if eq .status "cancelled" }}
+                  <i class="fa=li fas fa-user-xmark ml-2"></i>
+                {{ else }}
+                  <i class="fa=li fas fa-user ml-2"></i>
+                {{ end }}
+                {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ end }}
+                <span class="research-project">{{ .name | markdownify | emojify }}</span>
+                {{ if .url }}</a>{{ end }}
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+      {{ end }}
+
+      {{ with $block.content.items.students.graduate }}
+        <li>
+          <span>Graduate Students:</span>
+          <ul class="ul-edu fa-ul">
+            {{ range . }}
+            <li>
+              <div class="description">
+                {{ with .date }}<span class="research-project-date">{{ . }}</span>{{ end }}
+                {{ if eq .status "defended" }}
+                  <i class="fa=li fas fa-user-graduate ml-2"></i>
+                {{ else if eq .status "active" }}
+                  <i class="fa=li fas fa-user ml-2"></i>
+                {{ else if eq .status "cancelled" }}
+                  <i class="fa=li fas fa-user-xmark ml-2"></i>
+                {{ else }}
+                  <i class="fa=li fas fa-user ml-2"></i>
+                {{ end }}
+                {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ end }}
+                <span class="research-project">{{ .name | markdownify | emojify }}</span>
+                {{ if .url }}</a>{{ end }}
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+    </ul>
+  </div>
+
+</div>
