@@ -29,6 +29,7 @@
                 {{ with .link }}<p class="institution"><a href="{{ . }}">Site du cours</a></p>{{ end }}
                 {{ with .level }}<p class="institution">Niveau : {{ . | markdownify }}</p>{{ end }}
                 {{ with .code }}<p class="institution">Code UE: <i>{{ . | markdownify }}</i></p>{{ end}}
+                {{ with .school }}<p class="institution">{{ . | markdownify }}</p>{{ end }}
               </div>
             </li>
             {{ end }}
