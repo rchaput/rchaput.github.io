@@ -29,6 +29,9 @@
           {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ end }}
           <span class="research-project">{{ .name | markdownify | emojify }}</span>
           {{ if .url }}</a>{{ end }}
+          {{ if .leader | default false }}
+            <span class="research-project-leader">(<i class="fa-solid fa-crown"></i> Leader)</span>
+          {{ end }}
         </div>
       </li>
       {{ end }}
