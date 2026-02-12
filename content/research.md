@@ -13,6 +13,11 @@ sections:
       title: "Research activities"
       items:
         projects:
+          - name: ECIÉA
+            dates:
+              start: 2026
+              end: 2027
+            leader: true
           - name: ACCELER-AI
             dates:
               start: 2023
@@ -29,13 +34,15 @@ sections:
               dates:
                 start: 2023
                 end: ""
-              url: ""
+              url: "https://liris.cnrs.fr/these/these-timon-deschamps"
               status: "active"
           graduate:
+            - name: Edgar Demeude
+              date: 2026
+              status: "active"
             - name: Valentin Rieu
               date: 2025
-              url: ""
-              status: "active"
+              status: "defended"
             - name: Marceau Nahon
               date: 2024
               status: "defended"
