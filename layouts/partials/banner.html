@@ -1,0 +1,10 @@
+<div class="article-header pt-16">
+    {{ if .Params.banner }}
+        {{ $image_src := (print "media/" .Params.banner.image) }}
+        {{ $image := resources.Get $image_src }}
+        {{ with $image }}
+            <img class="article-banner" src="{{ .RelPermalink }}"
+                 width="{{ .Width }}" height="{{ .Height }}" alt="" />
+        {{ end }}
+    {{ end }}
+</div>
