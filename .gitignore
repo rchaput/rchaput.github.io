@@ -1,6 +1,10 @@
 # IDEs
-.idea
-.vscode
+.idea/
+.vscode/
 
 # macOS
 **/.DS_Store
+
+# Hugo build
+public/
+.hugo_build.lock
