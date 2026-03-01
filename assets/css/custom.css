@@ -1,0 +1,12 @@
+/**
+ Custom CSS that is common to all pages (or shared by most).
+ Specific CSS should go to templates.
+ */
+
+.article-container {
+    margin: 2rem 5% 2rem 5%;
+}
+
+footer {
+    margin: 2rem 5% 2rem 5%;
+}
