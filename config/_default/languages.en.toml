@@ -17,7 +17,7 @@ title = "Remy Chaput"
  [params.author]
    name = "Remy Chaput"
 #   email = "rchaput.pro@pm.me"
-   image = "img/avatar.png"
+#   image = "avatar.png"
    headline = "Associate professor in AI"
 #   bio = "A little bit about you"
 #   links = [
