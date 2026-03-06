@@ -238,8 +238,8 @@
         font-size: 0.9rem;
     }
 
-    /* Hidden filter cards */
-    .course-card.filtered-out {
+    /* Hidden filter cards and diplomas */
+    .course-card.filtered-out, .diploma-column.filtered-out {
         display: none;
     }
 
@@ -287,7 +287,7 @@
     <div class="course-board">
         {{ range $page.Params.diplomas }}
             {{ $diploma := . }}
-            <section class="diploma-column">
+            <section class="diploma-column" data-diploma="{{ .name }}">
                 <h2 class="diploma-title">
                     {{ with .logo }}
                         {{ $image_src := (print "media/" .) }}
@@ -345,6 +345,8 @@
 
         // Get all course cards
         const courseCards = document.querySelectorAll('.course-card');
+        // Get all diploma columns
+        const diplomaColumns = document.querySelectorAll('.diploma-column');
 
         // Function to filter courses based on current filter values
         function filterCourses() {
@@ -352,6 +354,10 @@
             const selectedYear = yearFilter.value;
             const selectedIncharge = inchargeFilter.value;
 
+            // Track which diplomas have visible courses
+            const visibleDiplomas = new Set();
+
+            // Hide or show courses based on filters
             courseCards.forEach(card => {
                 // Get data attributes from the card
                 const diploma = card.getAttribute('data-diploma');
@@ -373,10 +379,21 @@
                 // Apply visibility based on filter result
                 if (showCard) {
                     card.classList.remove('filtered-out');
+                    visibleDiplomas.add(diploma);
                 } else {
                     card.classList.add('filtered-out');
                 }
             });
+
+            // Hide or show diplomas based on whether they have visible courses
+            diplomaColumns.forEach(column => {
+                const diplomaName = column.getAttribute('data-diploma');
+                if (visibleDiplomas.has(diplomaName)) {
+                    column.classList.remove('filtered-out');
+                } else {
+                    column.classList.add('filtered-out');
+                }
+            })
         }
 
         // Add event listeners to all filter elements
