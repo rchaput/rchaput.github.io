@@ -1,0 +1,255 @@
+<style>
+
+    /* Gantt-style timeline container */
+    .gantt-container {
+        max-width: 90%;
+        margin: 0 auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Gantt grid */
+    .gantt-grid {
+        position: relative;
+        margin: 2rem 0;
+        overflow-x: auto;
+    }
+
+    /* Year headers */
+    .gantt-year-row {
+        display: flex;
+        border-bottom: 2px solid #3498db;
+        margin-bottom: 1.5rem;
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 10;
+    }
+
+    .gantt-year {
+        flex: 1; /* This will make each year column span equal width */
+        padding: 1rem;
+        text-align: center;
+        font-weight: bold;
+        color: #3498db;
+        background-color: #f8f9fa;
+        border-right: 1px solid #e9ecef;
+        /* Warning: this might overflow as the number of years increase */
+    }
+
+    .gantt-year:last-child {
+        border-right: none;
+    }
+
+    /* Project rows */
+    .gantt-project-row {
+        display: flex;
+        margin-bottom: 1.5rem;
+        align-items: center;
+        /*flex: 1;*/
+        /*height: 80px;*/
+        min-height: auto;
+        overflow: visible;
+        position: relative;
+        min-width: 100%;
+    }
+
+    /* Project bar */
+    .gantt-project-bar {
+        height: auto;
+        position: relative;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .gantt-project-bar:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 2;
+    }
+
+    .gantt-project-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .gantt-project-title {
+        font-weight: bold;
+        color: white;
+        margin-bottom: 0.25rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-top: 0.25rem;
+    }
+
+    .gantt-project-details {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-size: 0.7rem;
+        opacity: 0.9;
+        margin-bottom: 0.25rem;
+    }
+
+    .gantt-funding-origin {
+        flex: 1;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .gantt-leader {
+        flex: 0 0 auto;
+        padding-left: 0.5rem;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    .gantt-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: flex-start;
+        margin-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    .gantt-tag {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        font-size: 0.7rem;
+        backdrop-filter: blur(5px);
+    }
+
+    /* Timeline markers */
+    .gantt-marker {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: #3498db;
+        z-index: 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .gantt-project-bar {
+            height: 40px;
+        }
+    }
+
+</style>
+
+<div class="gantt-container">
+
+    <div class="gantt-grid">
+        {{/* Loop over pages to get min and max year */}}
+        {{ $allYears := slice }}
+        {{ range .Pages }}
+        {{ $allYears = $allYears | append .Params.start_date .Params.end_date }}
+        {{ end }}
+        {{ $startYear := math.Min $allYears | default 2010 }}
+        {{ $endYear := math.Max $allYears | default 2060 }}
+
+        <!-- Year headers -->
+        <div class="gantt-year-row"
+             data-min-year="{{ $startYear }}"
+             data-max-year="{{ $endYear }}"
+        >
+            {{ range $year := seq $startYear $endYear }}
+            <div class="gantt-year">{{ $year }}</div>
+            {{ end }}
+        </div>
+
+        <!-- Container to calculate timeline width -->
+        <div id="timeline-container" style="display: none;"></div>
+
+        <!-- Project rows -->
+        {{ range sort .Pages "File.Path" }}
+        <div class="gantt-project-row">
+            <div class="gantt-project-bar"
+                 data-name="{{ .Params.title }}"
+                 data-start-date="{{ .Params.start_date }}"
+                 data-end-date="{{ .Params.end_date }}"
+                 style="background-color: {{ .Params.color }};"
+            >
+                <div class="gantt-project-info">
+                    <div class="gantt-project-title">
+                        {{ with .Params.externalUrl }}
+                            <a href="{{ . }}">
+                        {{ end }}
+                        {{ .Params.title }}
+                        {{ with .Params.externalUrl }}
+                            </a>
+                        {{ end }}
+                    </div>
+                    <div class="gantt-project-details">
+                        <span class="gantt-funding-origin">{{ .Params.funding }}</span>
+                        {{ if .Params.is_leader | default false }}
+                        <span class="gantt-leader">{{ partial "icon" "star" }} Leader</span>
+                        {{ end }}
+                    </div>
+                    <div class="gantt-tags">
+                        {{ range .Params.tags }}
+                        <span class="gantt-tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<script>
+    // Function to calculate pixel positions for projects
+    function calculateProjectPositions() {
+        const timelineContainer = document.querySelector('.gantt-year-row');
+        if (!timelineContainer) return;
+
+        // Get the total width of timeline container
+        const timelineWidth = timelineContainer.offsetWidth;
+
+        // Calculate width per year (since years now span full width)
+        const yearCount = timelineContainer.children.length;
+        const pixelsPerYear = timelineWidth / yearCount;
+        // Get starting year for the timeline (minimum year)
+        const minYear = parseInt(timelineContainer.getAttribute('data-min-year'));
+
+        // Place each project bar based on its data attributes
+        const projectBars = document.querySelectorAll('.gantt-project-bar');
+        projectBars.forEach((bar) => {
+            // Read data attributes from DOM
+            const startYear = parseInt(bar.getAttribute('data-start-date'));
+            const endYear = parseInt(bar.getAttribute('data-end-date'));
+
+            // Calculate pixel positions
+            const startPixel = (startYear - minYear) * pixelsPerYear;
+            // Calculate duration in years
+            const durationInYears = endYear - startYear + 1; // +1 because we count both start and end year
+            const widthPixel = durationInYears * pixelsPerYear;
+
+            // Apply positions to the bar
+            bar.style.left = `${startPixel}px`;
+            bar.style.width = `${widthPixel}px`;
+        });
+    }
+
+    // Call the function when DOM is ready
+    document.addEventListener('DOMContentLoaded',calculateProjectPositions);
+    // Also recalculate on window resize
+    window.addEventListener('resize', calculateProjectPositions);
+</script>
