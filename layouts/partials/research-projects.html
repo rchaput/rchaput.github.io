@@ -109,10 +109,13 @@
     }
 
     .gantt-leader {
+        display: flex;
         flex: 0 0 auto;
         padding-left: 0.5rem;
         text-align: right;
         white-space: nowrap;
+        align-items: center;
+        gap: 0.25rem;
     }
 
     .gantt-tags {
@@ -199,7 +202,7 @@
                     <div class="gantt-project-details">
                         <span class="gantt-funding-origin">{{ .Params.funding }}</span>
                         {{ if .Params.is_leader | default false }}
-                        <span class="gantt-leader">{{ partial "icon" "star" }} Leader</span>
+                        <p class="gantt-leader">{{ partial "icon" "star" }} Leader</p>
                         {{ end }}
                     </div>
                     <div class="gantt-tags">
