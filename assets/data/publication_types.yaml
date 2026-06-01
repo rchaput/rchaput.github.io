@@ -1,0 +1,14 @@
+# This file defines the allowed Publication Types.
+# It is used when rendering the publication page
+# (see layouts/publication/list.html)
+# The definition order also influences the order they are shown in the
+# filter dropdown (i.e., recommended to list them by importance).
+publication_types:
+  - Journal article
+  - Conference paper
+  - Workshop paper
+  - Preprint
+  - Technical report
+  - Thesis
+  - Software
+  - Oral presentation

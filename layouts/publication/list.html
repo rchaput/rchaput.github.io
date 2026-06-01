@@ -1,0 +1,95 @@
+{{ define "main" }}
+<div class="article article-publications max-w-5xl mx-auto px-6 py-12">
+    <h1 class="text-gray-700 font-medium text-4xl mb-8">{{ .Title }}</h1>
+
+    <p class="article-content text-xl">
+        This page lists the research material I published (publications, talks, etc.).
+        {{/** .content | markdownify | safeHTML **/}}
+    </p>
+
+    <!-- Search and Filter Bar -->
+    <div class="flex flex-col md:flex-row gap-6 mb-12 p-6">
+        <!-- Filter by text -->
+        <input type="text" id="searchInput" placeholder="Search papers..."
+               class="w-full md:w-auto px-3 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors text-lg">
+        <!-- Filter by date (year) -->
+        <select id="searchDate" class="w-full md:w-auto px-3 py-3 pr-9 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors text-lg">
+            <option value="">All Years</option>
+            {{ $years := slice }}
+            {{ range .Pages.ByDate.Reverse }}
+                {{ $year := dateFormat "2006" .Date }}
+                {{ if not (in $years $year) }}
+                    {{ $years = $years | append $year }}
+                    <option value="{{ $year }}">{{ $year }}</option>
+                {{ end }}
+            {{ end }}
+        </select>
+        <!-- Filter by type of publication (conference, workshop, journal, ...) -->
+        {{ $publication_types := slice }}
+        {{ with resources.Get "data/publication_types.yaml" }}
+            {{ $file := . | transform.Unmarshal }}
+            {{ $publication_types = $file.publication_types }}
+        {{ else }}
+            {{ errorf "Critical: publication_types.yaml not found in assets/data/" }}
+        {{ end}}
+        <select id="searchType" class="w-full md:w-auto px-3 py-3 pr-9 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors text-lg">
+            <option value="">All Types</option>
+            {{ range $publication_types }}
+                <option value="{{ . }}">{{ . }}</option>
+            {{ end }}
+        </select>
+    </div>
+
+    <!-- Paper List Container -->
+    <div id="container-publications" class="space-y-8">
+        {{ range .Pages.ByDate.Reverse }}
+            {{ partial "publication-card.html" (dict "page" . "allowed_types" $publication_types) }}
+        {{ end }}
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const searchInput = document.getElementById('searchInput');
+        const searchDate = document.getElementById('searchDate');
+        const searchType = document.getElementById('searchType');
+        const cards = document.querySelectorAll('.publication-card');
+
+        function filterPapers() {
+            const query = searchInput.value.toLowerCase();
+            const dateFilter = searchDate.value;
+            const typeFilter = searchType.value.toLowerCase();
+
+            cards.forEach(card => {
+                const title = card.querySelector('h2').textContent.toLowerCase();
+                const abstract = card.querySelector('.publication-abstract').textContent.toLowerCase();
+                const year = card.dataset.year ? card.dataset.year : '';
+                const type = card.dataset.pubtype ? card.dataset.pubtype.toLowerCase() : '';
+
+                const matchesQuery = title.includes(query) || abstract.includes(query);
+                const matchesDate = !dateFilter || year.includes(dateFilter);
+                const matchesType = !typeFilter || type === typeFilter;
+
+                if (matchesQuery && matchesDate && matchesType) {
+                    // Show card with fade-in effect
+                    card.style.transition = 'opacity 0.3s ease-in-out';
+                    card.style.opacity = '1';
+                    card.classList.remove('hidden');
+                } else {
+                    // Hide card with fade-out effect
+                    card.style.transition = 'opacity 0.3s ease-in-out';
+                    card.style.opacity = '0';
+                    setTimeout(() => {
+                        card.classList.add('hidden');
+                    }, 300);
+                }
+            });
+        }
+
+        searchInput.addEventListener('input', filterPapers);
+        searchDate.addEventListener('change', filterPapers);
+        searchType.addEventListener('change', filterPapers);
+    });
+</script>
+{{ end }}
