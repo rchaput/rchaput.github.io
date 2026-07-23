@@ -182,6 +182,7 @@
 
         <!-- Project rows -->
         {{ range sort .Pages "File.Path" }}
+        {{ if not .Params.hidden }}
         <div class="gantt-project-row">
             <div class="gantt-project-bar"
                  data-name="{{ .Params.title }}"
@@ -213,6 +214,7 @@
                 </div>
             </div>
         </div>
+        {{ end }}
         {{ end }}
     </div>
 </div>
