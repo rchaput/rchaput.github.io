@@ -1,0 +1,78 @@
+{{ $page := .page }}
+
+<div class="publication-links flex flex-wrap gap-2 mt-4 pt-3">
+
+    {{ with $page.Resources.Get "cite.bib" }}
+        <a href="{{ .RelPermalink }}"
+                class="inline-flex items-center px-3 py-1.5 text-blue-700 rounded border border-blue-200 text-xs font-medium hover:bg-blue-100 transition-colors">
+            <i class="fa fa-quote-left mr-1"></i> Cite
+        </a>
+    {{ end }}
+
+    {{ with $page.Params.doi }}
+        <a href="https://doi.org/{{ . }}" target="_blank"
+           class="inline-flex items-center px-3 py-1.5 text-blue-700 rounded border border-blue-200 text-xs font-medium hover:bg-blue-100 transition-colors">
+            <i class="fa fa-link mr-1"></i> DOI
+        </a>
+    {{ end }}
+
+    {{ with $page.Params.hal }}
+        <a href="https://hal.science/{{ . }}" target="_blank"
+           class="inline-flex items-center px-3 py-1.5 text-blue-700 rounded border border-blue-200 text-xs font-medium hover:bg-blue-100 transition-colors">
+            <i class="fa fa-file mr-1"></i> HAL
+        </a>
+    {{ end }}
+
+    {{ with $page.Params.url_pdf }}
+        {{ with $page.Resources.Get . }}
+            <a href="{{ .Permalink }}" target="_blank"
+               class="inline-flex items-center px-3 py-1.5 text-blue-700 rounded border border-blue-200 text-xs font-medium hover:bg-blue-100 transition-colors">
+                <i class="fa fa-file-pdf mr-1"></i> PDF
+            </a>
+        {{ else }}
+            <a href="{{ . }}" target="_blank"
+               class="inline-flex items-center px-3 py-1.5 text-blue-700 rounded border border-blue-200 text-xs font-medium hover:bg-blue-100 transition-colors">
+                <i class="fa fa-file-pdf mr-1"></i> PDF
+            </a>
+        {{ end }}
+    {{ end }}
+
+    {{ with $page.Params.url_slides }}
+        {{ with $page.Resources.Get . }}
+            <a href="{{ .Permalink }}" target="_blank"
+               class="inline-flex items-center px-3 py-1.5 text-blue-700 rounded border border-blue-200 text-xs font-medium hover:bg-blue-100 transition-colors">
+                <i class="fa fa-file-powerpoint mr-1"></i> Slides
+            </a>
+        {{ else }}
+            <a href="{{ . }}" target="_blank"
+               class="inline-flex items-center px-3 py-1.5 text-blue-700 rounded border border-blue-200 text-xs font-medium hover:bg-blue-100 transition-colors">
+                <i class="fa fa-file-powerpoint mr-1"></i> Slides
+            </a>
+        {{ end }}
+    {{ end }}
+
+    {{ with $page.Params.url_poster }}
+        {{ with $page.Resources.Get . }}
+            <a href="{{ .Permalink }}" target="_blank"
+               class="inline-flex items-center px-3 py-1.5 text-blue-700 rounded border border-blue-200 text-xs font-medium hover:bg-blue-100 transition-colors">
+                <i class="fa fa-file-image mr-1"></i> Poster
+            </a>
+        {{ else }}
+            <a href="{{ . }}" target="_blank"
+               class="inline-flex items-center px-3 py-1.5 text-blue-700 rounded border border-blue-200 text-xs font-medium hover:bg-blue-100 transition-colors">
+                <i class="fa fa-file-image mr-1"></i> Poster
+            </a>
+        {{ end }}
+    {{ end }}
+
+    <!-- Render Custom Links -->
+    {{ range $page.Params.links }}
+        <a href="{{ .url }}" target="_blank"
+           class="inline-flex items-center px-3 py-1.5 text-blue-700 rounded border border-blue-200 text-xs font-medium hover:bg-blue-100 transition-colors">
+            <!-- Icon handling -->
+            {{ if .icon }}<i class="{{ .icon_pack }} {{ .icon }} mr-1"></i>{{ end }}
+            {{ .name }}
+        </a>
+    {{ end }}
+
+</div>

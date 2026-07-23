@@ -1,0 +1,73 @@
+{{ define "main" }}
+<article class="article-container max-w-4xl mx-auto py-12 px-6 md:px-12">
+    <!-- Header Section -->
+    <header class="mb-8">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4">{{ .Title }}</h1>
+        
+        {{ with .Params.authors }}
+            <div class="text-xl text-gray-700 mb-2">
+                {{ delimit . ", " }}
+            </div>
+        {{ end }}
+
+        <div class="flex flex-wrap items-center gap-2 text-gray-600 text-sm">
+            <span>{{ dateFormat "January, 2006" .Date }}</span>
+            {{ with .Params.publication_type }}
+                <span class="middot-divider mr-2 ml-2">&middot;</span>
+                <span class="italic">{{ . }}</span>
+            {{ end }}
+        </div>
+
+        <!-- Links Section -->
+        {{ partial "publication-links.html" (dict "page" .) }}
+    </header>
+
+    <div class="space-y-8">
+        <!-- Abstract Section -->
+        {{ if .Params.abstract }}
+            <section>
+                <h2 class="text-xl font-bold text-gray-900 mb-3">Abstract</h2>
+                <div class="text-lg text-gray-700 leading-relaxed prose prose-blue max-w-none">
+                    {{ .Params.abstract | markdownify }}
+                </div>
+            </section>
+        {{ end }}
+
+        <!-- Metadata Section (Below Abstract) -->
+        <section>
+            {{ with .Params.publication_type }}
+                <div class="mb-4">
+                    <span class="text-gray-500 font-medium mr-2 uppercase tracking-wider">Type:</span >
+                    <span class="text-gray-900">{{ . }}</span >
+                </div >
+            {{ end }}
+            {{ with .Params.publication }}
+                <div class="mb-4">
+                    <span class="text-gray-500 font-medium mr-2 uppercase tracking-wider">Publication:</span >
+                    <span class="text-gray-900">{{ . | markdownify }}</span >
+                </div >
+            {{ end }}
+        </section>
+
+        <!-- List of tags (rounded chips -->
+        <section class="flex flex-wrap items-center gap-2">
+            {{ if .Params.tags }}
+                <div class="flex flex-wrap gap-1">
+                    {{ range .Params.tags }}
+                        <span class="badge badge-light">
+                            {{ . }}
+                        </span >
+                    {{ end }}
+                </div >
+            {{ end }}
+        </section>
+
+        <!-- Main Content -->
+        {{ with .Content }}
+            <section class="prose prose-blue max-w-none">
+                {{ . | markdownify | emojify }}
+            </section>
+        {{ end }}
+    </div>
+</article>
+{{ end }}
