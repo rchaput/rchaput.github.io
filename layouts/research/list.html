@@ -40,6 +40,32 @@
 
     {{ partial "research-students" . }}
 
+    <!-- Recent Publications -->
+    <div class="page-title">
+        <h1 class="mt-12">
+            Recent publications
+        </h1>
+        <p>
+            See the <a href='{{ relURL "publication" }}'>complete list</a>
+        </p>
+    </div>
+
+    {{ $publication_types := slice }}
+    {{ with resources.Get "data/publication_types.yaml" }}
+        {{ $file := . | transform.Unmarshal }}
+        {{ $publication_types = $file.publication_types }}
+    {{ else }}
+        {{ errorf "Critical: publication_types.yaml not found in assets/data/" }}
+    {{ end}}
+    {{ $publications := where .Site.RegularPages "Section" "publication" }}
+    {{ $recent_publications := $publications.ByDate.Reverse | first 3 }}
+    <div id="container-publications" class="max-w-5xl mx-auto px-6 py-12 space-y-8">
+        {{ range $recent_publications }}
+            {{ partial "publication-card.html" (dict "page" . "allowed_types" $publication_types) }}
+        {{ end }}
+    </div>
+
+
 </div>
 
 {{- end -}}
