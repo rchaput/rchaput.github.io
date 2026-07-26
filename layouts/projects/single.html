@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 py-8">
+    <article class="max-w-4xl mx-auto">
+        {{ $img := .Resources.Get "featured.png" }}
+        {{ if (and .Params.image $img) }}
+            <div class="mb-8">
+                <img src="{{ $img.RelPermalink }}"
+                     alt="{{ .Title }}" 
+                     class="rounded-lg shadow-md w-full object-cover max-h-[400px]">
+                {{ with .Params.image.caption }}
+                    <p class="text-sm text-gray-500 mt-2 italic">{{ . }}</p>
+                {{ end }}
+            </div>
+        {{ end }}
+
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
+            <div class="flex flex-wrap gap-2 text-sm text-gray-600 dark:text-gray-400">
+                {{ if .Date }}<span>{{ .Date.Format "Jan 2, 2006" }}</span>{{ end }}
+            </div>
+        </header>
+
+        <div class="flex flex-wrap gap-3">
+            {{ if .Params.url_code }}
+                <a href="{{ .Params.url_code }}" target="_blank" class="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-sm font-medium hover:bg-blue-900 hover:text-white transition shadow-sm">Code</a>
+            {{ end }}
+            {{ range .Params.links }}
+                <a href="{{ .url }}" target="_blank" class="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-sm font-medium hover:bg-blue-900 hover:text-white transition shadow-sm">{{ .name }}</a>
+            {{ end }}
+        </div>
+
+        <div class="prose prose-lg dark:prose-invert max-w-none py-4">
+            {{ .Content }}
+        </div>
+
+        <div class="flex flex-wrap gap-2 text-sm py-8">
+            {{ range .Params.tags }}
+                <span class="px-2 py-0.5 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded">{{ . }}</span>
+            {{ end }}
+        </div>
+    </article>
+</div>
+{{ end }}
