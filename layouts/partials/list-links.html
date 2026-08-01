@@ -1,0 +1,45 @@
+{{/**
+  This partial defines a list of clickable links (rendered as buttons).
+
+  It expects as input a list of dictionaries, with the following keys:
+    - `url`: the link itself;
+    - `icon` (optional): an icon name that can be loaded through the
+       Blowfish icon partial (either native or placed in `assets/icons`);
+    - `name`: the link text to render.
+
+  It can typically be used over a Page's `.Params.links` field.
+**/}}
+
+{{/**
+  Default icons mapping
+
+  Even if the icon is not specified, we use a default icon for
+  some common names (code, documentation, DOI, HAL, etc.).
+**/}}
+{{ $defaultIconsMap := (dict
+    "code" "code"
+    "documentation" "fas/book"
+    "doi" "academicons/doi"
+    "hal" "academicons/hal"
+    "pdf" "fas/file-pdf"
+    "slides" "fas/file-powerpoint"
+    "poster" "fas/file-image"
+) }}
+
+<div class="flex flex-wrap gap-3">
+    {{ range . }}
+        {{/** TODO: handle page resources **/}}
+        {{ $icon := .icon }}
+        {{ if not $icon }}
+            {{ $icon = index $defaultIconsMap (lower .name) }}
+        {{ end }}
+        <a href="{{ .url }}"
+           target="_blank"
+           class="inline-flex items-center px-3 py-1.5 text-blue-700 rounded border border-blue-200 text-xs font-medium hover:bg-blue-100 transition-colors">
+            {{ if $icon }}
+                {{ partial "icon" $icon }}
+            {{ end }}
+            <span class="ml-1">{{ .name }}</span>
+        </a>
+    {{ end }}
+</div>
