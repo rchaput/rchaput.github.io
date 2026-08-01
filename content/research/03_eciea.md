@@ -19,7 +19,7 @@ students:
     kind: Master 2
     start_date: 2026
     end_date:
-    status: "active"
+    status: "defended"
   - name: Enzo Dos Anjos
     kind: Engineer 3Y
     start_date: 2025
