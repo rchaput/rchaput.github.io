@@ -4,9 +4,11 @@
         {{ $img := .Resources.Get "featured.png" }}
         {{ if (and .Params.image $img) }}
             <div class="mb-8">
-                <img src="{{ $img.RelPermalink }}"
-                     alt="{{ .Title }}" 
-                     class="rounded-lg shadow-md w-full object-cover max-h-[400px]">
+                <a href="{{ $img.RelPermalink }}">
+                    <img src="{{ $img.RelPermalink }}"
+                         alt="{{ .Title }}"
+                         class="rounded-lg shadow-md w-full object-cover max-h-[400px]">
+                </a>
                 {{ with .Params.image.caption }}
                     <p class="text-sm text-gray-500 mt-2 italic">{{ . }}</p>
                 {{ end }}
