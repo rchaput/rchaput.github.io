@@ -8,20 +8,16 @@ date: 2021-08-06
 
 profile: false
 
-external_link: ""
-
 image:
   caption: "Using the knitrdrawio library and its result"
   focal_point: ""
   preview_only: false
 
-url_code: "https://github.com/rchaput/knitrdrawio/"
-
 links:
+  - name: Code
+    url: 'https://github.com/rchaput/knitrdrawio/'
   - name: Documentation
     url: 'https://rchaput.github.io/knitrdrawio/'
-    icon_pack: fas
-    icon: book
 ---
 
 **knitrdrawio** is a publicly-available R package that brings a new engine

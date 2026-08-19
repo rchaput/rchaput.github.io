@@ -8,14 +8,14 @@ date: 2021-12-20
 
 profile: false
 
-external_link: ""
-
 image:
   caption: "Using r2dup2 and its result"
   focal_point: ""
   preview_only: false
 
-url_code: "https://github.com/rchaput/r2dup2/"
+links:
+  - name: Code
+    url: 'https://github.com/rchaput/r2dup2/'
 ---
 
 In `R`,  the default `utils::capture.output` function only redirects R

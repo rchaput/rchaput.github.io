@@ -8,20 +8,16 @@ date: 2021-12-20
 
 profile: false
 
-external_link: ""
-
 image:
   caption: "Using the acronymsdown library and its result"
   focal_point: ""
   preview_only: false
 
-url_code: "https://github.com/rchaput/acronyms/"
-
 links:
+  - name: Code
+    url: 'https://github.com/rchaput/acronyms/'
   - name: Documentation
     url: 'https://rchaput.github.io/acronyms/'
-    icon_pack: fas
-    icon: book
 ---
 
 [acronyms](https://github.com/rchaput/acronyms/) is the newest version of this

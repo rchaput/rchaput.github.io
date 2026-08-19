@@ -8,24 +8,19 @@ date: 2024-01-13
 
 profile: false
 
-external_link: ""
-
 image:
   caption: "Interface of Argumentation Reward Designer"
   focal_point: ""
   preview_only: false
 
-url_code: "https://github.com/ethicsai/argumentation-reward-designer/"
-
 links:
+  - name: Code
+    url: 'https://github.com/ethicsai/argumentation-reward-designer/'
   - name: Web App
     url: 'https://ethicsai.github.io/argumentation-reward-designer/'
-    icon_pack: fas
-    icon: globe
+    icon: fas/globe
   - name: Documentation
     url: 'https://ethicsai.github.io/argumentation-reward-designer/docs/'
-    icon_pack: fas
-    icon: book
 ---
 
 **Argumentation Reward Designer** (ARD) is a tool that helps to create

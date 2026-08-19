@@ -8,20 +8,16 @@ date: 2025-09-08
 
 profile: false
  
-external_link: ""
-
 image:
   caption: "Illustration of the ethical gardeners simulation"
   focal_point: ""
   preview_only: false
 
-url_code: "https://github.com/ethicsai/ethical-gardeners/"
-
 links:
+  - name: Code
+    url: 'https://github.com/ethicsai/ethical-gardeners/'
   - name: Documentation
     url: 'https://ethicsai.github.io/ethical-gardeners/'
-    icon_pack: fas
-    icon: book
 ---
 
 This is a third-party [PettingZoo] environment, focusing on learning 

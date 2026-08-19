@@ -8,20 +8,16 @@ date: 2023-04-03
 
 profile: false
  
-external_link: ""
-
 image:
   caption: "Schema of the Smart Grid elements"
   focal_point: ""
   preview_only: false
 
-url_code: "https://github.com/ethicsai/ethical-smart-grid/"
-
 links:
+  - name: Code
+    url: 'https://github.com/ethicsai/ethical-smart-grid/'
   - name: Documentation
     url: 'https://ethicsai.github.io/ethical-smart-grid/'
-    icon_pack: fas
-    icon: book
 ---
 
 This is a third-party [Gym] environment, focusing on learning ethically-aligned
