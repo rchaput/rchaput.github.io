@@ -20,14 +20,7 @@
             </div>
         </header>
 
-        <div class="flex flex-wrap gap-3">
-            {{ if .Params.url_code }}
-                <a href="{{ .Params.url_code }}" target="_blank" class="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-sm font-medium hover:bg-blue-900 hover:text-white transition shadow-sm">Code</a>
-            {{ end }}
-            {{ range .Params.links }}
-                <a href="{{ .url }}" target="_blank" class="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-sm font-medium hover:bg-blue-900 hover:text-white transition shadow-sm">{{ .name }}</a>
-            {{ end }}
-        </div>
+        {{ partial "list-links" .Params.links }}
 
         <div class="prose prose-lg dark:prose-invert max-w-none py-4">
             {{ .Content }}
