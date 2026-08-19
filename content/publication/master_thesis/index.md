@@ -33,28 +33,16 @@ tags: ["Ethics", "Multi-Agent Systems", "Reinforcement Learning", "Self-Organizi
 categories: []
 featured: false
 
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
-# links:
-# - name: Follow
-#   url: https://twitter.com
-#   icon_pack: fab
-#   icon: twitter
-
 url_pdf: memoire_stage_master_rchaput.pdf
-url_code:
-url_dataset:
-url_poster:
-url_project:
 url_slides: slides_stage_master_rchaput.pdf
-url_source:
-url_video:
 ---
 
 ***
-This is the thesis I redacted at the end of my Master in Artificial Intelligence. The subject was *Evolutive learning
-of ethical behaviors*, realized at the [LIRIS](https://liris.cnrs.fr) lab, under the supervision of Professor 
-[Salima Hassas](https://liris.cnrs.fr/page-membre/salima-hassas) and 
+This is the thesis I wrote at the end of my Master in Artificial Intelligence. 
+The subject was *Evolutive learningof ethical behaviors*, realized at the 
+[LIRIS](https://liris.cnrs.fr) lab, under the supervision of Professor 
+[Salima Hassas](https://liris.cnrs.fr/page-membre/salima-hassas) and
 Professor [Olivier Boissier](https://www.emse.fr/~boissier/).
 
-The documents (thesis and slides) are in French, but the English abstract is available.
+The documents (thesis and slides) are in French, but the English abstract is 
+available.

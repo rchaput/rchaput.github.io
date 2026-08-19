@@ -29,13 +29,11 @@ tags = ["Reinforcement Learning", "Machine Ethics", "Smart Grid",
 featured = false
 
 doi = "10.21105/joss.05410"
-
 hal = "hal-04187666"
 
 [[links]]
 url = "https://github.com/ethicsai/ethical-smart-grid"
-icon_pack = "fab"
-icon = "github"
 name = "GitHub"
+icon = "github"
 
 +++

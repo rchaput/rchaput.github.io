@@ -31,7 +31,6 @@ tags = ["Ethics", "Machine Ethics", "Multi-Agent Learning",
 featured = false
 
 doi = "10.5802/roia.56"
-
 hal = "hal-04161020"
 
 +++

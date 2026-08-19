@@ -34,7 +34,6 @@ featured = false
 
 url_pdf = "Chaput_Apprentissage_adaptatif_ethique_paper.pdf"
 url_slides = "Chaput_Apprentissage_adaptatif_ethique_slides.pdf"
-
 hal = "hal-03012127v1"
 
 +++

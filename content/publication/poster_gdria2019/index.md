@@ -24,22 +24,7 @@ tags: ["Ethics", "Multi-Agent Systems", "Reinforcement Learning", "Self-Organizi
 categories: []
 featured: false
 
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
-# links:
-# - name: Follow
-#   url: https://twitter.com
-#   icon_pack: fab
-#   icon: twitter
-
-url_pdf:
-url_code:
-url_dataset:
 url_poster: Poster_IA2_GDRIA_2019.pdf
-url_project:
-url_slides:
-url_source:
-url_video:
 ---
 
 ***

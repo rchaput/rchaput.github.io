@@ -31,24 +31,10 @@ tags:
 categories: []
 featured: true
 
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
-# links:
-# - name: Follow
-#   url: https://twitter.com
-#   icon_pack: fab
-#   icon: twitter
-
 hal: "tel-04107492"
-
 url_pdf: https://rchaput.github.io/phdthesis/thesis.pdf
-url_code:
-url_dataset:
-url_poster:
-url_project:
 url_slides: https://github.com/rchaput/phdthesis/blob/slides/slides.pdf
 url_source: https://github.com/rchaput/phdthesis/
-url_video:
 ---
 
 **Learning behaviours aligned with moral values in a multi-agent system: guiding reinforcement learning

@@ -39,7 +39,6 @@ hal = "hal-04379426"
 [[links]]
 url = "https://arxiv.org/abs/2307.00552"
 name = "ArXiv"
-icon_pack = "ai"
-icon = "arxiv"
+icon = "academicons/arxiv"
 
 +++
