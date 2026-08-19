@@ -1,14 +1,21 @@
 {{/**
   This partial defines a list of clickable links (rendered as buttons).
 
-  It expects as input a list of dictionaries, with the following keys:
+  It expects as input a dictionary with 2 keys.
+  - `links` (mandatory) a list of dictionaries representing the buttons
+     to render, with the following keys:
     - `url`: the link itself;
     - `icon` (optional): an icon name that can be loaded through the
        Blowfish icon partial (either native or placed in `assets/icons`);
     - `name`: the link text to render.
+  - `page` (optional) A Page context, to detect Page Resources in URLs.
 
-  It can typically be used over a Page's `.Params.links` field.
+  It can typically be used over a Page's `.Params.links` field (and the Page
+  itself if desired).
 **/}}
+
+{{ $links := .links }}
+{{ $page := .page }}
 
 {{/**
   Default icons mapping
@@ -27,13 +34,22 @@
 ) }}
 
 <div class="flex flex-wrap gap-3">
-    {{ range . }}
-        {{/** TODO: handle page resources **/}}
+    {{ range $links }}
+        {{/* 1. Resolve Icon */}}
         {{ $icon := .icon }}
         {{ if not $icon }}
             {{ $icon = index $defaultIconsMap (lower .name) }}
         {{ end }}
-        <a href="{{ .url }}"
+
+        {{/* 2. Resolve URL (Resource vs External/String) */}}
+        {{ $href := .url }}
+        {{ if $page }}
+            {{ with $page.Resources.Get .url }}
+                {{ $href = .RelPermalink }}
+            {{ end }}
+        {{ end }}
+
+        <a href="{{ $href }}"
            target="_blank"
            class="inline-flex items-center px-3 py-1.5 text-blue-700 rounded border border-blue-200 text-xs font-medium hover:bg-blue-100 transition-colors">
             {{ if $icon }}

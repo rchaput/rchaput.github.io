@@ -22,7 +22,7 @@
             </div>
         </header>
 
-        {{ partial "list-links" .Params.links }}
+        {{ partial "list-links" (dict "links" .Params.links "page" .) }}
 
         <div class="prose prose-lg dark:prose-invert max-w-none py-4">
             {{ .Content }}

@@ -47,7 +47,7 @@
                 <div class="prose prose-lg dark:prose-invert max-w-none mb-6 text-gray-600 dark:text-gray-400">
                     {{ .Params.summary }}
                 </div>
-                {{ partial "list-links" .Params.links }}
+                {{ partial "list-links" (dict "links" .Params.links "page" .) }}
             </div>
         </article>
         {{ end }}
