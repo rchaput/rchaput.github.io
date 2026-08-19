@@ -14,9 +14,19 @@ affiliations:
 
 social:
   - link: mailto:rchaput.pro@pm.me
-    icon: at
+    icon: fas/envelope
   - link: https://github.com/rchaput
     icon: github
+  - link: https://www.linkedin.com/in/rchaput
+    icon: linkedin
+  - link: https://www.researchgate.net/profile/Remy_Chaput
+    icon: academicons/researchgate
+  - link: https://orcid.org/0000-0002-2233-7566
+    icon: academicons/orcid
+  - link: https://www.zotero.org/rchaput
+    icon: academicons/zotero
+  - link: https://dblp.uni-trier.de/pid/272/7185.html
+    icon: academicons/dblp
 
 interests:
   - Reinforcement Learning (Lifelong, Multi-Agent, Multi-Objective)
