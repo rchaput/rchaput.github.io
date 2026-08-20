@@ -1,0 +1,10 @@
+{{- define "main" -}}
+<div class="max-w-4xl mx-auto">
+  {{ partial "aboutme/skills.html" . }}
+  <hr class="border-gray-200 dark:border-gray-700">
+  {{ partial "aboutme/experience.html" . }}
+  <hr class="border-gray-200 dark:border-gray-700">
+  {{ partial "aboutme/education.html" . }}
+</div>
+{{- end -}}
+

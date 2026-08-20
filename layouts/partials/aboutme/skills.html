@@ -1,0 +1,16 @@
+<section class="py-12">
+  <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+
+  <div class="max-w-4xl mx-auto grid grid-cols-3 gap-x-8 gap-y-12 justify-items-center">
+    {{ range .Params.skills }}
+    <div class="flex flex-col items-center text-center group">
+      <div class="w-20 h-20 mb-4 transition-transform duration-300 group-hover:scale-110 flex items-center justify-center">
+        <div class="text-5xl">
+          {{ partial "icon" .icon }}
+        </div>
+      </div>
+      <h3 class="font-semibold text-lg">{{ .name }}</h3>
+    </div>
+    {{ end }}
+  </div>
+</section>

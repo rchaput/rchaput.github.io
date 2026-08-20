@@ -1,0 +1,43 @@
+<section class="py-12">
+  <h2 class="text-3xl font-bold mb-8 text-center">Experience</h2>
+
+  <div class="space-y-8 max-w-4xl mx-auto">
+    {{ range .Params.experience }}
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-lg">
+        <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+          <div>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+              {{ .title | markdownify | emojify }}
+            </h3>
+            <p class="text-lg {{ if .company_url }}text-blue-600 dark:text-blue-400{{ else }}text-gray-600 dark:text-gray-400{{ end }}">
+              {{ if .company_url }}
+                <a href="{{ .company_url }}" class="hover:underline">
+                  {{ .company | markdownify | emojify }}
+                </a>
+              {{ else }}
+                {{ .company | markdownify | emojify }}
+              {{ end }}
+            </p>
+          </div>
+          <div class="mt-2 md:mt-0 text-gray-500 dark:text-gray-400 font-medium">
+            {{ .date }}
+          </div>
+        </div>
+        <p class="text-sm text-gray-400 mb-3">
+          {{ .location | markdownify | emojify }}
+        </p>
+        <div class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 mb-4">
+          {{ .description | markdownify | emojify }}
+        </div>
+        
+        {{ if .tags }}
+          <div class="flex flex-wrap gap-2">
+            {{ range .tags }}
+              <span class="px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded">{{ . }}</span>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>
