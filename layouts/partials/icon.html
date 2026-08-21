@@ -1,0 +1,15 @@
+{{/**
+  Override the default Blowfish icon partial to allow the icon's color
+  to be controlled by the parent element's text color.
+  For example, if the text is white, most icons will be white. This also
+  depends on the icon itself and how it is implemented, so it might render
+  differently for various icons.
+**/}}
+{{- $icon := resources.Get (print "icons/" . ".svg") -}}
+{{- if $icon -}}
+<span class="relative block icon fill-current">
+  {{- $icon.Content | safeHTML -}}
+</span>
+{{- else -}}
+  {{ warnf "Icon %s could not be found in assets/icons/." . }}
+{{- end -}}
