@@ -65,6 +65,20 @@
         {{ end }}
     </div>
 
+    <div class="page-title">
+        <h1 class="mt-12">
+            Other research activities
+        </h1>
+        <p>
+            My research activities also include:
+        </p>
+    </div>
+
+    {{ with .Page.Params.other }}
+        <div class="prose dark:prose-invert max-w-5xl mx-auto">
+            {{ . | markdownify | emojify }}
+        </div>
+    {{ end }}
 
 </div>
 
