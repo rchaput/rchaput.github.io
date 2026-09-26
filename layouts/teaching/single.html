@@ -319,8 +319,9 @@
                         </h3>
                         <div class="course-year">Année {{ .year }}</div>
                         {{ with .major }}
-                            {{/* TODO: if major contains a comma, add a 's' at the end (Majeures) */}}
-                            <div class="course-major">Majeure {{ . }}</div>
+                            <div class="course-major">
+                                {{ if (findRE "," .) }}Majeures{{ else }}Majeure{{ end }} {{ . }}
+                            </div>
                         {{ end }}
                         {{ if .incharge }}
                             <div class="course-responsibility" title="Responsable">
