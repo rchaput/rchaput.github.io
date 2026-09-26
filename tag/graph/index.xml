@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graph | Remy Chaput</title><link>/tag/graph/</link><atom:link href="/tag/graph/index.xml" rel="self" type="application/rss+xml"/><description>graph</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 13 Jan 2024 00:00:00 +0000</lastBuildDate><image><url>/media/icon_hu62f16b166d299cea1530d18dc13c60c6_452_512x512_fill_lanczos_center_3.png</url><title>graph</title><link>/tag/graph/</link></image><item><title>argumentation-reward-designer</title><link>/project/argumentation-reward-designer/</link><pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate><guid>/project/argumentation-reward-designer/</guid><description>&lt;p>&lt;strong>Argumentation Reward Designer&lt;/strong> (ARD) is a tool that helps to create
+reward functions based on argumentation graphs. It builds upon the &lt;a href="https://github.com/ethicsai/ajar/" target="_blank" rel="noopener">AJAR&lt;/a>
+library and provides a visual interface to design the graphs, by placing and
+moving arguments on a grid, and drawing attacks between them.&lt;/p>
+&lt;p>Graphs can then be exported to JSON, PNG (for sharing a visual representation
+of the graph), or Python code (which can be used in
+/project/ethical-smartgrid/).&lt;/p></description></item></channel></rss>
