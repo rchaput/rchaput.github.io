@@ -162,7 +162,14 @@
         {{/* Loop over pages to get min and max year */}}
         {{ $allYears := slice }}
         {{ range .Pages }}
-        {{ $allYears = $allYears | append .Params.start_date .Params.end_date }}
+            {{ if not (.Params.hidden | default false) }}
+                {{ if .Params.start_date }}
+                    {{ $allYears = $allYears | append .Params.start_date }}
+                {{ end }}
+                {{ if .Params.end_date }}
+                    {{ $allYears = $allYears | append .Params.end_date }}
+                {{ end }}
+            {{ end }}
         {{ end }}
         {{ $startYear := math.Min $allYears | default 2010 }}
         {{ $endYear := math.Max $allYears | default 2060 }}
