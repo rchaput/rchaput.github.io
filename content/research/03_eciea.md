@@ -18,7 +18,7 @@ students:
   - name: Edgar Demeude
     kind: Master 2
     start_date: 2026
-    end_date:
+    end_date: 2026
     status: "defended"
   - name: Enzo Dos Anjos
     kind: Engineer 3Y
