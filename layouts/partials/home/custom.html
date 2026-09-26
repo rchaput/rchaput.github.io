@@ -50,7 +50,7 @@
                         </div>
                         <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">Professional Summary</h2>
                     </div>
-                    <div class="prose prose-lg dark:prose-invert text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed">
+                    <div class="prose prose-lg dark:prose-invert text-gray-800 dark:text-gray-200 text-xl leading-relaxed">
                         <div class="bio-text">
                             {{ .Content | markdownify | emojify }}
                         </div>
@@ -63,16 +63,16 @@
                         </div>
                         <h3 class="text-xl font-bold text-gray-900 dark:text-white tracking-tight">Interests</h3>
                     </div>
-                    <div class="flex flex-wrap gap-3">
+                    <ul class="space-y-2 ml-4">
                         {{ range .Params.interests }}
-                            <span class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
-                               hover:bg-primary-100
-                               dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
-                               transition-all duration-200 cursor-default">
-                                {{ . | markdownify | emojify }}
-                            </span>
+                            <li class="flex items-center gap-3 text-2xl text-gray-700 dark:text-gray-300">
+                                <span class="w-6 h-6 flex items-center justify-center text-primary-600 dark:text-primary-400">
+                                    {{ partial "icon" "fas/book-open" }}
+                                </span>
+                                <span>{{ . | markdownify | emojify }}</span>
+                            </li>
                         {{ end }}
-                    </div>
+                    </ul>
                 </div>
             </div>
         </div>
