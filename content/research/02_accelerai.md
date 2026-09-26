@@ -15,6 +15,11 @@ tags:
   - Co-construction
 
 students:
+  - name: Louis Bagot
+    kind: Postdoc
+    start_date: 2026
+    end_date:
+    status: "active"
   - name: Timon Deschamps
     kind: PhD
     start_date: 2023
