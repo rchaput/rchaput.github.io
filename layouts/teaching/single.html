@@ -91,6 +91,12 @@
         margin-bottom: 0.75rem;
     }
 
+    .course-responsibility {
+        display: inline-flex;
+        align-items: center;
+        color: goldenrod;
+    }
+
     .course-name {
         font-size: 1.15rem;
         color: #2c3e50;
@@ -316,13 +322,11 @@
                             {{/* TODO: if major contains a comma, add a 's' at the end (Majeures) */}}
                             <div class="course-major">Majeure {{ . }}</div>
                         {{ end }}
-                        {{/*
                         {{ if .incharge }}
-                            <p class="course-responsibility">Responsable</p>
-                        {{ else }}
-                            <p class="course-responsibility">Intervenant</p>
+                            <div class="course-responsibility" title="Responsable">
+                                {{ partial "icon" "fas/crown" }}
+                            </div>
                         {{ end }}
-                        */}}
                         <p class="course-desc">
                             {{ .description | markdownify | emojify }}
                         </p>
